@@ -5,19 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>키다리스튜디오::Business</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     <!-- reset -->
     <link rel="stylesheet" href="../css/reset.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="../css/business.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
   </head>
   <body>
-    <div id="wrapper">
+    <header id="header">
       <div class="container">
+        <div id="logo">
+          <a href=""
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">CEO 인사말</a></li>
+                <li><a href="">CI</a></li>
+                <li><a href="">그룹사</a></li>
+                <li><a href="">회사전경</a></li>
+                <li><a href="">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="">영화</a></li>
+                <li><a href="">웹툰제작스튜디오</a></li>
+                <li><a href="">웹소설</a></li>
+                <li><a href="">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="">직무안내</a></li>
+                <li><a href="">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="">기업지배구조</a></li>
+                <li><a href="">공시정보</a></li>
+                <li><a href="">재무정보</a></li>
+                <li><a href="">투자정보</a></li>
+                <li><a href="">공시정보 관리규정</a></li>
+                <li><a href="">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="slideBar">
+        <div class="barInner">
+          <div class="menuArea">
+            <dl>
+              <dt>Company</dt>
+              <dd><a href="">회사소개</a></dd>
+              <dd><a href="">CEO 인사말</a></dd>
+              <dd><a href="">CI</a></dd>
+              <dd>
+                <a href="">그룹사</a>
+                <ul>
+                  <li>
+                    <a href="">Contents & <br />Service</a>
+                  </li>
+                  <li><a href="">IT</a></li>
+                  <li><a href="">Finance</a></li>
+                  <li><a href="">Grobal Business</a></li>
+                </ul>
+              </dd>
+              <dd><a href="">회사전경</a></dd>
+              <dd><a href="">오시는길</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>Business</dt>
+              <dd><a href="">영화</a></dd>
+              <dd><a href="">웹툰제작스튜디오</a></dd>
+              <dd><a href="">웹소설</a></dd>
+              <dd>
+                <a href="">플랫폼</a>
+                <ul>
+                  <li><a href="">봄툰</a></li>
+                  <li><a href="">델리툰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>Careers</dt>
+              <dd><a href="">직무안내</a></dd>
+              <dd><a href="">채용공고</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>공지</dt>
+              <dd><a href="">언론보도</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea last">
+            <dl>
+              <dt>IR</dt>
+              <dd><a href="">기업지배구조</a></dd>
+              <dd><a href="">공시정보</a></dd>
+              <dd><a href="">재무정보</a></dd>
+              <dd><a href="">투자정보</a></dd>
+              <dd><a href="">공시정보관리규정</a></dd>
+              <dd><a href="">공고사항</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <div id="wrapper">
+      <div class="contentsContainer">
         <section id="sub_visual">
           <div class="img business">
             <div class="txt_wrap">
@@ -31,21 +166,21 @@
             <a href="" class="homeIcon"><span class="roof"></span></a>
             <div class="locationSelectArea">
               <span></span>
-              <select name="" id="">
+              <select name="" id="locationList01" onchange="link01()">
                 <option value="">Company</option>
-                <option value="" selected>Business</option>
+                <option value="../html/business_movie.html" selected>Business</option>
                 <option value="">Careers</option>
-                <option value="">PR</option>
-                <option value="">IR</option>
+                <option value="../html/pr_press.html">PR</option>
+                <option value="../html/IR_structure.html">IR</option>
               </select>
             </div>
             <div class="locationSelectArea typeA">
               <span></span>
-              <select name="" id="">
-                <option value="" selected>영화</option>
-                <option value="">웹툰제작스튜디오</option>
-                <option value="">웹소설</option>
-                <option value="">플랫폼</option>
+              <select name="" id="locationList02" onchange="link02()">
+                <option value="../html/business_movie.html" selected>영화</option>
+                <option value="../html/business_webtoon.html">웹툰제작스튜디오</option>
+                <option value="../html/business_webNovel.html">웹소설</option>
+                <option value="../html/business_platform.html">플랫폼</option>
               </select>
             </div>
           </div>
@@ -78,7 +213,7 @@
                     <button></button>
                   </div>
                 </div>
-                <div class="workListArea">
+                <div class="workListArea movie01">
                   <ul>
                     <li>
                       <div class="contentsList movieBox">
@@ -168,7 +303,7 @@
                     <li>
                       <div class="contentsList movieBox">
                         <div class="imgArea">
-                          <img src="../images/business/movie_04.jpg" alt="" />
+                          <img src="../images/business/movie_08.jpg" alt="" />
                         </div>
                         <span>결백</span>
                         <p>개봉일 : 2020-06-10</p>
@@ -188,12 +323,385 @@
                     <a href="" class="last"></a>
                   </div>
                 </div>
+                <div class="workListArea movie02">
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_2-1.jpg" alt="" />
+                        </div>
+                        <span>뜨거운 피</span>
+                        <p>개봉일 : 2021</p>
+                        <p>감독 : 천명관</p>
+                        <p>배우 : 정우,김갑수,최무성,윤지혜 외</p>
+                        <p>장르 : 느와르</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
+                <div class="workListArea movie03">
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-1.jpg" alt="" />
+                        </div>
+                        <span>헌터킬러</span>
+                        <p>개봉일 : 2018-12-06</p>
+                        <p>감독 : 도노반 마시</p>
+                        <p>배우 : 제라드 버틀러, 게리 올드만</p>
+                        <p>장르 : 액션, 스릴러</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-2.jpg" alt="" />
+                        </div>
+                        <span>셜록놈즈</span>
+                        <p>개봉일 : 2018-10-03</p>
+                        <p>감독 : 존 스티븐슨</p>
+                        <p>장르 : 애니메이션, 코미디, 가족, 모험</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-3.jpg" alt="" />
+                        </div>
+                        <span>물괴</span>
+                        <p>개봉일 : 2018.09.12</p>
+                        <p>감독 : 허종호</p>
+                        <p>배우 : 김명민,김인권,이혜리,박성웅</p>
+                        <p>장르 : 크리쳐 액션사극</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-4.jpg" alt="" />
+                        </div>
+                        <span>독전:인스텐디드 컷</span>
+                        <p>개봉일 : 2018.07.18</p>
+                        <p>감독 : 이해영</p>
+                        <p>배우 : 조진웅,류준열,김성령,박해준</p>
+                        <p>장르 : 범죄,액션</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-5.jpg" alt="" />
+                        </div>
+                        <span>나와 봄날의 약속</span>
+                        <p>개봉일 : 2018.06.28</p>
+                        <p>감독 : 백승빈</p>
+                        <p>배우 : 김성균, 장영남, 김학선, 이주영</p>
+                        <p>장르 : 미스터리 판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-6.jpg" alt="" />
+                        </div>
+                        <span>미드나잇 선</span>
+                        <p>개봉일 : 2018-06-21</p>
+                        <p>감독 : 스콧 스피어</p>
+                        <p>배우 : 벨라 손, 패트릭 슈왈제네거</p>
+                        <p>장르 : 멜로/로맨스</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-7.jpg" alt="" />
+                        </div>
+                        <span>데자뷰</span>
+                        <p>개봉일 : 2018.05.30</p>
+                        <p>감독 : 고경민</p>
+                        <p>배우 : 남규리, 이천희, 이규한</p>
+                        <p>장르 : 미스터리, 스릴러</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_3-8.jpg" alt="" />
+                        </div>
+                        <span>독전</span>
+                        <p>개봉일 : 2018.05.22</p>
+                        <p>감독 : 이해영</p>
+                        <p>배우 : 조진웅, 류준열, 김성령, 박해준</p>
+                        <p>장르 : 범죄, 액션</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" data-page="3" class="page">4</a>
+                    <a href="" data-page="4" class="page">5</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
+                <div class="workListArea movie04">
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-1.jpg" alt="" />
+                        </div>
+                        <span>빛나는 순간</span>
+                        <p>개봉일 : 2021-06-30</p>
+                        <p>감독 : 소준문</p>
+                        <p>배우 : 고두심, 지현우</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-2.jpg" alt="" />
+                        </div>
+                        <span>진삼국무쌍</span>
+                        <p>개봉일 : 2021-06-24</p>
+                        <p>감독 : 주현량</p>
+                        <p>배우 : 고천락, 왕카이, 한경</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-3.jpg" alt="" />
+                        </div>
+                        <span>특수요원</span>
+                        <p>개봉일 : 2020-11-19</p>
+                        <p>감독 : 신재명</p>
+                        <p>배우 : 이재윤, 공정환</p>
+                        <p>장르 : 액션</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-4.jpg" alt="" />
+                        </div>
+                        <span>마르지엘라</span>
+                        <p>개봉일 : 2020-09-30</p>
+                        <p>감독 : 라이너 홀제메르</p>
+                        <p>배우 : 마틴 마르지엘라</p>
+                        <p>장르 : 다큐멘터리</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-5.jpg" alt="" />
+                        </div>
+                        <span>그리드</span>
+                        <p>개봉일 : 2020-10-15</p>
+                        <p>감독 : 마이클 윈터바텀</p>
+                        <p>배우 : 스티븐 쿠건, 에이사 버터필드, 셜리 헨더슨</p>
+                        <p>장르 : 코미디, 드라마</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-6.jpg" alt="" />
+                        </div>
+                        <span>드라이브</span>
+                        <p>개봉일 : 2020-09-03</p>
+                        <p>감독 : 니콜라스 윈딩 레픈</p>
+                        <p>배우 : 라이언 고슬링, 캐리 멀리건</p>
+                        <p>장르 : 액션, 멜로/로맨스</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-7.jpg" alt="" />
+                        </div>
+                        <span>시크릿 가든</span>
+                        <p>개봉일 : 2020-08-19</p>
+                        <p>감독 : 마크 먼든</p>
+                        <p>배우 : 딕시 에저릭스, 콜린 퍼스, 줄리 월터스</p>
+                        <p>장르 : 드라마, 가족, 판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie_4-8.jpg" alt="" />
+                        </div>
+                        <span>강철비2: 정상회담</span>
+                        <p>개봉일 : 2020-07-29</p>
+                        <p>감독 : 양우석</p>
+                        <p>배우 : 정우성, 곽도원, 유연석</p>
+                        <p>장르 : 드라마, 액션</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" data-page="3" class="page">4</a>
+                    <a href="" data-page="4" class="page">5</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </div>
     </div>
+    <!-- section end -->
+    <footer id="footer">
+      <div class="footMain">
+        <a href="">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="">다우키룸그룹 전체보기 +</a>
+        <ul>
+          <li class="footMenu">
+            <a href="" class="footVisual01"><span class="blind">키움증권</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual02"><span class="blind">사람인</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual03"><span class="blind">다우데이타</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual04"><span class="blind">다우기술</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual05"><span class="blind">한국정보인증</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual06"><span class="blind">미래테크놀로지</span></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
+    <script>
+      // gsap.from(".contents", { duration: 1, ease: "sine.out", y: 100 });
+      const gnb = document.querySelector("#gnb");
+      const header = document.querySelector("#header");
+      const btnAll = document.querySelector("#header .btnAll");
+      const slideBar = document.querySelector("#slideBar");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      header.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
+
+      btnAll.addEventListener("click", function () {
+        header.classList.toggle("open");
+      });
+
+      function link01() {
+        let url = document.getElementById("locationList01").value;
+        location.href = url;
+      }
+      function link02() {
+        let url = document.getElementById("locationList02").value;
+        location.href = url;
+      }
+
+      const pannel01 = document.querySelector(".movie01");
+      const pannel02 = document.querySelector(".movie02");
+      const pannel03 = document.querySelector(".movie03");
+      const pannel04 = document.querySelector(".movie04");
+      const movieTab01 = document.querySelector(".movieTab01");
+      const movieTab02 = document.querySelector(".movieTab02");
+      const movieTab03 = document.querySelector(".movieTab03");
+      const movieTab04 = document.querySelector(".movieTab04");
+
+      movieTab01.addEventListener("click", function (e) {
+        e.preventDefault();
+        movieTab01.classList.add("on");
+        movieTab02.classList.remove("on");
+        movieTab03.classList.remove("on");
+        movieTab04.classList.remove("on");
+        pannel01.classList.remove("off");
+        pannel02.classList.remove("on");
+        pannel03.classList.remove("on");
+        pannel04.classList.remove("on");
+      });
+      movieTab02.addEventListener("click", function (e) {
+        e.preventDefault();
+        movieTab01.classList.remove("on");
+        movieTab02.classList.add("on");
+        movieTab03.classList.remove("on");
+        movieTab04.classList.remove("on");
+        pannel01.classList.add("off");
+        pannel02.classList.add("on");
+        pannel03.classList.remove("on");
+        pannel04.classList.remove("on");
+      });
+      movieTab03.addEventListener("click", function (e) {
+        e.preventDefault();
+        movieTab01.classList.remove("on");
+        movieTab02.classList.remove("on");
+        movieTab03.classList.add("on");
+        movieTab04.classList.remove("on");
+        pannel01.classList.add("off");
+        pannel02.classList.remove("on");
+        pannel03.classList.add("on");
+        pannel04.classList.remove("on");
+      });
+      movieTab04.addEventListener("click", function (e) {
+        e.preventDefault();
+        movieTab01.classList.add("off");
+        movieTab02.classList.remove("on");
+        movieTab03.classList.remove("on");
+        movieTab04.classList.add("on");
+        pannel01.classList.add("off");
+        pannel02.classList.remove("on");
+        pannel03.classList.remove("on");
+        pannel04.classList.add("on");
+      });
+    </script>
   </body>
 </html>

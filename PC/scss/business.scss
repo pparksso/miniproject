@@ -12,7 +12,7 @@ a {
 }
 #wrapper {
   width: 100vw;
-  .container {
+  .contentsContainer {
     #sub_visual {
       height: 480px;
       position: relative;
@@ -392,6 +392,25 @@ a {
                     color: #fff;
                     background-color: #000;
                   }
+                }
+              }
+            }
+            .movie01 {
+              &.off {
+                display: none;
+              }
+            }
+            .movie02 {
+              margin-bottom: 700px;
+              .pagenate {
+                visibility: hidden;
+              }
+            }
+            @for $i from 2 to 5 {
+              .movie0#{$i} {
+                display: none;
+                &.on {
+                  display: block;
                 }
               }
             }
