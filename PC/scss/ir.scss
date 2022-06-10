@@ -664,61 +664,49 @@ a {
         }
         .workListArea {
           width: 1200px;
-          .AnnouncementListWrap {
+          .AnnouncementListHead {
+            height: 70px;
+            line-height: 70px;
+            border-bottom: 1px solid #e3e3e3;
             border-top: 2px solid #000;
             margin-top: 40px;
-            box-sizing: border-box;
-            .AnnouncementListHead {
-              display: flex;
-              height: 70px;
-              border-bottom: 1px solid #e3e3e3;
-              span {
-                font-size: 18px;
+            span {
+              display: inline-block;
+              text-align: center;
+              font-size: 18px;
+              &.title {
+                width: 800px;
+              }
+              &.date {
+                width: 266px;
               }
             }
-            .boardTitle {
-              width: 800px;
-              height: 70px;
+          }
+
+          .AnnouncementListWrap {
+            li {
+              // height: 70px;
+              border-bottom: 1px solid #e3e3e3;
               line-height: 70px;
-              text-align: center;
-            }
-            .boardDate {
-              width: 226px;
-              height: 70px;
-              line-height: 70px;
-              text-align: center;
-            }
-            .AnnouncementHeadFile {
-              width: 174px;
-              height: 70px;
-              line-height: 70px;
-              text-align: center;
-            }
-            .AnnouncementListBody {
-              .AnnouncementEl {
-                position: relative;
-                .boardLeft {
-                  display: flex;
-                  border-bottom: 1px solid #e3e3e3;
-                  &:hover {
-                    transition: all 0.3s;
-                    background-color: #f6f6f6;
-                  }
-                }
-                .AnnouncementTitle {
-                  text-align: left;
+              position: relative;
+              transition: all 0.3s ease-in-out;
+              position: relative;
+              .boardLi {
+                p {
+                  width: 800px;
+                  box-sizing: border-box;
                   padding-left: 40px;
-                  box-sizing: border-box;
+                  font-size: 18px;
+                  display: inline-block;
+                  margin-right: 60px;
                 }
-                .AnnouncementDate {
-                  text-align: left;
-                  box-sizing: border-box;
-                  padding-left: 50px;
-                  span {
-                    font-size: 14px;
-                    color: #999;
-                  }
+                span {
+                  font-size: 14px;
+                  color: #999;
                 }
+              }
+              :hover {
+                background-color: #f6f6f6;
               }
               .Announcementfile {
                 width: 40px;
@@ -733,10 +721,9 @@ a {
                 &:hover {
                   background-color: #f1f1f1;
                   .fileDown:after {
-                    height: 10px;
+                    height: 13px;
                   }
                 }
-
                 .fileDown {
                   position: absolute;
                   bottom: 10px;
@@ -770,8 +757,12 @@ a {
                   }
                 }
               }
+              .paper {
+                // display: none;
+              }
             }
           }
+
           .pagenate {
             margin-top: 80px;
             text-align: center;

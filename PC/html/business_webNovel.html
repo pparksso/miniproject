@@ -188,8 +188,8 @@
           </div>
           <div class="subWrap business-tab">
             <div class="tabArea">
-              <a href="" class="movieTab01 on">로맨스/BL<span></span></a>
-              <a href="" class="movieTab02">판타지/무협<span></span></a>
+              <a href="" class="novelTab01 on">로맨스/BL<span></span></a>
+              <a href="" class="novelTab02">판타지/무협<span></span></a>
             </div>
             <div class="areaInner">
               <div class="board_opt business">
@@ -208,7 +208,7 @@
                     <button></button>
                   </div>
                 </div>
-                <div class="workListArea">
+                <div class="workListArea novel01">
                   <ul>
                     <li>
                       <div class="contentsList webNovelBox">
@@ -305,6 +305,103 @@
                     <a href="" class="last"></a>
                   </div>
                 </div>
+                <div class="workListArea novel02">
+                  <ul>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-1.jpg" alt="" />
+                        </div>
+                        <span>금수저 생활백서</span>
+                        <p>작가 : 강동호</p>
+                        <p>장르 : 현대판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-2.jpg" alt="" />
+                        </div>
+                        <span>핵무기도 만들어 드릴까요?</span>
+                        <p>작가 : 북홀릭</p>
+                        <p>장르 : 현대판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-3.jpg" alt="" />
+                        </div>
+                        <span>국세청 망나니</span>
+                        <p>작가 : 동면거북이</p>
+                        <p>장르 : 현대판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-4.jpg" alt="" />
+                        </div>
+                        <span>곤륜마협</span>
+                        <p>작가 : 글별자리</p>
+                        <p>장르 : 무협</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-5.jpg" alt="" />
+                        </div>
+                        <span>식사하고 가세요</span>
+                        <p>작가 : 인기영</p>
+                        <p>장르 : 현대판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-6.jpg" alt="" />
+                        </div>
+                        <span>재벌가 장남은 가치를 본다</span>
+                        <p>작가 : 유재무</p>
+                        <p>장르 : 현대 판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-7.jpg" alt="" />
+                        </div>
+                        <span>재벌생활기록부</span>
+                        <p>작가 : 조건상</p>
+                        <p>장르 : 현대판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webNovelBox">
+                        <div class="imgArea">
+                          <img src="../images/business/novel2-8.jpg" alt="" />
+                        </div>
+                        <span>귀환한 절대자는 역대급 헌터</span>
+                        <p>작가 : 김현각</p>
+                        <p>장르 : 퓨전판타지</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" data-page="3" class="page">4</a>
+                    <a href="" data-page="4" class="page">5</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -371,6 +468,26 @@
 
       btnAll.addEventListener("click", function () {
         header.classList.toggle("open");
+      });
+
+      const pannel01 = document.querySelector(".novel01");
+      const pannel02 = document.querySelector(".novel02");
+      const novelTab01 = document.querySelector(".novelTab01");
+      const novelTab02 = document.querySelector(".novelTab02");
+
+      novelTab01.addEventListener("click", function (e) {
+        e.preventDefault();
+        novelTab01.classList.add("on");
+        novelTab02.classList.remove("on");
+        pannel01.classList.remove("off");
+        pannel02.classList.remove("on");
+      });
+      novelTab02.addEventListener("click", function (e) {
+        e.preventDefault();
+        novelTab01.classList.remove("on");
+        novelTab02.classList.add("on");
+        pannel01.classList.add("off");
+        pannel02.classList.add("on");
       });
     </script>
   </body>

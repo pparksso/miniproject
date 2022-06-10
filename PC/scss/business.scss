@@ -666,6 +666,17 @@ a {
                 }
               }
             }
+            .novel01 {
+              &.off {
+                display: none;
+              }
+            }
+            .novel02 {
+              display: none;
+              &.on {
+                display: block;
+              }
+            }
           }
         }
       }

@@ -202,41 +202,33 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer .contents .announcement .workListArea { width: 1200px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap { border-top: 2px solid #000; margin-top: 40px; box-sizing: border-box; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListHead { height: 70px; line-height: 70px; border-bottom: 1px solid #e3e3e3; border-top: 2px solid #000; margin-top: 40px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListHead { display: flex; height: 70px; border-bottom: 1px solid #e3e3e3; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListHead span { display: inline-block; text-align: center; font-size: 18px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListHead span { font-size: 18px; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListHead span.title { width: 800px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .boardTitle { width: 800px; height: 70px; line-height: 70px; text-align: center; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListHead span.date { width: 266px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .boardDate { width: 226px; height: 70px; line-height: 70px; text-align: center; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li { border-bottom: 1px solid #e3e3e3; line-height: 70px; position: relative; transition: all 0.3s ease-in-out; position: relative; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementHeadFile { width: 174px; height: 70px; line-height: 70px; text-align: center; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .boardLi p { width: 800px; box-sizing: border-box; padding-left: 40px; font-size: 18px; display: inline-block; margin-right: 60px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl { position: relative; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .boardLi span { font-size: 14px; color: #999; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl .boardLeft { display: flex; border-bottom: 1px solid #e3e3e3; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li :hover { background-color: #f6f6f6; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl .boardLeft:hover { transition: all 0.3s; background-color: #f6f6f6; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile { width: 40px; height: 40px; display: block; position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 66px; transition: all 0.3s ease-in-out; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl .AnnouncementTitle { text-align: left; padding-left: 40px; box-sizing: border-box; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile:hover { background-color: #f1f1f1; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl .AnnouncementDate { text-align: left; box-sizing: border-box; padding-left: 50px; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile:hover .fileDown:after { height: 13px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .AnnouncementEl .AnnouncementDate span { font-size: 14px; color: #999; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown { position: absolute; bottom: 10px; left: 9px; width: 18px; height: 7px; border: 2px solid #666666; border-top: none; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile { width: 40px; height: 40px; display: block; position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 66px; transition: all 0.3s ease-in-out; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown::before { content: ""; position: absolute; bottom: 7px; left: 4px; width: 8px; height: 8px; border: 2px solid #666666; border-top: none; border-right: none; transform: rotate(-45deg); }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile:hover { background-color: #f1f1f1; }
-
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile:hover .fileDown:after { height: 10px; }
-
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile .fileDown { position: absolute; bottom: 10px; left: 9px; width: 18px; height: 7px; border: 2px solid #666666; border-top: none; }
-
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile .fileDown::before { content: ""; position: absolute; bottom: 7px; left: 4px; width: 8px; height: 8px; border: 2px solid #666666; border-top: none; border-right: none; transform: rotate(-45deg); }
-
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap .AnnouncementListBody .Announcementfile .fileDown::after { content: ""; position: absolute; bottom: 8px; left: 8px; width: 2px; height: 7px; background-color: #666; transform: rotate(180deg); transition: height 0.25s ease-in-out; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown::after { content: ""; position: absolute; bottom: 8px; left: 8px; width: 2px; height: 7px; background-color: #666; transform: rotate(180deg); transition: height 0.25s ease-in-out; }
 
 #wrapper .contentsContainer .contents .announcement .workListArea .pagenate { margin-top: 80px; text-align: center; }
 
