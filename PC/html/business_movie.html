@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/business.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <!-- js -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    i
     <script src="../js/gsap.min.js"></script>
   </head>
   <body>
@@ -309,6 +311,114 @@
                         <p>감독 : 박상현</p>
                         <p>배우 : 신혜선,배종옥,허준호</p>
                         <p>장르 : 무죄 입증 추적극</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
+                <div class="workListArea movie01_2 page02">
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-1.jpg" alt="" />
+                        </div>
+                        <span>아홉스님</span>
+                        <p>개봉일 : 2020-05-27</p>
+                        <p>배우 : 자승, 무연, 진각, 호산, 성곡, 재현</p>
+                        <p>장르 : 다큐멘터리, 드라마</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-2.jpg" alt="" />
+                        </div>
+                        <span>엽문4: 더 파이널</span>
+                        <p>개봉일 : 2020-04-01</p>
+                        <p>감독 : 엽위신</p>
+                        <p>배우 : 견자단, 스콧 앳킨스, 진국곤</p>
+                        <p>장르 : 액션, 드라마</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-3.jpg" alt="" />
+                        </div>
+                        <span>와일드 라이프</span>
+                        <p>개봉일 : 2019-12-25</p>
+                        <p>감독 : 폴 다노</p>
+                        <p>배우 : 제이크 질렌할, 캐리 멀리건, 에드 옥센볼드</p>
+                        <p>장르 : 드라마</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-4.jpg" alt="" />
+                        </div>
+                        <span>어쩌다 룸메이트</span>
+                        <p>개봉일 : 2019-11-13</p>
+                        <p>감독 : 소륜</p>
+                        <p>배우 : 뇌가음, 동려아</p>
+                        <p>장르 : 멜로/로맨스</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-5.jpg" alt="" />
+                        </div>
+                        <span>호크니</span>
+                        <p>개봉일 : 2019-08-08</p>
+                        <p>감독 : 랜달 라이트</p>
+                        <p>배우 : 데이비드 호크니</p>
+                        <p>장르 : 다큐멘터리</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-6.jpg" alt="" />
+                        </div>
+                        <span>마녀 배달부 키키</span>
+                        <p>개봉일 : 2019-06-26</p>
+                        <p>감독 : 미야자키 하야오</p>
+                        <p>장르 : 애니메이션, 모험, 판타지, 가족</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-7.jpg" alt="" />
+                        </div>
+                        <span>이웃집 토토로</span>
+                        <p>개봉일 : 2019-06-06</p>
+                        <p>감독 : 미야자키 하야오</p>
+                        <p>장르 : 애니메이션, 가족, 판타지</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList movieBox">
+                        <div class="imgArea">
+                          <img src="../images/business/movie1-2-8.jpg" alt="" />
+                        </div>
+                        <span>유랑지구</span>
+                        <p>개봉일 : 2019-04-18</p>
+                        <p>감독 : 곽범</p>
+                        <p>배우 : 굴초소, 조금맥, 오경</p>
+                        <p>장르 : SF</p>
                       </div>
                     </li>
                   </ul>
@@ -615,7 +725,9 @@
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
-      // gsap.from(".contents", { duration: 1, ease: "sine.out", y: 100 });
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
       const gnb = document.querySelector("#gnb");
       const header = document.querySelector("#header");
       const btnAll = document.querySelector("#header .btnAll");
@@ -657,6 +769,8 @@
       const movieTab02 = document.querySelector(".movieTab02");
       const movieTab03 = document.querySelector(".movieTab03");
       const movieTab04 = document.querySelector(".movieTab04");
+
+      const movie01_2 = document.querySelector(".movie01_2");
 
       movieTab01.addEventListener("click", function (e) {
         e.preventDefault();

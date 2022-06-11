@@ -17,6 +17,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/ir.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -197,7 +199,7 @@
                 <h5>주식현황</h5>
                 <span>2021년 12월 31일</span>
               </div>
-              <table class="table01">
+              <table class="table01 nomalTable">
                 <colgroup>
                   <col width="16%" />
                   <col width="27%" />
@@ -309,7 +311,7 @@
               <div class="tableName">
                 <h5>이사회 구성</h5>
               </div>
-              <table class="table02">
+              <table class="table02 nomalTable">
                 <colgroup>
                   <col width="20%" />
                   <col width="20%" />
@@ -362,7 +364,7 @@
               <div class="tableName">
                 <h5>이사회 운영</h5>
               </div>
-              <table class="table03">
+              <table class="table03 nomalTable">
                 <colgroup>
                   <col width="10%" />
                   <col width="15%" />
@@ -508,7 +510,7 @@
               <div class="tableName">
                 <h5>감사 구성</h5>
               </div>
-              <table class="table04">
+              <table class="table04 nomalTable">
                 <colgroup>
                   <col width="25%" />
                   <col width="25%" />
@@ -537,7 +539,7 @@
               <div class="tableName">
                 <h5>외부감사인</h5>
               </div>
-              <table class="table05">
+              <table class="table05 nomalTable">
                 <colgroup>
                   <col width="25%" />
                   <col width="25%" />
@@ -603,6 +605,9 @@
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
       const gnb = document.querySelector("#gnb");
       const header = document.querySelector("#header");
       const btnAll = document.querySelector("#header .btnAll");

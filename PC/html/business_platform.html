@@ -17,6 +17,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/business.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -228,6 +230,9 @@
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
       const gnb = document.querySelector("#gnb");
       const header = document.querySelector("#header");
       const btnAll = document.querySelector("#header .btnAll");

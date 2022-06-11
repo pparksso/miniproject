@@ -17,6 +17,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/ir.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -198,7 +200,7 @@
                 <h5>재무상태표(IFRS 연결)</h5>
                 <span>단위:백만원</span>
               </div>
-              <table class="table06">
+              <table class="table06 nomalTable">
                 <colgroup>
                   <col width="25%" />
                   <col width="25%" />
@@ -307,7 +309,7 @@
                 <h5>포괄손익계산서(IFRS 연결)</h5>
                 <span>단위:백만원</span>
               </div>
-              <table class="table06">
+              <table class="table06 nomalTable">
                 <colgroup>
                   <col width="25%" />
                   <col width="25%" />
@@ -403,6 +405,9 @@
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
       const gnb = document.querySelector("#gnb");
       const header = document.querySelector("#header");
       const btnAll = document.querySelector("#header .btnAll");

@@ -130,15 +130,15 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .tableName span { font-size: 16px; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner table { border-top: 2px solid #000; width: 100%; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .nomalTable { border-top: 2px solid #000; width: 100%; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner table tbody tr { box-sizing: border-box; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .nomalTable tbody tr { box-sizing: border-box; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner table tbody tr td { height: 80px; box-sizing: border-box; font-weight: 400; font-size: 18px; border: 1px solid #ededed; border-left: none; vertical-align: middle; text-align: center; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .nomalTable tbody tr td { height: 80px; box-sizing: border-box; font-weight: 400; font-size: 18px; border: 1px solid #ededed; border-left: none; vertical-align: middle; text-align: center; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner table tbody tr td:nth-last-child(1) { border-right: none; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .nomalTable tbody tr td:nth-last-child(1) { border-right: none; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner table tbody tr td span { font-size: 20px; font-weight: 700; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .nomalTable tbody tr td span { font-size: 20px; font-weight: 700; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .table03 tr .tableLeft { text-align: left; padding-left: 5px; line-height: 1.5; }
 
@@ -212,23 +212,53 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li { border-bottom: 1px solid #e3e3e3; line-height: 70px; position: relative; transition: all 0.3s ease-in-out; position: relative; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .boardLi p { width: 800px; box-sizing: border-box; padding-left: 40px; font-size: 18px; display: inline-block; margin-right: 60px; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle { height: 70px; position: relative; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .boardLi span { font-size: 14px; color: #999; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle :hover { background-color: #f6f6f6; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li :hover { background-color: #f6f6f6; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .boardLi p { width: 800px; box-sizing: border-box; padding-left: 40px; font-size: 18px; display: inline-block; margin-right: 60px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile { width: 40px; height: 40px; display: block; position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 66px; transition: all 0.3s ease-in-out; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .boardLi span { font-size: 14px; color: #999; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile:hover { background-color: #f1f1f1; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile { width: 40px; height: 40px; display: block; position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); right: 66px; transition: all 0.3s ease-in-out; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile:hover .fileDown:after { height: 13px; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile:hover { background-color: #f1f1f1; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown { position: absolute; bottom: 10px; left: 9px; width: 18px; height: 7px; border: 2px solid #666666; border-top: none; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile:hover .fileDown:after { height: 13px; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown::before { content: ""; position: absolute; bottom: 7px; left: 4px; width: 8px; height: 8px; border: 2px solid #666666; border-top: none; border-right: none; transform: rotate(-45deg); }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile .fileDown { position: absolute; bottom: 10px; left: 9px; width: 18px; height: 7px; border: 2px solid #666666; border-top: none; }
 
-#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .Announcementfile .fileDown::after { content: ""; position: absolute; bottom: 8px; left: 8px; width: 2px; height: 7px; background-color: #666; transform: rotate(180deg); transition: height 0.25s ease-in-out; }
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile .fileDown::before { content: ""; position: absolute; bottom: 7px; left: 4px; width: 8px; height: 8px; border: 2px solid #666666; border-top: none; border-right: none; transform: rotate(-45deg); }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .listTitle .Announcementfile .fileDown::after { content: ""; position: absolute; bottom: 8px; left: 8px; width: 2px; height: 7px; background-color: #666; transform: rotate(180deg); transition: height 0.25s ease-in-out; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper { background-color: #f6f6f6; display: none; color: #999999; box-sizing: border-box; padding: 32px 40px 30px 40px; width: 100%; line-height: 180%; text-align: justify; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper h1 { font-size: 20pt; font-weight: 700; margin: 30px 0 10px 0; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper h2 { font-size: 14pt; font-weight: 700; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper span { display: block; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .center { text-align: center; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper p { letter-spacing: 1.5; font-size: 11px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .date { font-size: 16px; margin-bottom: 30px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .address { font-size: 11.5pt; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .smallFz { font-size: 11px; line-height: 200%; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .indent01 { text-indent: 25px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .indent02 { text-indent: 40px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .indent03 { text-indent: 50px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .indent04 { text-indent: 80px; }
+
+#wrapper .contentsContainer .contents .announcement .workListArea .AnnouncementListWrap li .paper .indent05 { text-indent: 110px; }
 
 #wrapper .contentsContainer .contents .announcement .workListArea .pagenate { margin-top: 80px; text-align: center; }
 
@@ -251,6 +281,28 @@ a { color: inherit; text-decoration: none; }
 #wrapper .contentsContainer .contents .announcement .workListArea .pagenate .page { font-size: 15px; }
 
 #wrapper .contentsContainer .contents .announcement .workListArea .pagenate .page.on { color: #fff; background-color: #000; }
+
+#paperTable { width: 724.33px; background-color: #fff; color: #000; font-weight: 300; }
+
+#paperTable h1 { font-size: 16pt; font-weight: 700; }
+
+#paperTable strong { font-size: 14pt; margin-top: 50px; letter-spacing: 30px; text-align: center; display: block; }
+
+#paperTable .companyBox { display: flex; justify-content: space-between; font-size: 15px; }
+
+#paperTable .thanks { text-align: left; word-break: keep-all; margin-left: 70px; margin-bottom: 20px; }
+
+#paperTable .announceTable { word-break: keep-all; box-sizing: border-box; border: 1px solid; }
+
+#paperTable .announceTable thead { text-align: center; border: 1px solid #000; border-bottom: none; }
+
+#paperTable .announceTable .bold { font-weight: 700; font-size: 15px; letter-spacing: 2px; }
+
+#paperTable .announceTable tbody { border-top: 1px solid #000; border-bottom: 1px solid #000; }
+
+#paperTable .announceTable td { border-right: 1px solid #000; font-size: 15px; }
+
+#paperTable .announceTable td:nth-child(2n) { text-align: right; padding-right: 15px; }
 
 #footer { padding-top: 50px; position: relative; background-color: #333; color: #666; }
 

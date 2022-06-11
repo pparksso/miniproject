@@ -677,6 +677,14 @@ a {
                 display: block;
               }
             }
+            @for $i from 2 to 4 {
+              .page0#{$i} {
+                display: none;
+                &.on {
+                  display: block;
+                }
+              }
+            }
           }
         }
       }
