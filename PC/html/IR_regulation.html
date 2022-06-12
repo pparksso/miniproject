@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/ir.css" />
     <!-- js -->
     <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -1165,6 +1166,9 @@
       </div>
     </footer>
     <!-- footer end -->
+    <a href="#" class="btn_gotop">
+      <span>TOP</span>
+    </a>
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
       gsap.from(".subWrap", { duration: 1, y: 100 });
@@ -1186,6 +1190,13 @@
           header.classList.add("scroll");
         } else {
           header.classList.remove("scroll");
+        }
+      });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
         }
       });
 

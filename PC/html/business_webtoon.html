@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/common.css" />
     <!-- js -->
     <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -367,6 +368,9 @@
         </ul>
       </div>
     </footer>
+    <a href="#" class="btn_gotop">
+      <span>TOP</span>
+    </a>
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
@@ -391,7 +395,13 @@
           header.classList.remove("scroll");
         }
       });
-
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
       btnAll.addEventListener("click", function () {
         header.classList.toggle("open");
       });

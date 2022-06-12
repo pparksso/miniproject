@@ -15,10 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
     <!-- css -->
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/business.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <!-- js -->
     <script src="../js/gsap.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -185,8 +190,73 @@
           </div>
         </section>
         <section class="contents">
-          <div class="titleWrap">
+          <div class="titleWrap" style="margin-bottom: 100px">
             <h4>플랫폼</h4>
+          </div>
+          <div id="toon">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="bomtoon swiper-slide">
+                  <a href="">
+                    <span>
+                      <em class="blind">봄툰이미지</em>
+                    </span>
+                    <i>
+                      서비스 <br />
+                      <em>바로가기</em>
+                    </i>
+                    <em class="service">SERVICE</em>
+                  </a>
+                  <div class="txtBox">
+                    <h3>봄툰</h3>
+                    <p>
+                      봄툰은 400만 독자와 함께 웹툰, 소설을 기반으로 한 국내 1위 여성 전문 콘텐츠 플랫폼입니다. 매년 여성향 독점 웹툰 기준 최다수의 신규 작품을 제공하고 있으며, 로맨스, BL, GL 등의
+                      트렌디한 장르를 중심으로 웹툰 뿐만 아니라 소설, 쇼핑, 영상, 글로벌 서비스까지 그 영역을 확대하여 서비스 중입니다. 단순한 콘텐츠의 제공영역에서 더 나아가 고객이 함께 즐길 수 있는
+                      여성 플랫폼이 되기 위해 창의적 발상과 열정적 자세로 최선의 서비스를 제공하는 것이 목표입니다.
+                    </p>
+                  </div>
+                  <div class="boxBox">
+                    <div class="box01 box"></div>
+                    <div class="box02 box"></div>
+                    <div class="box03 box"></div>
+                    <div class="box04 box"></div>
+                  </div>
+                </div>
+                <div class="delitoon swiper-slide">
+                  <a href="">
+                    <span>
+                      <em class="blind">델리툰이미지</em>
+                    </span>
+                    <i>
+                      서비스 <br />
+                      <em>바로가기</em>
+                    </i>
+                    <em class="service">SERVICE</em>
+                  </a>
+                  <div class="txtBox">
+                    <h3>델리툰</h3>
+                    <p>
+                      프랑스를 대표하는 웹툰 플랫폼인 델리툰은 유럽 내 최초의 유료 웹툰 서비스로 로맨스, 판타지, 드라마, 소년, 액션 등 다양한 장르의 만화 장르를 서비스하고 있으며, 한국 웹툰을 시작으로
+                      중국, 일본 등의 웹툰과 만화를 소개할 것 입니다. 2020년 중에 프랑스 뿐 아니라 독일 , 2021년에 스페인, 이태리 까지 사업 영역을 확대하여 명실공히 유럽 최대의 웹툰 서비스 사업자로
+                      자리매김 할 것 입니다.
+                    </p>
+                  </div>
+                  <div class="boxBox">
+                    <div class="box01 box"></div>
+                    <div class="box02 box"></div>
+                    <div class="box03 box"></div>
+                    <div class="box04 box"></div>
+                  </div>
+                </div>
+              </div>
+              <button class="prev">
+                <span class="material-icons"> west </span>
+              </button>
+              <button class="next">
+                <span class="material-icons"> east </span>
+              </button>
+              <div class="pagination"></div>
+            </div>
           </div>
         </section>
       </div>
@@ -228,6 +298,9 @@
       </div>
     </footer>
     <!-- footer end -->
+    <a href="#" class="btn_gotop">
+      <span>TOP</span>
+    </a>
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
       gsap.from(".subWrap", { duration: 1, y: 100 });
@@ -237,6 +310,7 @@
       const header = document.querySelector("#header");
       const btnAll = document.querySelector("#header .btnAll");
       const slideBar = document.querySelector("#slideBar");
+      const toon = document.querySelector("#toon");
       gnb.addEventListener("mouseenter", function () {
         header.classList.add("on");
       });
@@ -254,6 +328,28 @@
 
       btnAll.addEventListener("click", function () {
         header.classList.toggle("open");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
+
+      new Swiper("#toon .swiper-container", {
+        effect: "slide",
+        loop: true,
+        navigation: {
+          nextEl: "#toon .next",
+          prevEl: "#toon .prev",
+        },
+        pagination: {
+          el: "#toon .pagination",
+          type: "bullets",
+          clickable: true,
+        },
       });
     </script>
   </body>

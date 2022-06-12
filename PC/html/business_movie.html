@@ -729,11 +729,22 @@
         </ul>
       </div>
     </footer>
+    <a href="#" class="btn_gotop">
+      <span>TOP</span>
+    </a>
     <!-- footer end -->
     <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
     <script>
       gsap.from(".subWrap", { duration: 1, y: 100 });
       gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
 
       const gnb = document.querySelector("#gnb");
       const header = document.querySelector("#header");
