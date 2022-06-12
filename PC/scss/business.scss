@@ -647,18 +647,13 @@ a {
                 }
               }
             }
-            .movie01 {
-              &.off {
-                display: none;
-              }
-            }
             .movie02 {
               margin-bottom: 700px;
               .pagenate {
                 visibility: hidden;
               }
             }
-            @for $i from 2 to 5 {
+            @for $i from 1 to 5 {
               .movie0#{$i} {
                 display: none;
                 &.on {
@@ -677,7 +672,7 @@ a {
                 display: block;
               }
             }
-            @for $i from 2 to 4 {
+            @for $i from 1 to 4 {
               .page0#{$i} {
                 display: none;
                 &.on {

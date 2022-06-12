@@ -196,11 +196,13 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .workListArea .pagenate .page.on { color: #fff; background-color: #000; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner .business .movie01.off { display: none; }
-
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .movie02 { margin-bottom: 700px; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .movie02 .pagenate { visibility: hidden; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .movie01 { display: none; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .movie01.on { display: block; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .movie02 { display: none; }
 
@@ -219,6 +221,18 @@ a { color: inherit; text-decoration: none; }
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .novel02 { display: none; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .business .novel02.on { display: block; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page01 { display: none; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page01.on { display: block; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page02 { display: none; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page02.on { display: block; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page03 { display: none; }
+
+#wrapper .contentsContainer .contents .subWrap .areaInner .business .page03.on { display: block; }
 
 #footer { padding-top: 50px; position: relative; background-color: #333; color: #666; }
 
