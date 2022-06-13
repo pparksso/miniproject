@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키다리스튜디오::메인</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/splitting.css" />
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+  </head>
+  <body>
+    <a href="#" class="btn_gotop">
+      <span>TOP</span>
+    </a>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="./company_intro.html">회사소개</a></li>
+                <li><a href="./company_ceo.html">CEO 인사말</a></li>
+                <li><a href="./company_ci.html">CI</a></li>
+                <li><a href="./company_group.html">그룹사</a></li>
+                <li><a href="./company_view.html">회사전경</a></li>
+                <li><a href="./company_map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="./business_movie.html">영화</a></li>
+                <li><a href="./business_webtoon.html">웹툰제작스튜디오</a></li>
+                <li><a href="./business_webNovel.html">웹소설</a></li>
+                <li><a href="./business_platform.html">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="./careers_job.html">직무안내</a></li>
+                <li><a href="./careers_employ.html">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="./pr_press.html">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="./IR_structure.html">기업지배구조</a></li>
+                <li><a href="./IR_Dart.html">공시정보</a></li>
+                <li><a href="./IR_financial.html">재무정보</a></li>
+                <li><a href="./IR_investment.html">투자정보</a></li>
+                <li><a href="./IR_regulation.html">공시정보 관리규정</a></li>
+                <li><a href="./IR_Announcement.html">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="slideBar">
+        <div class="barInner">
+          <div class="menuArea">
+            <dl>
+              <dt>Company</dt>
+              <dd><a href="./company_intro.html">회사소개</a></dd>
+              <dd><a href="./company_ceo.html">CEO 인사말</a></dd>
+              <dd><a href="./company_ci.html">CI</a></dd>
+              <dd>
+                <a href="./company_group.html">그룹사</a>
+                <ul>
+                  <li>
+                    <a href="">Contents & <br />Service</a>
+                  </li>
+                  <li><a href="">IT</a></li>
+                  <li><a href="">Finance</a></li>
+                  <li><a href="">Grobal Business</a></li>
+                </ul>
+              </dd>
+              <dd><a href="./company_view.html">회사전경</a></dd>
+              <dd><a href="./company_map.html">오시는길</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>Business</dt>
+              <dd><a href="./business_movie.html">영화</a></dd>
+              <dd><a href="./business_webtoon.html">웹툰제작스튜디오</a></dd>
+              <dd><a href="./business_webNovel.html">웹소설</a></dd>
+              <dd>
+                <a href="./business_platform.html">플랫폼</a>
+                <ul>
+                  <li><a href="">봄툰</a></li>
+                  <li><a href="">델리툰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>Careers</dt>
+              <dd><a href="./careers_job.html">직무안내</a></dd>
+              <dd><a href="./careers_employ.html">채용공고</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea">
+            <dl>
+              <dt>공지</dt>
+              <dd><a href="./pr_press.html">언론보도</a></dd>
+            </dl>
+          </div>
+          <div class="menuArea last">
+            <dl>
+              <dt>IR</dt>
+              <dd><a href="./IR_structure.html">기업지배구조</a></dd>
+              <dd><a href="./IR_Dart.html">공시정보</a></dd>
+              <dd><a href="./IR_financial.html">재무정보</a></dd>
+              <dd><a href="./IR_investment.html">투자정보</a></dd>
+              <dd><a href="./IR_regulation.html">공시정보관리규정</a></dd>
+              <dd><a href="./IR_Announcement.html">공고사항</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="scrollNav">
+      <ul class="scrollBox">
+        <li>
+          <span class="nav01">메<br />인</span>
+        </li>
+        <li>
+          <span class="nav02">대<br />표<br />작<br />품</span>
+        </li>
+        <li>
+          <span class="nav03">서<br />비<br />스<br />소<br />개</span>
+        </li>
+        <li>
+          <span class="nav04">회<br />사<br />전<br />경</span>
+        </li>
+        <li>
+          <span class="nav05">리<br />더<br />필<br />름</span>
+        </li>
+      </ul>
+    </div>
+    <section id="mainVisual">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide slide01">
+          <img src="../images/visual_img_1.jpg" alt="" class="visual01" />
+          <div class="txtBox">
+            <div class="txt01">
+              <span>최</span>
+              <span>고</span>
+              <span>의</span>
+              <span>콘</span>
+              <span>텐</span>
+              <span>츠</span>
+            </div>
+            <div class="txt02">
+              <span>소</span>
+              <span>비</span>
+              <span>가</span>
+              <span>치</span>
+              <span>를</span>
+              <span>만</span>
+              <span>드</span>
+              <span>는</span>
+              <span>것</span>
+            </div>
+            <div class="txt03">
+              <p>일상의 순간이 콘텐츠가 되어 세상과 소통하고</p>
+            </div>
+            <div class="txt04">
+              <p>디지털 환경 속에서 변화와 혁신을 만들어갑니다.</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slide02">
+          <img src="../images/visual_img_2.jpg" alt="" class="visual02" />
+          <div class="txtBox">
+            <div class="txt01">
+              <span>최</span>
+              <span>고</span>
+              <span>의</span>
+              <span>콘</span>
+              <span>텐</span>
+              <span>츠</span>
+            </div>
+            <div class="txt02">
+              <span>소</span>
+              <span>비</span>
+              <span>가</span>
+              <span>치</span>
+              <span>를</span>
+              <span>만</span>
+              <span>드</span>
+              <span>는</span>
+              <span>것</span>
+            </div>
+            <div class="txt03">
+              <p>일상의 순간이 콘텐츠가 되어 세상과 소통하고</p>
+            </div>
+            <div class="txt04">
+              <p>디지털 환경 속에서 변화와 혁신을 만들어갑니다.</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slide03">
+          <img src="../images/visual_img_3.jpg" alt="" class="visual03" />
+          <div class="txtBox">
+            <div class="txt01" data-splitting>최고의 콘텐츠</div>
+            <div class="txt02" data-splitting>소비가치를 만드는 것</div>
+            <div class="txt03">
+              <p>일상의 순간이 콘텐츠가 되어 세상과 소통하고</p>
+            </div>
+            <div class="txt04">
+              <p>디지털 환경 속에서 변화와 혁신을 만들어갑니다.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="prev">
+        <span class="material-icons"> arrow_back_ios </span>
+      </button>
+      <button class="next">
+        <span class="material-icons"> arrow_forward_ios </span>
+      </button>
+      <div class="pagination"></div>
+      <div class="mouseScroll" data-aos="fade-up">
+        <div class="mouse"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+    <section id="reWork">
+      <h3>대표작품</h3>
+      <p class="txt01">키다리스튜디오는 최고의 콘텐츠와 서비스를</p>
+      <p class="txt02">제공하고자 늘 고민하고 연구합니다.</p>
+      <div class="repArea">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/movie/movie01.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/movie/movie02.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/movie/movie03.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-1.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-2.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-3.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-4.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-5.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga02/2-6.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-1.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-2.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-3.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-4.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-5.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-6.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-7.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-8.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-9.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-10.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-11.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-12.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-13.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-14.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="../images/manga03/3-15.jpg" alt="" />
+                <div class="border">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </section>
+    <section id="toon">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="bomtoon swiper-slide">
+            <a href="">
+              <span>
+                <em class="blind">봄툰이미지</em>
+              </span>
+              <i>
+                서비스 <br />
+                <em>바로가기</em>
+              </i>
+              <em class="service">SERVICE</em>
+            </a>
+            <div class="txtBox">
+              <h3>봄툰</h3>
+              <p>
+                봄툰은 400만 독자와 함께 웹툰, 소설을 기반으로 한 국내 1위 여성 전문 콘텐츠 플랫폼입니다. 매년 여성향 독점 웹툰 기준 최다수의 신규 작품을 제공하고 있으며, 로맨스, BL, GL 등의 트렌디한
+                장르를 중심으로 웹툰 뿐만 아니라 소설, 쇼핑, 영상, 글로벌 서비스까지 그 영역을 확대하여 서비스 중입니다. 단순한 콘텐츠의 제공영역에서 더 나아가 고객이 함께 즐길 수 있는 여성 플랫폼이
+                되기 위해 창의적 발상과 열정적 자세로 최선의 서비스를 제공하는 것이 목표입니다.
+              </p>
+            </div>
+            <div class="boxBox">
+              <div class="box01 box"></div>
+              <div class="box02 box"></div>
+              <div class="box03 box"></div>
+              <div class="box04 box"></div>
+            </div>
+          </div>
+          <div class="delitoon swiper-slide">
+            <a href="">
+              <span>
+                <em class="blind">델리툰이미지</em>
+              </span>
+              <i>
+                서비스 <br />
+                <em>바로가기</em>
+              </i>
+              <em class="service">SERVICE</em>
+            </a>
+            <div class="txtBox">
+              <h3>델리툰</h3>
+              <p>
+                프랑스를 대표하는 웹툰 플랫폼인 델리툰은 유럽 내 최초의 유료 웹툰 서비스로 로맨스, 판타지, 드라마, 소년, 액션 등 다양한 장르의 만화 장르를 서비스하고 있으며, 한국 웹툰을 시작으로 중국,
+                일본 등의 웹툰과 만화를 소개할 것 입니다. 2020년 중에 프랑스 뿐 아니라 독일 , 2021년에 스페인, 이태리 까지 사업 영역을 확대하여 명실공히 유럽 최대의 웹툰 서비스 사업자로 자리매김 할 것
+                입니다.
+              </p>
+            </div>
+            <div class="boxBox">
+              <div class="box01 box"></div>
+              <div class="box02 box"></div>
+              <div class="box03 box"></div>
+              <div class="box04 box"></div>
+            </div>
+          </div>
+        </div>
+        <button class="prev">
+          <span class="material-icons"> west </span>
+        </button>
+        <button class="next">
+          <span class="material-icons"> east </span>
+        </button>
+        <div class="pagination"></div>
+      </div>
+    </section>
+    <section id="company">
+      <h3>회사전경</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide company01">
+            <p>
+              시사실 <br />
+              영화감상을 위한 아늑한 시사실
+            </p>
+          </div>
+          <div class="swiper-slide company02">
+            <p>
+              카페테리아 <br />
+              간단한 회의는 물론 휴식이 가능한 공간
+            </p>
+          </div>
+          <div class="swiper-slide company03">
+            <p>
+              리더필름 <br />
+              영화의 시작을 알리는 개성이 담긴 리더필름
+            </p>
+          </div>
+          <div class="swiper-slide company04">
+            <p>
+              직원 휴게실 <br />
+              밝은 분위기의 인테리어가 돋보이는 휴게 공간
+            </p>
+          </div>
+          <div class="swiper-slide company05">
+            <p>
+              제작 웹툰 소개 <br />
+              인기 웹툰 작품을 전시하고 있는 아트월
+            </p>
+          </div>
+          <div class="swiper-slide company06">
+            <p>
+              메인 영화 투자작품 소개<br />
+              대표 영화 포스터를 전시하고 있는 아트월
+            </p>
+          </div>
+          <div class="swiper-slide company07">
+            <p>
+              현재 인기 콘텐츠 <br />
+              현재 인기 콘텐츠를 소개하고 있는 공간
+            </p>
+          </div>
+          <div class="swiper-slide company08">
+            <p>
+              대표 웹툰,웹소설 소개 <br />
+              대표 웹툰과 웹소설의 이미지를 전시하고 있는 아트월
+            </p>
+          </div>
+        </div>
+        <div class="prev btnAll"></div>
+        <div class="next btnAll"></div>
+        <div class="pagination"></div>
+      </div>
+    </section>
+    <section id="videoView">
+      <h3>리더필름</h3>
+      <video controls muted poster="../images/video_intro_3.jpg" draggable="true">
+        <source src="../video/intro_3.mp4" />
+      </video>
+    </section>
+    <div id="footer">
+      <div class="footMain">
+        <a href="">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="./company_group.html">다우키룸그룹 전체보기 +</a>
+        <ul>
+          <li class="footMenu">
+            <a href="" class="footVisual01"><span class="blind">키움증권</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual02"><span class="blind">사람인</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual03"><span class="blind">다우데이타</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual04"><span class="blind">다우기술</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual05"><span class="blind">한국정보인증</span></a>
+          </li>
+          <li class="footMenu">
+            <a href="" class="footVisual06"><span class="blind">미래테크놀로지</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const gnb = document.querySelector("#gnb");
+  const header = document.querySelector("#header");
+  const btnAll = document.querySelector("#header .btnAll");
+  const slideBar = document.querySelector("#slideBar");
+  const scrollNav = document.querySelector("#scrollNav");
+  const scrollBox = document.querySelector("#scrollNav .scrollBox");
+  const nav01 = document.querySelector("#scrollNav .scrollBox .nav01");
+  const nav02 = document.querySelector("#scrollNav .scrollBox .nav02");
+  const nav03 = document.querySelector("#scrollNav .scrollBox .nav03");
+  const nav04 = document.querySelector("#scrollNav .scrollBox .nav04");
+  const nav05 = document.querySelector("#scrollNav .scrollBox .nav05");
+
+  const reWork = document.querySelector("#reWork");
+  const toon = document.querySelector("#toon");
+  const company = document.querySelector("#company");
+  const videoView = document.querySelector("#videoView");
+
+  Splitting();
+
+  // window.scrollY;
+  // console.log("🚀 ~ file: index.html ~ line 778 ~ scrollY", scrollY);
+  // document.scrollingElement.scrollTop;  스크롤위치알아보는것
+
+  // 대표작품 272~5정도
+  // 툰 1545
+  // 회사전경 2362
+  // 리더필름 2912
+
+  gnb.addEventListener("mouseenter", function () {
+    header.classList.add("on");
+  });
+  gnb.addEventListener("mouseleave", function () {
+    header.classList.remove("on");
+  });
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      header.classList.add("scroll");
+    } else {
+      header.classList.remove("scroll");
+    }
+    if (window.scrollY >= 0 && window.scrollY < 300) {
+      scrollNav.classList.add("scroll");
+      scrollNav.style.color = "#fff";
+      nav01.style.display = "block";
+    } else {
+      nav01.style.display = "none";
+    }
+    if (window.scrollY > 300 && window.scrollY < 1200) {
+      reWork.classList.add("scroll"), scrollNav.classList.add("scroll");
+      scrollNav.style.color = "#000";
+      nav02.style.display = "block";
+      $(".btn_gotop").show();
+    } else {
+      $(".btn_gotop").hide();
+      nav02.style.display = "none";
+    }
+    if (window.scrollY > 250) {
+      $(".btn_gotop").show();
+    } else {
+      $(".btn_gotop").hide();
+    }
+
+    // 스크롤박스에 클래스하나더달아서 스크롤이벤트에 색만바뀌게 적용하고 더해서 해당지역에nav0~에 넓이 조절하는요소넣어주기
+    if (window.scrollY > 1200 && window.scrollY < 2100) {
+      toon.classList.add("scroll"), scrollNav.classList.add("scroll");
+      scrollNav.style.color = "#000";
+      nav03.style.display = "block";
+    } else {
+      nav03.style.display = "none";
+    }
+    if (window.scrollY > 2100 && window.scrollY < 3000) {
+      company.classList.add("scroll"), scrollNav.classList.add("scroll");
+      scrollNav.style.color = "#fff";
+      nav04.style.display = "block";
+    } else {
+      nav04.style.display = "none";
+    }
+
+    if (window.scrollY > 3000) {
+      videoView.classList.add("scroll"), scrollNav.classList.add("scroll");
+      scrollNav.style.color = "#fff";
+      nav05.style.display = "block";
+    } else {
+      nav05.style.display = "none";
+    }
+  });
+
+  btnAll.addEventListener("click", function () {
+    header.classList.toggle("open");
+  });
+  new Swiper("#mainVisual", {
+    spaceBetween: 1,
+    effect: "fade",
+    speed: 1000,
+    loop: true,
+    navigation: {
+      nextEl: "#mainVisual .next",
+      prevEl: "#mainVisual .prev",
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: "#mainVisual .pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+  // const mainVisualTL = gsap.timeline();
+  // mainVisualTL
+  //   .from("#mainVisual .swiper-wrapper .slide03 .txt01 .char", { y: 100, opacity: 0, duration: 0.5, delay: 0.5, ease: "none.out", stagger: 0.02 })
+  //   .from("#mainVisual .swiper-wrapper .slide03 .txt02 .char", { y: 100, opacity: 0, duration: 0.5, delay: 0.5, ease: "none.out", stagger: 0.02 }, 1);
+
+  new Swiper("#reWork .repArea .swiper-container", {
+    effect: "slide",
+    speed: 500,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
+  new Swiper("#toon .swiper-container", {
+    effect: "slide",
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: "#toon .next",
+      prevEl: "#toon .prev",
+    },
+    pagination: {
+      el: "#toon .pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
+  new Swiper("#company .swiper-container", {
+    loop: true,
+    effect: "slide",
+    slidesPerView: 2.3,
+    centeredSlides: true,
+    spaceBetween: -270,
+    speed: 400,
+
+    loop: true,
+    loopAdditionalSlides: 1,
+    navigation: {
+      nextEl: "#company .next",
+      prevEl: "#company .prev",
+    },
+    pagination: {
+      el: "#company .pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+</script>
