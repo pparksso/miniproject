@@ -2,19 +2,19 @@ body { box-sizing: border-box; font-family: "Noto Sans KR", sans-serif; font-siz
 
 a { color: inherit; text-decoration: none; }
 
-.btn_gotop { display: block; position: fixed; text-align: center; width: 70px; height: 70px; bottom: 70px; right: 2%; z-index: 999; border: 1px solid #111; outline: none; background-color: white; font-weight: 700; font-size: 14px; cursor: pointer; }
+.btn_gotop { display: block; width: 70px; height: 70px; position: fixed; right: 2%; bottom: 70px; z-index: 999; border: 1px solid #111; font-size: 14px; font-weight: 700; text-align: center; outline: none; background-color: white; cursor: pointer; }
 
-.btn_gotop::before { content: ""; width: 14px; height: 14px; margin: 18px auto 0; transform: rotate(45deg); display: block; border: 1px solid #000; border-bottom: none; border-right: none; }
+.btn_gotop::before { display: block; width: 14px; height: 14px; margin: 18px auto 0; border: 1px solid #000; border-right: none; border-bottom: none; transform: rotate(45deg); content: ""; }
 
 #logo { width: 15%; }
 
-#logo h1 { margin: 29px 0 0 78px; width: 172px; height: 42px; background-image: url(../images/layout/kidari_logo_white.png); background-size: 172px 42px; }
+#logo h1 { width: 172px; height: 42px; margin: 29px 0 0 78px; background-image: url(../images/layout/kidari_logo_white.png); background-size: 172px 42px; }
 
-#header { width: 100%; height: 110px; position: fixed; z-index: 99; transition: all 0.25s ease-in-out; color: #fff; overflow: hidden; }
+#header { width: 100%; height: 110px; position: fixed; z-index: 99; overflow: hidden; color: #fff; transition: all 0.25s ease-in-out; }
 
 #header.open .btnAll { z-index: 99; }
 
-#header.open .btnAll span { background-color: #fff; color: #fff; }
+#header.open .btnAll span { color: #fff; background-color: #fff; }
 
 #header.open .btnAll span:nth-child(1) { top: 15px; transform: rotate(45deg); }
 
@@ -22,49 +22,49 @@ a { color: inherit; text-decoration: none; }
 
 #header.open .btnAll span:nth-child(3) { top: 15px; transform: rotate(-45deg); }
 
-#header.open #slideBar { transition: all 0.3s ease-in-out; left: 0; opacity: 1; }
+#header.open #slideBar { left: 0; opacity: 1; transition: all 0.3s ease-in-out; }
 
-#header.on { height: 400px; background-color: #fff; color: #111; }
+#header.on { height: 400px; color: #111; background-color: #fff; }
 
 #header.on:after { background-color: #ccc; }
 
 #header.on #logo { width: 15%; }
 
-#header.on #logo h1 { margin: 29px 0 0 78px; width: 172px; height: 42px; background-image: url(../images/layout/kidari_logo.png); background-size: 172px 42px; transition: all 0.2s; }
+#header.on #logo h1 { width: 172px; height: 42px; margin: 29px 0 0 78px; background-image: url(../images/layout/kidari_logo.png); background-size: 172px 42px; transition: all 0.2s; }
 
 #header.on .btnAll span { background-color: #000; }
 
-#header.scroll { background-color: #fff; color: #111; border-bottom: 1px solid rgba(1, 1, 1, 0.05); }
+#header.scroll { border-bottom: 1px solid rgba(1, 1, 1, 0.05); color: #111; background-color: #fff; }
 
 #header.scroll #logo { width: 15%; }
 
-#header.scroll #logo h1 { margin: 29px 0 0 78px; width: 172px; height: 42px; background-image: url(../images/layout/kidari_logo.png); background-size: 172px 42px; transition: all 0.2s; }
+#header.scroll #logo h1 { width: 172px; height: 42px; margin: 29px 0 0 78px; background-image: url(../images/layout/kidari_logo.png); background-size: 172px 42px; transition: all 0.2s; }
 
 #header.scroll .btnAll span { background-color: #000; }
 
 #header.open.scroll .btnAll span { background-color: #fff; }
 
-#header #slideBar { position: fixed; width: 100%; height: 100%; top: 0; padding-top: 60px; background-color: #111; left: 100%; transition: all 0.3s ease-out; opacity: 0; }
+#header #slideBar { width: 100%; height: 100%; position: fixed; top: 0; left: 100%; padding-top: 60px; opacity: 0; transition: all 0.3s ease-out; background-color: #111; }
 
-#header #slideBar .barInner { position: absolute; width: 1000px; left: 24%; top: 48%; transform: translateX(-50%); transform: translateY(-50%); }
+#header #slideBar .barInner { width: 1000px; position: absolute; top: 48%; left: 24%; transform: translateX(-50%); transform: translateY(-50%); }
 
-#header #slideBar .barInner .menuArea { border-bottom: 1px solid #666; margin: 10px 0; padding: 16px 0 24px; }
+#header #slideBar .barInner .menuArea { margin: 10px 0; padding: 16px 0 24px; border-bottom: 1px solid #666; }
 
 #header #slideBar .barInner .menuArea a:hover { text-decoration: underline; }
 
 #header #slideBar .barInner .menuArea dl { display: flex; }
 
-#header #slideBar .barInner .menuArea dl dt { width: 200px; text-align: center; font-size: 24px; margin-right: 20px; color: #fff; }
+#header #slideBar .barInner .menuArea dl dt { width: 200px; margin-right: 20px; font-size: 24px; text-align: center; color: #fff; }
 
-#header #slideBar .barInner .menuArea dl dd { width: 130px; font-size: 18px; text-align: center; float: left; padding: 5px 0; color: #999; letter-spacing: -1px; }
+#header #slideBar .barInner .menuArea dl dd { width: 130px; padding: 5px 0; font-size: 18px; text-align: center; color: #999; letter-spacing: -1px; float: left; }
 
-#header #slideBar .barInner .menuArea dl dd ul { margin-top: 20px; font-size: 16px; display: block; line-height: 1.7; color: #666; }
+#header #slideBar .barInner .menuArea dl dd ul { display: block; margin-top: 20px; font-size: 16px; color: #666; line-height: 1.7; }
 
 #header #slideBar .barInner .last { border-bottom: none; }
 
-#header .btnAll { position: absolute; display: block; right: 40px; top: 40px; height: 41px; width: 60px; background: none; border: none; outline: none; padding: 0; cursor: pointer; }
+#header .btnAll { display: block; width: 60px; height: 41px; position: absolute; top: 40px; right: 40px; padding: 0; border: none; background: none; outline: none; cursor: pointer; }
 
-#header .btnAll span { display: block; width: 34px; height: 3px; background-color: #fff; position: absolute; z-index: 2; transition: all 0.25s ease; }
+#header .btnAll span { display: block; width: 34px; height: 3px; position: absolute; z-index: 2; transition: all 0.25s ease; background-color: #fff; }
 
 #header .btnAll span:nth-child(1) { top: 0px; }
 
@@ -72,15 +72,15 @@ a { color: inherit; text-decoration: none; }
 
 #header .btnAll span:nth-child(3) { top: 26px; }
 
-#gnb .list { position: absolute; top: 22px; left: 34%; display: block; padding: 20px 0; }
+#gnb .list { display: block; position: absolute; top: 22px; left: 34%; padding: 20px 0; }
 
 #gnb .list > li { width: 160px; text-align: center; float: left; }
 
 #gnb .list > li:hover .depth01:before { transform: scaleX(1); }
 
-#gnb .list .depth01 { font-size: 22px; position: relative; }
+#gnb .list .depth01 { position: relative; font-size: 22px; }
 
-#gnb .list .depth01::before { content: ""; display: block; position: absolute; left: -10px; bottom: -10px; width: 100%; height: 4px; padding: 0 10px; background-color: #1b1b1b; transform: scaleX(0); transition: all 0.3s; }
+#gnb .list .depth01::before { width: 100%; height: 4px; bottom: -10px; left: -10px; padding: 0 10px; transform: scaleX(0); transition: all 0.3s; background-color: #1b1b1b; content: ""; display: block; position: absolute; }
 
 #gnb .list .depth02 { padding-top: 40px; font-size: 16px; }
 
@@ -92,7 +92,7 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer #sub_visual { height: 480px; position: relative; }
 
-#wrapper .contentsContainer #sub_visual .img { height: 100%; background-image: url("../images/business/sub_visual_4.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+#wrapper .contentsContainer #sub_visual .img { height: 100%; background-image: url("../images/business/sub_visual_4.jpg"); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; }
 
 #wrapper .contentsContainer #sub_visual .img .txt_wrap { position: absolute; top: 50%; left: 50%; text-align: center; color: #fff; transform: translateX(-50%) translateY(-50%); }
 
@@ -106,11 +106,11 @@ a { color: inherit; text-decoration: none; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .privacy { line-height: 1.5; word-break: keep-all; }
 
-#wrapper .contentsContainer .contents .subWrap .areaInner .privacy h3 { font-weight: 700; font-size: 23px; display: inline-block; }
+#wrapper .contentsContainer .contents .subWrap .areaInner .privacy h3 { display: inline-block; font-size: 23px; font-weight: 700; }
 
 #wrapper .contentsContainer .contents .subWrap .areaInner .privacy .txtBox { margin-left: 20px; font-size: 17px; text-align: justify; }
 
-#footer { padding-top: 50px; position: relative; background-color: #333; color: #666; }
+#footer { position: relative; padding-top: 50px; color: #666; background-color: #333; }
 
 #footer .footMain { display: flex; justify-content: center; text-align: center; }
 
@@ -118,15 +118,15 @@ a { color: inherit; text-decoration: none; }
 
 #footer address { display: flex; justify-content: center; font-size: 14px; text-align: center; line-height: 140%; }
 
-#footer .footMenuBox { position: relative; margin-top: 50px; height: 70px; line-height: 70px; background-color: #373737; }
+#footer .footMenuBox { height: 70px; position: relative; margin-top: 50px; line-height: 70px; background-color: #373737; }
 
-#footer .footMenuBox a { position: absolute; text-align: center; font-weight: 400; color: #999; top: 0; left: 20%; font-size: 16px; width: 266px; height: 70px; line-height: 70px; border-left: 1px solid #3f434b; border-right: 1px solid #3f434b; background: none; }
+#footer .footMenuBox a { width: 266px; height: 70px; position: absolute; top: 0; left: 20%; border-right: 1px solid #3f434b; border-left: 1px solid #3f434b; font-size: 16px; font-weight: 400; text-align: center; color: #999; line-height: 70px; background: none; }
 
 #footer .footMenuBox ul { transform: translateX(43%); }
 
 #footer .footMenuBox ul .footMenu { float: left; }
 
-#footer .footMenuBox ul .footMenu a { position: relative; display: block; margin: 0 20px; margin-top: 23px; width: 79px; height: 23px; border: none; background-repeat: no-repeat; background-size: 72px 22px; }
+#footer .footMenuBox ul .footMenu a { display: block; width: 79px; height: 23px; position: relative; margin: 0 20px; margin-top: 23px; border: none; background-repeat: no-repeat; background-size: 72px 22px; }
 
 #footer .footMenuBox ul .footMenu a.footVisual01 { background-image: url("../images/layout/foot_bi_1.png"); }
 

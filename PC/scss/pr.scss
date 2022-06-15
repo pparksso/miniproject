@@ -15,38 +15,38 @@ a {
 }
 .btn_gotop {
   display: block;
-  position: fixed;
-  text-align: center;
   width: 70px;
   height: 70px;
-  bottom: 70px;
+  position: fixed;
   right: 2%;
+  bottom: 70px;
   z-index: 999;
   border: 1px solid #111;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
   outline: none;
   background-color: white;
-  font-weight: 700;
-  font-size: 14px;
   cursor: pointer;
   &::before {
-    content: "";
+    display: block;
     width: 14px;
     height: 14px;
     margin: 18px auto 0;
-    transform: rotate(45deg);
-    display: block;
     border: 1px solid #000;
-    border-bottom: none;
     border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    content: "";
   }
   // padding: 15px 20px;
 }
 #logo {
   width: 15%;
   h1 {
-    margin: 29px 0 0 78px;
     width: 172px;
     height: 42px;
+    margin: 29px 0 0 78px;
     background-image: url(../images/layout/kidari_logo_white.png);
     background-size: 172px 42px;
   }
@@ -56,16 +56,16 @@ a {
   height: 110px;
   position: fixed;
   z-index: 99;
-  transition: all 0.25s ease-in-out;
-  color: #fff;
   overflow: hidden;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
   &.open {
     .btnAll {
       z-index: 99;
 
       span {
-        background-color: #fff;
         color: #fff;
+        background-color: #fff;
 
         &:nth-child(1) {
           top: 15px;
@@ -83,24 +83,24 @@ a {
       }
     }
     #slideBar {
-      transition: all 0.3s ease-in-out;
       left: 0;
       opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
   }
   &.on {
     height: 400px;
-    background-color: #fff;
     color: #111;
+    background-color: #fff;
     &:after {
       background-color: #ccc;
     }
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -113,15 +113,15 @@ a {
     }
   }
   &.scroll {
-    background-color: #fff;
-    color: #111;
     border-bottom: 1px solid rgba(1, 1, 1, 0.05);
+    color: #111;
+    background-color: #fff;
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -141,27 +141,27 @@ a {
     }
   }
   #slideBar {
-    position: fixed;
     width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
-    padding-top: 60px;
-    background-color: #111;
     left: 100%;
-    transition: all 0.3s ease-out;
+    padding-top: 60px;
     opacity: 0;
+    transition: all 0.3s ease-out;
+    background-color: #111;
     .barInner {
-      position: absolute;
       width: 1000px;
-      left: 24%;
+      position: absolute;
       top: 48%;
+      left: 24%;
       transform: translateX(-50%);
       transform: translateY(-50%);
 
       .menuArea {
-        border-bottom: 1px solid #666;
         margin: 10px 0;
         padding: 16px 0 24px;
+        border-bottom: 1px solid #666;
 
         a {
           &:hover {
@@ -174,26 +174,26 @@ a {
 
           dt {
             width: 200px;
-            text-align: center;
-            font-size: 24px;
             margin-right: 20px;
+            font-size: 24px;
+            text-align: center;
             color: #fff;
           }
           dd {
             width: 130px;
+            padding: 5px 0;
             font-size: 18px;
             text-align: center;
-            float: left;
-            padding: 5px 0;
             color: #999;
             letter-spacing: -1px;
+            float: left;
 
             ul {
+              display: block;
               margin-top: 20px;
               font-size: 16px;
-              display: block;
-              line-height: 1.7;
               color: #666;
+              line-height: 1.7;
             }
           }
         }
@@ -205,29 +205,29 @@ a {
   }
 
   .btnAll {
-    position: absolute;
     display: block;
-    right: 40px;
-    top: 40px;
-    height: 41px;
     width: 60px;
-    background: none;
-    border: none;
-    outline: none;
+    height: 41px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
     padding: 0;
+    border: none;
+    background: none;
+    outline: none;
     cursor: pointer;
 
     span {
       display: block;
       width: 34px;
       height: 3px;
-
-      background-color: #fff;
       position: absolute;
 
       z-index: 2;
 
       transition: all 0.25s ease;
+
+      background-color: #fff;
       &:nth-child(1) {
         top: 0px;
       }
@@ -242,10 +242,10 @@ a {
 }
 #gnb {
   .list {
+    display: block;
     position: absolute;
     top: 22px;
     left: 34%;
-    display: block;
     padding: 20px 0;
 
     > li {
@@ -262,18 +262,18 @@ a {
       }
     }
     .depth01 {
-      font-size: 22px;
       position: relative;
+      font-size: 22px;
       &::before {
-        @include pseudo();
-        left: -10px;
-        bottom: -10px;
         width: 100%;
         height: 4px;
+        bottom: -10px;
+        left: -10px;
         padding: 0 10px;
-        background-color: #1b1b1b;
         transform: scaleX(0);
         transition: all 0.3s;
+        background-color: #1b1b1b;
+        @include pseudo();
       }
     }
     .depth02 {
@@ -299,9 +299,9 @@ a {
       .img {
         height: 100%;
         background-image: url("../images/business/sub_visual_4.jpg");
+        background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 50%;
         .txt_wrap {
           position: absolute;
           top: 50%;
@@ -409,15 +409,15 @@ a {
     .contents {
       .titleWrap {
         h4 {
+          margin-top: 80px;
           font-size: 66px;
           font-weight: 700;
           text-align: center;
-          margin-top: 80px;
         }
         p {
           margin-top: 60px;
-          font-size: 18px;
           padding: 0 20%;
+          font-size: 18px;
           text-align: center;
         }
       }
@@ -429,8 +429,8 @@ a {
           margin: 80px auto 0 auto;
           .pr {
             .listAll {
-              position: relative;
               display: inline-block;
+              position: relative;
               top: 25px;
               font-size: 18px;
               strong {
@@ -467,14 +467,14 @@ a {
                   }
                 }
                 select {
-                  height: 100%;
                   width: 122px;
+                  height: 100%;
+                  padding-left: 14px;
+                  border: 1px solid #e3e3e3;
+                  font-size: 15px;
                   appearance: none;
                   outline: none;
-                  border: 1px solid #e3e3e3;
-                  padding-left: 14px;
                   cursor: pointer;
-                  font-size: 15px;
                 }
               }
               .inputArea {
@@ -482,45 +482,45 @@ a {
                 input[type="text"] {
                   width: 344px;
                   height: 42px;
-                  box-sizing: border-box;
-                  border: 1px solid #e3e3e3;
                   padding: 0 10px;
+                  border: 1px solid #e3e3e3;
+                  box-sizing: border-box;
                   font-size: 15px;
                   &::placeholder {
                     color: #bfbfbf;
                   }
                 }
                 button {
+                  width: 38px;
+                  height: 38px;
                   position: absolute;
                   top: 2px;
                   right: 2px;
-                  width: 38px;
-                  height: 38px;
                   border: none;
                   cursor: pointer;
                   background-color: #fff;
                   &:before {
-                    content: "";
                     display: block;
-                    position: absolute;
-                    background-color: #fff;
                     width: 12px;
                     height: 12px;
-                    border: 2px solid #000;
-                    border-radius: 100%;
+                    position: absolute;
                     top: 30%;
                     right: 14px;
+                    border: 2px solid #000;
+                    content: "";
+                    background-color: #fff;
+                    border-radius: 100%;
                   }
                   &:after {
-                    content: "";
                     display: block;
-                    position: absolute;
-                    background-color: #000;
                     width: 7px;
                     height: 2px;
-                    bottom: 9px;
+                    position: absolute;
                     right: 11px;
+                    bottom: 9px;
                     transform: rotate(45deg);
+                    content: "";
+                    background-color: #000;
                   }
                 }
               }
@@ -529,14 +529,14 @@ a {
               width: 1200px;
               .pressListHead {
                 height: 70px;
-                line-height: 70px;
-                border-bottom: 1px solid #e3e3e3;
-                border-top: 2px solid #000;
                 margin-top: 40px;
+                border-top: 2px solid #000;
+                border-bottom: 1px solid #e3e3e3;
+                line-height: 70px;
                 span {
                   display: inline-block;
-                  text-align: center;
                   font-size: 18px;
+                  text-align: center;
                   &.title {
                     width: 800px;
                   }
@@ -547,19 +547,19 @@ a {
               }
               .pressListWrap {
                 li {
+                  position: relative;
                   // height: 70px;
                   border-bottom: 1px solid #e3e3e3;
                   line-height: 70px;
-                  position: relative;
                   transition: all 0.3s ease-in-out;
                   .boardLi {
                     p {
-                      width: 800px;
-                      box-sizing: border-box;
-                      padding-left: 40px;
-                      font-size: 18px;
                       display: inline-block;
+                      width: 800px;
                       margin-right: 98px;
+                      padding-left: 40px;
+                      box-sizing: border-box;
+                      font-size: 18px;
                     }
                     span {
                       font-size: 14px;
@@ -570,18 +570,18 @@ a {
                     background-color: #f6f6f6;
                   }
                   .news {
+                    display: none;
                     width: 100%;
                     height: 100%;
-                    text-align: left;
-                    line-height: 180%;
-                    font-weight: 400;
-                    word-break: keep-all;
-                    box-sizing: border-box;
                     padding: 52px 40px 30px 40px;
-                    background-color: #f6f6f6;
+                    box-sizing: border-box;
                     font-size: 16px;
+                    font-weight: 400;
+                    text-align: left;
                     letter-spacing: 1.5;
-                    display: none;
+                    line-height: 180%;
+                    word-break: keep-all;
+                    background-color: #f6f6f6;
                     &.on {
                       display: block;
                     }
@@ -589,32 +589,32 @@ a {
                       color: #999;
                     }
                     h1 {
-                      font-weight: 700;
                       font-size: 12pt;
+                      font-weight: 700;
                       &.newsDate {
                         text-align: right;
                       }
                     }
                     h2 {
-                      font-size: 14pt;
                       margin-left: 6px;
-                      line-height: 115%;
+                      font-size: 14pt;
                       font-weight: 700;
+                      line-height: 115%;
                     }
                     p {
-                      text-indent: 20px;
                       text-align: justify;
+                      text-indent: 20px;
                     }
                     .newsImgBox {
                       display: flex;
-                      flex-direction: column;
-                      box-sizing: border-box;
                       align-items: center;
+                      flex-direction: column;
                       margin: 90px 0 100px 0;
+                      box-sizing: border-box;
                       span {
-                        font-weight: 700;
-                        font-size: 14px;
                         margin-bottom: 20px;
+                        font-size: 14px;
+                        font-weight: 700;
                       }
                     }
                   }
@@ -625,73 +625,73 @@ a {
                 text-align: center;
                 a {
                   display: inline-block;
-                  text-align: center;
                   width: 36px;
                   height: 36px;
-                  line-height: 36px;
+                  position: relative;
                   margin-right: 0.1px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  line-height: 36px;
                   transition: all 0.2s ease;
                   vertical-align: middle;
-                  box-sizing: border-box;
-                  position: relative;
                   &:hover {
                     background-color: #f3f3f3;
                   }
                 }
                 .preview {
                   &::after {
-                    content: "\e5e0";
+                    position: absolute;
+                    left: 35%;
                     font-family: "Material Icons";
                     font-size: 18px;
                     font-weight: 500;
-                    position: absolute;
-                    left: 35%;
+                    content: "\e5e0";
                   }
                 }
                 .next {
                   &::after {
-                    content: "\e5e1";
+                    position: absolute;
+                    right: 25%;
                     font-family: "Material Icons";
                     font-size: 18px;
                     font-weight: 500;
-                    position: absolute;
-                    right: 25%;
+                    content: "\e5e1";
                   }
                 }
                 .first {
                   &::before {
-                    content: "\e5e0";
-                    font-family: "Material Icons";
-                    font-size: 18px;
-                    font-weight: 300;
                     position: absolute;
                     left: 30%;
-                  }
-                  &::after {
-                    content: "\e5e0";
                     font-family: "Material Icons";
                     font-size: 18px;
                     font-weight: 300;
+                    content: "\e5e0";
+                  }
+                  &::after {
                     position: absolute;
                     left: 45%;
+                    font-family: "Material Icons";
+                    font-size: 18px;
+                    font-weight: 300;
+                    content: "\e5e0";
                   }
                 }
                 .last {
                   &::before {
-                    content: "\e5e1";
-                    font-family: "Material Icons";
-                    font-size: 18px;
-                    font-weight: 300;
                     position: absolute;
                     left: 20%;
-                  }
-                  &::after {
-                    content: "\e5e1";
                     font-family: "Material Icons";
                     font-size: 18px;
                     font-weight: 300;
+                    content: "\e5e1";
+                  }
+                  &::after {
                     position: absolute;
                     left: 35%;
+                    font-family: "Material Icons";
+                    font-size: 18px;
+                    font-weight: 300;
+                    content: "\e5e1";
                   }
                 }
                 .page {
@@ -710,10 +710,10 @@ a {
   }
 }
 #footer {
-  padding-top: 50px;
   position: relative;
-  background-color: #333;
+  padding-top: 50px;
   color: #666;
+  background-color: #333;
 
   .footMain {
     display: flex;
@@ -731,24 +731,24 @@ a {
     line-height: 140%;
   }
   .footMenuBox {
+    height: 70px;
     position: relative;
     margin-top: 50px;
-    height: 70px;
     line-height: 70px;
     background-color: #373737;
     a {
-      position: absolute;
-      text-align: center;
-      font-weight: 400;
-      color: #999;
-      top: 0;
-      left: 20%;
-      font-size: 16px;
       width: 266px;
       height: 70px;
-      line-height: 70px;
-      border-left: 1px solid #3f434b;
+      position: absolute;
+      top: 0;
+      left: 20%;
       border-right: 1px solid #3f434b;
+      border-left: 1px solid #3f434b;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #999;
+      line-height: 70px;
       background: none;
     }
     ul {
@@ -756,21 +756,21 @@ a {
       .footMenu {
         float: left;
         a {
-          position: relative;
           display: block;
-          margin: 0 20px;
-          margin-top: 23px;
           width: 79px;
           height: 23px;
+          position: relative;
+          margin: 0 20px;
+          margin-top: 23px;
           border: none;
-          background: {
-            repeat: no-repeat;
-            size: 72px 22px;
-          }
           @for $i from 1 to 7 {
             &.footVisual0#{$i} {
               background-image: url("../images/layout/foot_bi_#{$i}.png");
             }
+          }
+          background: {
+            repeat: no-repeat;
+            size: 72px 22px;
           }
         }
       }

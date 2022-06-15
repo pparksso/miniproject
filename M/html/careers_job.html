@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키다리스튜디오::Careers</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/careers.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="./company_intro.html">회사소개</a></li>
+                <li><a href="./company_ceo.html">CEO 인사말</a></li>
+                <li><a href="./company_ci.html">CI</a></li>
+                <li><a href="./company_group.html">그룹사</a></li>
+                <li><a href="./company_view.html">회사전경</a></li>
+                <li><a href="./company_map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="./business_movie.html">영화</a></li>
+                <li><a href="./business_webtoon.html">웹툰제작스튜디오</a></li>
+                <li><a href="./business_webNovel.html">웹소설</a></li>
+                <li><a href="./business_platform.html">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="./careers_job.html">직무안내</a></li>
+                <li><a href="./careers_employ.html">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="./pr_press.html">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="./IR_structure.html">기업지배구조</a></li>
+                <li><a href="./IR_Dart.html">공시정보</a></li>
+                <li><a href="./IR_financial.html">재무정보</a></li>
+                <li><a href="./IR_investment.html">투자정보</a></li>
+                <li><a href="./IR_regulation.html">공시정보 관리규정</a></li>
+                <li><a href="./IR_Announcement.html">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- header end -->
+    <div id="wrapper">
+      <div class="contentsContainer">
+        <section id="sub_visual">
+          <div class="img business">
+            <div class="txt_wrap">
+              <h3>Careers</h3>
+              <p class="txt_1">
+                키다리스튜디오는 눈으로만 보지 않습니다.<br />
+                마음으로 보이는 열정과 꿈을 함께 합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="locationWrap">
+          <div class="locationInner">
+            <a href="./index.html" class="homeIcon"><span class="roof"></span></a>
+            <div class="locationSelectArea">
+              <span></span>
+              <select name="" id="locationList01" onchange="link01()">
+                <option value="./company_intro.html">Company</option>
+                <option value="./business_movie.html">Business</option>
+                <option value="./careers_job.html" selected>Careers</option>
+                <option value="./pr_press.html">PR</option>
+                <option value="./IR_structure.html">IR</option>
+              </select>
+            </div>
+            <div class="locationSelectArea typeA">
+              <span></span>
+              <select name="" id="locationList02" onchange="link02()">
+                <option value="./careers_job.html" selected>직무안내</option>
+                <option value="./careers_employ.html">채용공고</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="titleWrap">
+            <h4>직무안내</h4>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="careersJob">
+                <h3>영화</h3>
+                <ul>
+                  <li><a href="" class="tab01_1 tab">투자/제작</a></li>
+                  <li><a href="" class="tab01_2 tab">콘텐츠마케팅</a></li>
+                  <li><a href="" class="tab01_3 tab">극장배급</a></li>
+                  <li><a href="" class="tab01_4 tab">디지털 배급</a></li>
+                </ul>
+                <div class="txtBox">
+                  <p class="movieDesc01">
+                    작가와 감독 및 영화 제작사와의 협업을 통해 대중의 사랑을 받는 영상 스토리를 발굴하며, 본 계정과 펀드 운영사의 투자 유치를 통하여 메인/공동 투자자로서 영화의 창작을 지원하며 배급을
+                    담당 합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="movieDesc02">
+                    소비자 환경과 행동을 분석하고, 커뮤니케이션 전략을 수립합니다. 크리에이티브를 포함한 아이디어, 인플루언서와의 협업, 언론 관리, 온/오프라인 미디어 광고전략, 이벤트/프로모션 기획 등
+                    다양한 마케팅 방법을 동원하여 콘텐츠 가치를 만들고 제공합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="movieDesc03">
+                    국내 극장 시장 상황과 경쟁 상황을 예측 및 분석하여, 매출의 극대화를 위한 극장 배급 전략을 수립합니다. 극장 상영작의 스크린 관리, 극장 프로모션 지원, 극장 관계사와의 원만한 파트너십
+                    유지 등 극장과 관련된 모든 업무와 자사 라인업 계획 및 매출 관리 등의 업무를 담당합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="movieDesc04">IPTV/ 케이블TV / OTT/ 유,무선 플랫폼을 대상으로 국내,외 영상 콘텐츠의 소싱 및 유통을 담당하여 소비자들에게 양질의 영상 콘텐츠를 제공 합니다.</p>
+                </div>
+              </div>
+              <div class="careersJob">
+                <h3>웹툰</h3>
+                <ul>
+                  <li><a href="" class="tab02_1 tab">웹툰 PD</a></li>
+                  <li><a href="" class="tab02_2 tab">스튜디오 소속 작가</a></li>
+                  <li><a href="" class="tab02_3 tab">콘텐츠 유통</a></li>
+                </ul>
+                <div class="txtBox">
+                  <p class="webtoonDesc01">
+                    시장의 트렌드와 독자의 요구에 맞춰 작품을 기획하는 웹툰 콘텐츠 전문 프로듀서입니다. 웹툰이 제작되기까지의 모든 과정을 작가님과 함께합니다. 작가님의 스토리와 작화에 대해 조언하고
+                    개선시키는 일에서 시작하여 독자에게 최적의 조건하에 작품을 서비스할 수 있도록 조율하는 일까지, 웹툰 뒤의 모든 순간에 필요한 작업 전반을 관리합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="webtoonDesc02">
+                    키다리스튜디오가 자체적으로 제작하는 작품의 콘티, 인물, 배경, 채색을 각각 진행합니다. 키다리스튜디오에 소속되어 출퇴근을 함으로써 안정적으로 업무를 진행하게 되며, 각각의 전문적인
+                    능력을 발휘하여 팀 단위의 협업으로 작품을 제작 완성합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="webtoonDesc03">
+                    키다리스튜디오는 작품을 자체 제작/국내,외 소싱하여 다양한 플랫폼 사업자에게 제공 합니다. 글로벌 사업 팀을 구성하여 한국을 포함하여 중국, 일본, 미국, 태국, 인도네시아, 대만, 프랑스
+                    등의 8개국 50개 플랫폼과 파트너십을 맺고 있으며, 특히나 자회사인 유럽 최초의 웹툰 플랫폼인 델리툰을 직접 운영 하고 있습니다. 이러한 노력으로 대한민국의 웹툰을 전세계에 보급 하기
+                    위하여 오늘도 열심히 뛰고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="careersJob">
+                <h3>웹소설</h3>
+                <ul>
+                  <li><a href="" class="tab03_1 tab">웹소설 PD</a></li>
+                  <li><a href="" class="tab03_2 tab">제휴마케팅</a></li>
+                </ul>
+                <div class="txtBox">
+                  <p class="novelDesc01">
+                    웹소설(판타지, 무협, 로맨스, 로맨스판타지, BL 등) 작가와 작품을 발굴하며, 계약 체결된 작품의 기획과 편집(교정/교열/윤문, 표지 제작 등)과정을 거쳐 웹소설 작품을 상품화하는 업무와
+                    계약된 작가가 지속적으로 창작에 전념 할 수 있도록 컨설팅 및 업무 지원을 합니다. 웹소설 PD를 하기 위해서는 장르 소설에 대한 해박한 지식, 교정/교열, 의사소통 능력, 협상 스킬 등이
+                    필요합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="novelDesc02">
+                    웹소설 유통 플랫폼(카카오페이지, 네이버시리즈, 문피아, 리디북스 등 30여 개 사)을 대상으로 작품의 등록과 판매를 담당하며, 각 플랫폼의 담당자와 원활한 커뮤니케이션을 통해 신규 작품을
+                    제안하고 프로모션을 협의하여 작품을 론칭하는 업무를 합니다. 제휴마케팅 업무를 수행하기 위해서는 웹소설 작품에 대한 이해도, 의사소통 능력, 협상 스킬 등이 필요합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="careersJob">
+                <h3>플랫폼</h3>
+                <ul>
+                  <li><a href="" class="tab04_1 tab">서비스 기획</a></li>
+                  <li><a href="" class="tab04_2 tab">서비스 운영</a></li>
+                  <li><a href="" class="tab04_3 tab">마케팅</a></li>
+                  <li><a href="" class="tab04_4 tab">웹디자인</a></li>
+                  <li><a href="" class="tab04_5 tab">개발</a></li>
+                </ul>
+                <div class="txtBox">
+                  <p class="platform01">
+                    콘텐츠 관리와 서비스 유지, 서비스 품질 향상을 위한 운영 및 전략을 수립하며, 신규 기능에 대한 정책 수립과 기능 정의, 세부 UX기획 및 화면 설계까지 담당합니다. 디지털 플랫폼에 대한
+                    높은 이해도와 디자인 및 HTML 프로그래밍에 대한 기본지식으로 유관 부서와 원활한 커뮤니케이션 할 수 있는 능력이 필요합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="platform02">
+                    플랫폼에 다양한 콘텐츠를 소개할 수 있도록 수급/관리를 담당합니다. 자체 기획된 프로모션을 통하여 최적의 콘텐츠를 추천해주고, 보다 편리한 이용을 위해 고객 불편/요구사항을 분석하여
+                    편리하고 지속 가능한 서비스를 기획하고 관리합니다. 의사소통 능력, 협업을 이끌어 갈 수 있는 경험과 태도, 서비스에 대한 이해력이 필요합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="platform03">
+                    트렌드에 민감한 디지털 마케팅 퍼포먼스 분석과 매체 운영 (SA, DA, Facebook, Youtube, GDN 등 디지털 전매체)을 담당하고 웹&앱 마케팅 데이터 기반으로 시장분석, 매체 분석 등을 통한 광고
+                    제안 및 비즈니스 파트너들과의 협업을 담당합니다. 콘텐츠에 대한 높은 이해와 감각이 필요하며 비즈니스 파트너들과 원활한 커뮤니케이션 할 수 있는 능력이 필요합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="platform04">
+                    플랫폼 사용자 경험을 바탕으로 기획한 내용을 시각화하여 사용자가 쉽게 서비스를 이용할 수 있도록 기획자 및 개발자와 원활한 커뮤니케이션을 통하여 최적의 유저 인터페이스를 위해 웹
+                    페이지, 모바일 UI/GUI 디자인, 퍼블리싱을 담당합니다. UI 디자인과 포토샵, 일러스트레이터 등 시각화 작업에 필요한 그래픽 툴, HTML과 CSS 등의 관련 지식이 필요합니다.
+                  </p>
+                </div>
+                <div class="txtBox">
+                  <p class="platform05">
+                    데스크탑 웹, 모바일 웹, iOS, Android 앱 등 플랫폼의 전반적인 IT 시스템을 안정적으로 서비스하기 위해 주기적으로 시스템을 분석하고, 서비스 기획자 및 웹디자이너와 협업하여 새로운
+                    기능과 서비스를 개발 합니다. 프레임워크 지식, 개발 언어, 개발환경 등의 전문지식이 필요합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- section end -->
+    <footer id="footer">
+      <div class="footMain">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="company_group.html">다우키룸그룹 전체보기 +</a>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <a href="#" class="btn_gotop">
+      <span></span>
+    </a>
+    <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
+    <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
+      const gnb = document.querySelector("#gnb");
+      const header = document.querySelector("#header");
+      const btnAll = document.querySelector("#header .btnAll");
+      const slideBar = document.querySelector("#slideBar");
+      const tabs = document.querySelectorAll(".tab");
+      const txtBox = document.querySelectorAll(".txtBox");
+
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
+      btnAll.addEventListener("click", function () {
+        header.classList.toggle("open");
+      });
+
+      tabs.forEach(function (item, index) {
+        item.addEventListener("click", function (e) {
+          e.preventDefault();
+          txtBox.forEach(function (item, index02) {
+            // if (index === index02) {
+            //   item.classList.add("on");
+            // } else {
+            //   item.classList.remove("on");
+            // }
+            index === index02 ? item.classList.add("on") : item.classList.remove("on");
+          });
+        });
+      });
+      function link01() {
+        let url = document.getElementById("locationList01").value;
+        location.href = url;
+      }
+      function link02() {
+        let url = document.getElementById("locationList02").value;
+        location.href = url;
+      }
+    </script>
+  </body>
+</html>

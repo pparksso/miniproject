@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#companyTitle { display: flex; justify-content: center; font-size: 62px; font-weight: 700; margin: 100px auto 50px; }
+#companyTitle { display: flex; justify-content: center; margin: 100px auto 50px; font-size: 62px; font-weight: 700; }
 
 .locationWrap { height: 68px; border-bottom: 1px solid #e3e3e3; }
 
@@ -25,11 +25,11 @@
 
 #wrapper .container #sub_visual { height: 480px; position: relative; }
 
-#wrapper .container #sub_visual .img { height: 100%; background-image: url("../images/company/company.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; }
+#wrapper .container #sub_visual .img { height: 100%; background-image: url("../images/company/company.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
 
 #wrapper .container #sub_visual .img .txt_wrap { position: absolute; top: 50%; left: 50%; text-align: center; color: #fff; transform: translateX(-50%) translateY(-50%); }
 
-#wrapper .container #sub_visual .img .txt_wrap h3 { font-size: 54px; font-weight: 700; margin-bottom: 30px; }
+#wrapper .container #sub_visual .img .txt_wrap h3 { margin-bottom: 30px; font-size: 54px; font-weight: 700; }
 
 #wrapper .container #sub_visual .img .txt_wrap .txt_1 { padding: 0 10px; font-size: 18px; line-height: 1.5; }
 
@@ -55,47 +55,49 @@
 
 #companyIntro .companyContents { margin-top: 100px; }
 
-#companyIntro .companyContents p { display: flex; justify-content: center; text-align: center; font-size: 18px; font-weight: 300; line-height: 1.5; }
+#companyIntro .companyContents p { display: flex; justify-content: center; font-size: 18px; font-weight: 300; text-align: center; line-height: 1.5; }
 
 #companyIntro .subWrap { width: 1200px; margin: 100px auto 160px; }
 
-#companyIntro .subWrap .imgIntro { width: auto; margin-top: 50px; height: 500px; background-image: url("../images/company/company_intro.png"); background-position: center; background-repeat: no-repeat; }
+#companyIntro .subWrap .imgIntro { width: auto; height: 500px; margin-top: 50px; background-image: url("../images/company/company_intro.png"); background-position: center; background-repeat: no-repeat; }
 
-#companyIntro .subWrap h5 { display: flex; justify-content: center; font-size: 50px; font-weight: 700; margin-bottom: 70px; }
+#companyIntro .subWrap h5 { display: flex; justify-content: center; margin-bottom: 70px; font-size: 50px; font-weight: 700; }
 
 #companyIntro .subWrap .historyArea { margin-top: 100px; }
 
-#companyIntro .subWrap .historyArea .tapArea { display: flex; justify-content: center; font-size: 20px; position: relative; border-bottom: 1px solid #ccc; padding-bottom: 30px; color: #666; }
+#companyIntro .subWrap .historyArea .tapArea { display: flex; justify-content: center; position: relative; padding-bottom: 30px; border-bottom: 1px solid #ccc; font-size: 20px; color: #666; }
 
-#companyIntro .subWrap .historyArea .tapArea > a:hover:after { transform: scaleX(1); }
+#companyIntro .subWrap .historyArea .tapArea .timeTab { position: relative; padding: 0 20px; }
 
-#companyIntro .subWrap .historyArea .tapArea .selected { color: #f22fb0; }
+#companyIntro .subWrap .historyArea .tapArea .timeTab:after { width: 90%; height: 2px; position: absolute; bottom: -32px; left: 8px; transform: scale(0); transition: transform 0.25s ease-in-out; content: ""; background-color: #f22fb0; }
 
-#companyIntro .subWrap .historyArea .tapArea .selected::after { transform: scale(1); }
+#companyIntro .subWrap .historyArea .tapArea .timeTab:hover { color: #f22fb0; }
 
-#companyIntro .subWrap .historyArea .tapArea a { padding: 0 20px; position: relative; }
+#companyIntro .subWrap .historyArea .tapArea .timeTab:hover::after { transform: scale(1); }
 
-#companyIntro .subWrap .historyArea .tapArea a:after { content: ""; width: 90%; height: 2px; position: absolute; bottom: -30px; left: 10px; background-color: #f22fb0; transform: scale(0); transition: transform 0.25s ease-in-out; }
+#companyIntro .subWrap .historyArea .tapArea .timeTab.selected { color: #f22fb0; }
 
-#companyIntro .subWrap .historyArea .tapArea a:hover { color: #f22fb0; }
+#companyIntro .subWrap .historyArea .tapArea .timeTab.selected::after { transform: scale(1); }
 
-#companyIntro .subWrap .historyArea .historyTap01 { margin-top: 50px; }
+#companyIntro .subWrap .historyArea .historyPannel { margin-top: 50px; display: none; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl { padding: 40px 0 40px 4%; display: flex; }
+#companyIntro .subWrap .historyArea .historyPannel.on { display: block; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dt { width: 16%; margin-left: 4%; font-size: 34px; font-weight: 700; }
+#companyIntro .subWrap .historyArea .historyPannel dl { display: flex; padding: 40px 0 40px 4%; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dt span { position: relative; }
+#companyIntro .subWrap .historyArea .historyPannel dl dt { width: 16%; margin-left: 4%; font-size: 34px; font-weight: 700; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dt span::before { content: ""; width: 60px; height: 1px; display: block; background-color: #000; position: absolute; left: 150px; top: 24px; }
+#companyIntro .subWrap .historyArea .historyPannel dl dt span { position: relative; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dd { width: 72%; float: right; text-align: left; padding: 0 4%; margin-left: 50px; }
+#companyIntro .subWrap .historyArea .historyPannel dl dt span::before { display: block; width: 60px; height: 1px; position: absolute; top: 24px; left: 150px; content: ""; background-color: #000; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dd li { font-size: 16px; line-height: 2; }
+#companyIntro .subWrap .historyArea .historyPannel dl dd { width: 72%; margin-left: 50px; padding: 0 4%; text-align: left; float: right; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dd li .hide { opacity: 0; }
+#companyIntro .subWrap .historyArea .historyPannel dl dd li { font-size: 16px; line-height: 2; }
 
-#companyIntro .subWrap .historyArea .historyTap01 dl dd li span { font-weight: 700; margin: 10px 10px; }
+#companyIntro .subWrap .historyArea .historyPannel dl dd li .hide { opacity: 0; }
+
+#companyIntro .subWrap .historyArea .historyPannel dl dd li span { margin: 10px 10px; font-weight: 700; }
 
 #companyCeo .ceoTxt { position: relative; margin: 100px 0 160px 0; }
 
@@ -103,75 +105,77 @@
 
 #companyCeo .ceoTxt .txtBox .txt01 { width: 50%; font-size: 44px; line-height: 1.3; }
 
-#companyCeo .ceoTxt .txtBox .txt01::after { content: ""; height: 1px; width: 200px; position: absolute; background-color: #000; top: 80px; left: 49%; }
+#companyCeo .ceoTxt .txtBox .txt01::after { width: 200px; height: 1px; position: absolute; top: 80px; left: 49%; content: ""; background-color: #000; }
 
 #companyCeo .ceoTxt .txtBox .txt01 em { font-weight: 300; color: #f22fb0; }
 
 #companyCeo .ceoTxt .txtBox .txt01 i { font-weight: 700; color: #f22fb0; }
 
-#companyCeo .ceoTxt .txtBox .txt02 { margin-top: 50px; width: 55%; font-size: 18px; word-break: keep-all; color: #111; line-height: 2; }
+#companyCeo .ceoTxt .txtBox .txt02 { width: 55%; margin-top: 50px; font-size: 18px; color: #111; line-height: 2; word-break: keep-all; }
 
-#companyCeo .ceoTxt .txtBox .txt03 { margin-top: 50px; font-weight: 700; font-size: 20px; }
+#companyCeo .ceoTxt .txtBox .txt03 { margin-top: 50px; font-size: 20px; font-weight: 700; }
 
 #companyCeo .ceoTxt .txtBox .ceoImg { width: 460px; height: 600px; position: absolute; top: 50px; right: 350px; background-image: url("../images/company/ceo_v3.png"); }
 
 #companyCi { width: 1200px; margin: 0 auto; }
 
-#companyCi h4 { font-size: 68px; padding-bottom: 0; }
+#companyCi h4 { padding-bottom: 0; font-size: 68px; }
 
 #companyCi .ciContents { position: relative; }
 
-#companyCi .ciContents h5 { display: flex; justify-content: center; font-weight: 700; font-size: 28px; }
+#companyCi .ciContents h5 { display: flex; justify-content: center; font-size: 28px; font-weight: 700; }
 
-#companyCi .ciContents h5::before { content: ""; width: 20px; height: 1px; background-color: #000; position: absolute; top: -20px; }
+#companyCi .ciContents h5::before { width: 20px; height: 1px; position: absolute; top: -20px; content: ""; background-color: #000; }
 
-#companyCi .ciContents p { display: flex; justify-content: center; font-size: 18px; text-align: center; margin: 50px 0; padding-bottom: 50px; line-height: 1.5; color: #111; }
+#companyCi .ciContents p { display: flex; justify-content: center; margin: 50px 0; padding-bottom: 50px; font-size: 18px; text-align: center; color: #111; line-height: 1.5; }
 
 #companyCi .imgBox { position: relative; }
 
-#companyCi .imgBox .ciImg { margin: 0 auto; width: 1140px; height: 294px; background-image: url("../images/company/ci.png"); background-repeat: no-repeat; background-position: center; }
+#companyCi .imgBox .ciImg { width: 1140px; height: 294px; margin: 0 auto; background-image: url("../images/company/ci.png"); background-position: center; background-repeat: no-repeat; }
 
-#companyCi a { display: block; width: 230px; height: 80px; line-height: 80px; padding: 0 50px; color: #111; font-size: 22px; border: 1px solid #111; margin: 150px auto; }
+#companyCi a { display: block; width: 230px; height: 80px; margin: 150px auto; padding: 0 50px; border: 1px solid #111; font-size: 22px; color: #111; line-height: 80px; }
 
 #companyCi a .ciArrow { position: relative; }
 
-#companyCi a .ciArrow::before { content: ""; width: 52px; position: absolute; bottom: 5px; right: -80px; height: 1px; display: block; background-color: #000; }
+#companyCi a .ciArrow::before { display: block; width: 52px; height: 1px; position: absolute; right: -80px; bottom: 5px; content: ""; background-color: #000; }
 
-#companyCi a .ciArrow::after { content: ""; width: 14px; position: absolute; bottom: 9px; right: -80px; transform: rotate(30deg); height: 1px; display: block; background-color: #000; }
+#companyCi a .ciArrow::after { display: block; width: 14px; height: 1px; position: absolute; right: -80px; bottom: 9px; transform: rotate(30deg); content: ""; background-color: #000; }
 
 #companyGroup { width: 1200px; margin: 0 auto; }
 
-#companyGroup .tapArea { display: flex; justify-content: center; position: relative; border-bottom: 1px solid #ccc; padding-bottom: 30px; color: #666; font-size: 20px; margin-top: 100px; }
+#companyGroup .tapArea { border-bottom: 1px solid #e3e3e3; text-align: center; margin: 0 auto; overflow: hidden; font-weight: 400; box-sizing: border-box; }
 
-#companyGroup .tapArea > a span:hover:before { transform: scaleX(1); }
+#companyGroup .tapArea .groupTab { display: inline-block; font-size: 20px; position: relative; padding: 8px 20px 18px 20px; }
 
-#companyGroup .tapArea .selected { color: #f22fb0; }
+#companyGroup .tapArea .groupTab::before { content: ""; display: block; width: 100%; height: 2px; position: absolute; left: 0; bottom: 0; background-color: #f22fb0; transform: scaleX(0); z-index: 1; transition: all 0.3s ease; }
 
-#companyGroup .tapArea .selected::before { transform: scale(1); }
+#companyGroup .tapArea .groupTab.selected { color: #f22fb0; }
 
-#companyGroup .tapArea a { margin: 0 10px; }
+#companyGroup .tapArea .groupTab.selected::before { transform: scaleX(1); }
 
-#companyGroup .tapArea a span { position: relative; padding: 0 10px; }
+#companyGroup .tapArea .groupTab:hover { color: #f22fb0; }
 
-#companyGroup .tapArea a span:before { width: 100%; content: ""; height: 2px; display: block; position: absolute; bottom: -28px; background-color: #f22fb0; transform: scale(0); transition: transform 0.25s ease-in-out; }
+#companyGroup .tapArea .groupTab:hover::before { transform: scale(1); }
 
-#companyGroup .tapArea a span:hover { color: #f22fb0; }
+#companyGroup .areaInner { display: none; margin-bottom: 200px; }
 
-#companyGroup .areaInner .groupArea .groupContents h5 { display: flex; justify-content: center; font-size: 30px; font-weight: 700; margin-top: 100px; }
+#companyGroup .areaInner.on { display: block; }
+
+#companyGroup .areaInner .groupArea .groupContents h5 { display: flex; justify-content: center; margin-top: 100px; font-size: 30px; font-weight: 700; }
 
 #companyGroup .areaInner .groupArea .groupContents .kospi { display: flex; justify-content: center; margin-top: 20px; font-size: 18px; }
 
-#companyGroup .areaInner .groupArea .groupContents .kospi .orange { color: #ff5d05; margin-right: 20px; }
+#companyGroup .areaInner .groupArea .groupContents .kospi .orange { margin-right: 20px; color: #ff5d05; }
 
-#companyGroup .areaInner .groupArea .groupContents .kospi .orange::before { content: ""; width: 8px; height: 8px; border-radius: 4px; display: inline-block; margin-right: 10px; position: relative; top: -2px; background-color: #f00; }
+#companyGroup .areaInner .groupArea .groupContents .kospi .orange::before { display: inline-block; width: 8px; height: 8px; position: relative; top: -2px; margin-right: 10px; content: ""; border-radius: 4px; background-color: #f00; }
 
 #companyGroup .areaInner .groupArea .groupContents .kospi .blue { color: #215aed; }
 
-#companyGroup .areaInner .groupArea .groupContents .kospi .blue::before { content: ""; width: 8px; height: 8px; border-radius: 4px; display: inline-block; margin-right: 10px; position: relative; top: -2px; background-color: #00f; }
+#companyGroup .areaInner .groupArea .groupContents .kospi .blue::before { display: inline-block; width: 8px; height: 8px; position: relative; top: -2px; margin-right: 10px; content: ""; border-radius: 4px; background-color: #00f; }
 
-#companyGroup .areaInner .groupArea .groupContents .groupList { width: 100%; margin-top: 100px; overflow: hidden; }
+#companyGroup .areaInner .groupArea .groupContents .groupList { width: 100%; overflow: hidden; margin-top: 100px; }
 
-#companyGroup .areaInner .groupArea .groupContents .groupList li { float: left; width: 25%; height: 400px; display: flex; justify-content: center; }
+#companyGroup .areaInner .groupArea .groupContents .groupList li { display: flex; justify-content: center; width: 25%; height: 400px; float: left; }
 
 #companyGroup .areaInner .groupArea .groupContents .groupList li a { text-align: center; }
 
@@ -183,17 +187,17 @@
 
 #companyGroup .areaInner .groupArea .groupContents .groupList li a p { line-height: 1.5; }
 
-#companyGroup .areaInner .groupArea .groupContents .groupList li a .orange::before { content: ""; width: 8px; height: 8px; border-radius: 4px; display: inline-block; margin-right: 10px; position: relative; top: -2px; background-color: #ff5d05; }
+#companyGroup .areaInner .groupArea .groupContents .groupList li a .orange::before { display: inline-block; width: 8px; height: 8px; position: relative; top: -2px; margin-right: 10px; content: ""; border-radius: 4px; background-color: #ff5d05; }
 
-#companyGroup .areaInner .groupArea .groupContents .groupList li a .blue::before { content: ""; width: 8px; height: 8px; border-radius: 4px; display: inline-block; margin-right: 10px; position: relative; top: -2px; background-color: #215aed; }
+#companyGroup .areaInner .groupArea .groupContents .groupList li a .blue::before { display: inline-block; width: 8px; height: 8px; position: relative; top: -2px; margin-right: 10px; content: ""; border-radius: 4px; background-color: #215aed; }
 
-#companyView .viewBox { margin-top: 100px; height: 860px; background-color: #00081e; position: relative; overflow: hidden; }
+#companyView .viewBox { height: 860px; position: relative; overflow: hidden; margin-top: 100px; background-color: #00081e; }
 
-#companyView .viewBox .swiper-container { margin-top: 150px; width: 100%; height: 610px; }
+#companyView .viewBox .swiper-container { width: 100%; height: 610px; margin-top: 150px; }
 
-#companyView .viewBox .swiper-container .swiper-wrapper { position: relative; display: flex; box-sizing: content-box; }
+#companyView .viewBox .swiper-container .swiper-wrapper { display: flex; position: relative; box-sizing: content-box; }
 
-#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide { height: 450px; display: flex; align-items: flex-end; justify-content: center; opacity: 0.08; transform: scaleX(0.8); transition: all 0.3s ease; background-size: contain; background-position: center; background-repeat: no-repeat; }
+#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide { display: flex; justify-content: center; align-items: flex-end; height: 450px; transform: scaleX(0.8); opacity: 0.08; transition: all 0.3s ease; background-position: center; background-size: contain; background-repeat: no-repeat; }
 
 #companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide.company01 { background-image: url("../images/view/img_company_1.jpg"); }
 
@@ -211,40 +215,40 @@
 
 #companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide.company08 { background-image: url("../images/view/img_company_8.jpg"); }
 
-#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide p { margin-top: 30px; line-height: 2; font-size: 16px; font-weight: 400; color: #fff; position: absolute; top: 100%; display: none; text-align: center; }
+#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide p { display: none; position: absolute; top: 100%; margin-top: 30px; font-size: 16px; font-weight: 400; text-align: center; color: #fff; line-height: 2; }
 
-#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide-active { opacity: 1; transform: scaleX(1); }
+#companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide-active { transform: scaleX(1); opacity: 1; }
 
 #companyView .viewBox .swiper-container .swiper-wrapper .swiper-slide-active p { display: block; }
 
 #companyView .viewBox .swiper-container .btnAll { width: 0; height: 0; cursor: pointer; }
 
-#companyView .viewBox .swiper-container .btnAll::before { content: ""; width: 140px; height: 1px; background-color: #fff; display: block; position: absolute; bottom: 50%; z-index: 1; }
+#companyView .viewBox .swiper-container .btnAll::before { display: block; width: 140px; height: 1px; position: absolute; bottom: 50%; z-index: 1; content: ""; background-color: #fff; }
 
-#companyView .viewBox .swiper-container .btnAll::after { font-size: 18px; color: #fff; position: absolute; top: 46%; z-index: 1; }
+#companyView .viewBox .swiper-container .btnAll::after { position: absolute; top: 46%; z-index: 1; font-size: 18px; color: #fff; }
 
 #companyView .viewBox .swiper-container .prev::before { left: 12%; }
 
-#companyView .viewBox .swiper-container .prev::after { content: "이전"; left: 12%; }
+#companyView .viewBox .swiper-container .prev::after { left: 12%; content: "이전"; }
 
 #companyView .viewBox .swiper-container .next::before { right: 12%; }
 
-#companyView .viewBox .swiper-container .next::after { content: "다음"; right: 12%; }
+#companyView .viewBox .swiper-container .next::after { right: 12%; content: "다음"; }
 
-#companyView .viewBox .swiper-container .pagination { position: absolute; z-index: 1; display: flex; align-items: flex-end; justify-content: center; }
+#companyView .viewBox .swiper-container .pagination { display: flex; justify-content: center; align-items: flex-end; position: absolute; z-index: 1; }
 
-#companyView .viewBox .swiper-container .pagination .swiper-pagination-bullet { width: 25px; height: 2px; border-radius: 0; opacity: 1; margin-bottom: 70px; background-color: rgba(255, 255, 255, 0.1); position: relative; }
+#companyView .viewBox .swiper-container .pagination .swiper-pagination-bullet { width: 25px; height: 2px; position: relative; margin-bottom: 70px; opacity: 1; border-radius: 0; background-color: rgba(255, 255, 255, 0.1); }
 
 #companyView .viewBox .swiper-container .pagination .swiper-pagination-bullet::after { content: ""; display: block; position: absolute; display: block; width: 0; height: 100%; background-color: #e42ca6; }
 
 #companyView .viewBox .swiper-container .pagination .swiper-pagination-bullet-active::after { width: 100%; }
 
-#companyView .viewBox.scroll { opacity: 1; transform: translateY(0%); transition: all 0.3s ease; animation: fadein 0.6s; }
+#companyView .viewBox.scroll { transform: translateY(0%); opacity: 1; transition: all 0.3s ease; animation: fadein 0.6s; }
 
-#companyView .viewBox.scroll h3 { transform: translateY(0%); transition: all 0.3s ease 0.6s; opacity: 1; }
+#companyView .viewBox.scroll h3 { transform: translateY(0%); opacity: 1; transition: all 0.3s ease 0.6s; }
 
 #companyMap .titleBox p { display: flex; justify-content: center; font-size: 18px; }
 
-#companyMap .mapBox { overflow: hidden; width: 1200px; margin: 0 auto; }
+#companyMap .mapBox { width: 1200px; overflow: hidden; margin: 0 auto; }
 
 #companyMap #map1, #companyMap #map2 { height: 500px; margin-top: 50px; }

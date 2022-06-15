@@ -2,35 +2,35 @@
 @import "mixin";
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
   width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
   // height: 100vh;
   overflow-x: hidden;
   .btn_gotop {
     display: block;
-    position: fixed;
-    text-align: center;
     width: 70px;
     height: 70px;
-    bottom: 70px;
+    position: fixed;
     right: 2%;
+    bottom: 70px;
     z-index: 999;
     border: 1px solid #111;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
     outline: none;
     background-color: white;
-    font-weight: 700;
-    font-size: 14px;
     cursor: pointer;
     &::before {
-      content: "";
+      display: block;
       width: 14px;
       height: 14px;
       margin: 18px auto 0;
-      transform: rotate(45deg);
-      display: block;
       border: 1px solid #000;
-      border-bottom: none;
       border-right: none;
+      border-bottom: none;
+      transform: rotate(45deg);
+      content: "";
     }
     // padding: 15px 20px;
   }
@@ -42,36 +42,36 @@ a {
 #logo {
   width: 15%;
   h1 {
-    margin: 29px 0 0 78px;
     width: 172px;
     height: 42px;
+    margin: 29px 0 0 78px;
     background-image: url(../images/kidari_logo_white.png);
     background-size: 172px 42px;
   }
 }
 #scrollNav {
-  z-index: 2;
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
   right: 0;
+  z-index: 2;
+  transform: translateY(-50%);
   .scrollBox {
     li {
       margin-bottom: 25px;
       &::before {
-        content: "";
         display: block;
         width: 20px;
         height: 1px;
         margin-bottom: 16px;
+        content: "";
         background-color: #fff;
       }
       span {
-        position: relative;
-        line-height: 1.5;
         // color: #fff;
         display: none;
+        position: relative;
         font-size: 14px;
+        line-height: 1.5;
       }
     }
   }
@@ -90,16 +90,16 @@ a {
   height: 100px;
   position: fixed;
   z-index: 99;
-  transition: all 0.25s ease-in-out;
-  color: #fff;
   overflow: hidden;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
   &.open {
     .btnAll {
       z-index: 99;
 
       span {
-        background-color: #fff;
         color: #fff;
+        background-color: #fff;
 
         &:nth-child(1) {
           top: 15px;
@@ -117,24 +117,24 @@ a {
       }
     }
     #slideBar {
-      transition: all 0.3s ease-in-out;
       left: 0;
       opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
   }
   &.on {
     height: 330px;
-    background-color: #fff;
     color: #111;
+    background-color: #fff;
     &:after {
       background-color: #ccc;
     }
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -150,16 +150,16 @@ a {
     }
   }
   &.scroll {
-    background-color: #fff;
-    color: #111;
     border-bottom: 1px solid #eee;
+    color: #111;
+    background-color: #fff;
     // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -186,27 +186,27 @@ a {
     }
   }
   #slideBar {
-    position: fixed;
     width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
-    padding-top: 60px;
-    background-color: #111;
     left: 100%;
-    transition: all 0.3s ease-out;
+    padding-top: 60px;
     opacity: 0;
+    transition: all 0.3s ease-out;
+    background-color: #111;
     .barInner {
-      position: absolute;
       width: 1000px;
-      left: 24%;
+      position: absolute;
       top: 48%;
+      left: 24%;
       transform: translateX(-50%);
       transform: translateY(-50%);
 
       .menuArea {
-        border-bottom: 1px solid #666;
         margin: 10px 0;
         padding: 16px 0 24px;
+        border-bottom: 1px solid #666;
 
         a {
           &:hover {
@@ -219,26 +219,26 @@ a {
 
           dt {
             width: 200px;
-            text-align: center;
-            font-size: 24px;
             margin-right: 20px;
+            font-size: 24px;
+            text-align: center;
             color: #fff;
           }
           dd {
             width: 130px;
+            padding: 5px 0;
             font-size: 18px;
             text-align: center;
-            float: left;
-            padding: 5px 0;
             color: #999;
             letter-spacing: -1px;
+            float: left;
 
             ul {
+              display: block;
               margin-top: 20px;
               font-size: 16px;
-              display: block;
-              line-height: 1.7;
               color: #666;
+              line-height: 1.7;
             }
           }
         }
@@ -250,29 +250,29 @@ a {
   }
 
   .btnAll {
-    position: absolute;
     display: block;
-    right: 40px;
-    top: 40px;
-    height: 41px;
     width: 60px;
-    background: none;
-    border: none;
-    outline: none;
+    height: 41px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
     padding: 0;
+    border: none;
+    background: none;
+    outline: none;
     cursor: pointer;
 
     span {
       display: block;
       width: 34px;
       height: 3px;
-
-      background-color: #fff;
       position: absolute;
 
       z-index: 2;
 
       transition: all 0.25s ease;
+
+      background-color: #fff;
       &:nth-child(1) {
         top: 0px;
       }
@@ -288,10 +288,10 @@ a {
 
 #gnb {
   .list {
+    display: block;
     position: absolute;
     top: 18px;
     left: 34%;
-    display: block;
     padding: 22px 0;
 
     > li {
@@ -308,19 +308,19 @@ a {
       }
     }
     .depth01 {
-      font-size: 20px;
       position: relative;
+      font-size: 20px;
 
       &::before {
-        @include pseudo();
-        left: -10px;
-        bottom: -10px;
         width: 100%;
         height: 4px;
+        bottom: -10px;
+        left: -10px;
         padding: 0 10px;
-        background-color: #1b1b1b;
         transform: scaleX(0);
         transition: all 0.3s;
+        background-color: #1b1b1b;
+        @include pseudo();
       }
     }
     .depth02 {
@@ -341,16 +341,16 @@ a {
 }
 
 #footer {
-  padding-top: 50px;
   position: relative;
-  background-color: #333;
+  padding-top: 50px;
   color: #666;
+  background-color: #333;
 
   .footMain {
     display: flex;
     justify-content: center;
-    text-align: center;
     font-size: 14px;
+    text-align: center;
     a {
       margin: 0 15px 30px;
     }
@@ -363,24 +363,24 @@ a {
     line-height: 140%;
   }
   .footMenuBox {
+    height: 70px;
     position: relative;
     margin-top: 50px;
-    height: 70px;
     line-height: 70px;
     background-color: #373737;
     a {
-      position: absolute;
-      text-align: center;
-      font-weight: 400;
-      color: #999;
-      top: 0;
-      left: 20%;
-      font-size: 15px;
       width: 266px;
       height: 70px;
-      line-height: 70px;
-      border-left: 1px solid #3f434b;
+      position: absolute;
+      top: 0;
+      left: 20%;
       border-right: 1px solid #3f434b;
+      border-left: 1px solid #3f434b;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      color: #999;
+      line-height: 70px;
       background: none;
     }
     ul {
@@ -388,21 +388,21 @@ a {
       .footMenu {
         float: left;
         a {
-          position: relative;
           display: block;
-          margin: 0 15px;
-          margin-top: 23px;
           width: 79px;
           height: 23px;
+          position: relative;
+          margin: 0 15px;
+          margin-top: 23px;
           border: none;
-          background: {
-            repeat: no-repeat;
-            size: 68px 20px;
-          }
           @for $i from 1 to 7 {
             &.footVisual0#{$i} {
               background-image: url("../images/foot_bi_#{$i}.png");
             }
+          }
+          background: {
+            repeat: no-repeat;
+            size: 68px 20px;
           }
         }
       }

@@ -209,11 +209,11 @@
         <div class="historyArea">
           <h5>연혁</h5>
           <div class="tapArea">
-            <a href="" class="selected"><span>2016 ~ 2020</span></a>
-            <a href=""><span>2010 ~ 2015</span></a>
-            <a href=""><span>1996 ~ 1999</span></a>
+            <a href="" class="selected timeTab"><span>2016 ~ 2020</span></a>
+            <a href="" class="timeTab"><span>2010 ~ 2015</span></a>
+            <a href="" class="timeTab"><span>1996 ~ 1999</span></a>
           </div>
-          <div class="historyTap01">
+          <div class="historyPannel on">
             <dl>
               <dt>
                 <span>2020</span>
@@ -284,6 +284,49 @@
                   <li>
                     <span>04</span>
                     자회사 바로북 흡수합병
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
+          <div class="historyPannel">
+            <dl>
+              <dt>
+                <span style="line-height: 1.5">2010 ~ <br />2015</span>
+              </dt>
+              <dd>
+                <ol>
+                  <li>디지털교과서 저작 도구 개발</li>
+                  <li>ePub 저작도구 개발</li>
+                  <li>기술혁신 중소기업(INNO-BIZ)인정</li>
+                  <li>지식경제부 신 S/W 국무총리상</li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
+          <div class="historyPannel">
+            <dl>
+              <dt>
+                <span>1999</span>
+              </dt>
+              <dd>
+                <ol>
+                  <li>
+                    <span>09</span>
+                    ㈜다우기술과 전략적 제휴/다우키움그룹 편입
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <span>1996</span>
+              </dt>
+              <dd>
+                <ol>
+                  <li>
+                    <span>02</span>
+                    유가증권시장 상장
                   </li>
                 </ol>
               </dd>
@@ -371,5 +414,24 @@
       let url = document.getElementById("locationList02").value;
       location.href = url;
     }
+
+    const timeTabs = document.querySelectorAll(".timeTab");
+    const historyPannels = document.querySelectorAll(".historyPannel");
+
+    const timeTab = $(".timeTab");
+    timeTab.on("click", function (e) {
+      e.preventDefault();
+      $(this).addClass("selected");
+      $(this).siblings().removeClass("selected");
+    });
+
+    timeTabs.forEach(function (item, index) {
+      item.addEventListener("click", function (e) {
+        e.preventDefault();
+        historyPannels.forEach(function (item, index02) {
+          index === index02 ? item.classList.add("on") : item.classList.remove("on");
+        });
+      });
+    });
   </script>
 </html>

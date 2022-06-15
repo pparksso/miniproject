@@ -1,0 +1,523 @@
+@import "vars";
+@import "mixin";
+
+#wrapper {
+  width: 100vw;
+  .contentsContainer {
+    #sub_visual {
+      height: 240px;
+      position: relative;
+      .img {
+        height: 240px;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url("../images/careers/sub_visual_3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .txt_wrap {
+          position: absolute;
+          width: 100vw;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          color: #fff;
+          transform: translateX(-50%) translateY(-50%);
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .txt_1 {
+            margin-top: 12px;
+            // padding: 0 14%;
+            font-size: 12px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .locationWrap {
+      height: 100%;
+      border-bottom: 1px solid #e3e3e3;
+      .locationInner {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        height: 49px;
+
+        .homeIcon {
+          display: block;
+          width: 68px;
+          height: 49px;
+          z-index: 2;
+          // z-index: 10;
+          position: relative;
+          border-right: 1px solid #e3e3e3;
+          border-left: 1px solid #e3e3e3;
+          .roof {
+            &::before {
+              display: block;
+              width: 10px;
+              height: 10px;
+              position: absolute;
+              top: 20px;
+              left: 17px;
+              border-top: 2px solid #000;
+              border-left: 2px solid #000;
+              transform: rotate(45deg);
+              content: "";
+            }
+            &::after {
+              display: block;
+              width: 8px;
+              height: 8px;
+              position: absolute;
+              top: 25px;
+              left: 17px;
+              border: 2px solid #000;
+              border-top: none;
+              content: "";
+            }
+          }
+        }
+        .locationSelectArea {
+          width: 220px;
+          // z-index: 100;
+          position: relative;
+          text-align: center;
+          z-index: 2;
+
+          span {
+            &::before {
+              display: inline-block;
+              width: 1px;
+              height: 7px;
+              position: absolute;
+              top: 45%;
+              right: 20px;
+              transform: rotate(45deg);
+              content: "";
+              background-color: #000;
+            }
+            &::after {
+              display: inline-block;
+              width: 1px;
+              height: 7px;
+              position: absolute;
+              top: 45%;
+              right: 25px;
+              transform: rotate(-45deg);
+              content: "";
+              background-color: #000;
+            }
+          }
+          select {
+            width: 100%;
+            height: 49px;
+
+            padding-left: 15px;
+            border: 1px solid transparent;
+            border-right: 1px solid #e3e3e3;
+
+            font-size: 14px;
+            appearance: none;
+            outline: none;
+          }
+          .typeA {
+            width: 260px;
+          }
+        }
+      }
+    }
+    .contents {
+      .titleWrap {
+        h4 {
+          margin-top: 40px;
+          font-size: 28px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+      .subWrap {
+        position: relative;
+        .areaInner {
+          width: 94%;
+          margin: 40px auto 0 auto;
+          .careersJob {
+            margin: 70px auto 100px auto;
+            width: 95%;
+            h3 {
+              position: relative;
+              font-size: 16px;
+              font-weight: 700;
+              color: #e42ca6;
+              &::before {
+                display: block;
+                width: 13px;
+                height: 1px;
+                position: absolute;
+                top: -6px;
+                left: 0;
+                content: "";
+                background-color: #e42ca6;
+              }
+            }
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 15px;
+              li {
+                width: calc(100% / 3);
+                margin-top: 16px;
+                display: block;
+                a {
+                  font-size: 13px;
+                  font-weight: 700;
+                  letter-spacing: -1px;
+                }
+              }
+            }
+            .txtBox {
+              display: none;
+              margin-top: 30px;
+              padding: 14px 16px;
+              background-color: #f9f9f9;
+              &.on {
+                display: block;
+              }
+              p {
+                margin-top: 10px;
+                font-size: 13px;
+                line-height: 1.5;
+                word-break: keep-all;
+              }
+            }
+          }
+          .employ {
+            margin-bottom: 70px;
+            h5 {
+              margin-bottom: 14px;
+              font-size: 16px;
+              font-weight: 700;
+              text-align: center;
+            }
+          }
+          .person {
+            h2 {
+              margin-bottom: 14px;
+            }
+            p {
+              font-size: 13px;
+              font-weight: 400;
+              text-align: center;
+              line-height: 1.5;
+              span {
+                color: #f22fb0;
+                strong {
+                  font-weight: 700;
+                }
+              }
+            }
+            .personImg {
+              margin: 40px auto 0;
+              width: 325px;
+              height: 105px;
+              background-image: url("../images/careers/person_m.png");
+              background-repeat: no-repeat;
+              background-size: 325px 105px;
+            }
+          }
+          .welfare {
+            ul {
+              li {
+                margin-right: 15px;
+                margin-bottom: 15px;
+                &:nth-child(3n) {
+                  margin-right: 0;
+                }
+                .wBox {
+                  width: 94%;
+                  margin: 20px auto 0;
+                  padding: 20px 0;
+                  border: 1px solid #f6f6f6;
+                  box-sizing: border-box;
+                  text-align: center;
+                  img {
+                    width: 34px;
+                    height: 34px;
+                  }
+                  span {
+                    display: block;
+                    margin-top: 14px;
+                    font-size: 14px;
+                    font-weight: 700;
+                  }
+                  p {
+                    font-size: 12px;
+                    margin-top: 6px;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+          .process {
+            .interImg {
+              width: 145px;
+              height: 800px;
+              background-image: url("../images/careers/inter_m.png");
+              background-size: 145px 800px;
+              margin: 40px auto 0;
+            }
+            ul {
+              margin-top: 40px;
+              li {
+                word-break: keep-all;
+                position: relative;
+                padding: 0 20px;
+                margin-bottom: 8px;
+                font-size: 12px;
+                color: #666;
+                &:nth-last-child(1)::before {
+                  display: none;
+                }
+                &::before {
+                  display: block;
+                  width: 2px;
+                  height: 2px;
+                  position: absolute;
+                  top: 50%;
+                  left: 15px;
+                  transform: translateY(-50%);
+                  content: "";
+                  background-color: #000;
+                }
+              }
+            }
+          }
+          .jobPosting {
+            .workListArea {
+              box-sizing: border-box;
+              border-top: 2px solid #000;
+              margin-top: 30px;
+              ul {
+                li {
+                  border-bottom: 1px solid #e3e3e3;
+                  transition: all 0.3s ease-in-out;
+                  .boardLi {
+                    height: 90px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .kindEl {
+                      font-size: 11px;
+                      margin: 10px 0 0 6px;
+                      color: #999;
+                    }
+                    .postTitle {
+                      width: 76%;
+                      margin: 6px 0 0 6px;
+                      font-size: 14px;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap;
+                    }
+                    .date {
+                      padding-left: 6px;
+                      font-size: 12px;
+                      color: #999;
+                      margin-top: 10px;
+                    }
+                    .end {
+                      display: block;
+                      width: 68px;
+                      height: 30px;
+                      position: absolute;
+                      top: 50%;
+                      right: 10px;
+                      font-size: 13px;
+                      text-align: center;
+                      color: #fff;
+                      line-height: 28px;
+                      transform: translateY(-50%);
+                      cursor: default;
+                      background-color: #dcdcdc;
+                      border-radius: 15px;
+                    }
+                  }
+                  .postDesc {
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    padding: 52px 40px 30px 40px;
+                    box-sizing: border-box;
+                    font-size: 9pt;
+                    text-align: left;
+                    line-height: 2;
+                    background-color: #f6f6f6;
+                    word-break: keep-all;
+                    &.on {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .pagination {
+            margin-top: 80px;
+            text-align: center;
+            a {
+              display: inline-block;
+              width: 36px;
+              height: 36px;
+              position: relative;
+              margin-right: 0.1px;
+              box-sizing: border-box;
+              text-align: center;
+              line-height: 36px;
+              transition: all 0.2s ease;
+              vertical-align: middle;
+              &:hover {
+                background-color: #f3f3f3;
+              }
+            }
+            .preview {
+              &::after {
+                position: absolute;
+                left: 35%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 500;
+                content: "\e5e0";
+              }
+            }
+            .next {
+              &::after {
+                position: absolute;
+                right: 25%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 500;
+                content: "\e5e1";
+              }
+            }
+            .first {
+              &::before {
+                position: absolute;
+                left: 30%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e0";
+              }
+              &::after {
+                position: absolute;
+                left: 45%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e0";
+              }
+            }
+            .last {
+              &::before {
+                position: absolute;
+                left: 20%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e1";
+              }
+              &::after {
+                position: absolute;
+                left: 35%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e1";
+              }
+            }
+            .page {
+              font-size: 15px;
+              &.on {
+                color: #fff;
+                background-color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  position: relative;
+  padding-top: 50px;
+  color: #666;
+  background-color: #333;
+
+  .footMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    a {
+      margin: 0 15px 30px;
+    }
+  }
+  address {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    line-height: 140%;
+  }
+  .footMenuBox {
+    height: 70px;
+    position: relative;
+    margin-top: 50px;
+    line-height: 70px;
+    background-color: #373737;
+    a {
+      width: 266px;
+      height: 70px;
+      position: absolute;
+      top: 0;
+      left: 20%;
+      border-right: 1px solid #3f434b;
+      border-left: 1px solid #3f434b;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #999;
+      line-height: 70px;
+      background: none;
+    }
+    ul {
+      transform: translateX(43%);
+      .footMenu {
+        float: left;
+        a {
+          display: block;
+          width: 79px;
+          height: 23px;
+          position: relative;
+          margin: 0 20px;
+          margin-top: 23px;
+          border: none;
+          @for $i from 1 to 7 {
+            &.footVisual0#{$i} {
+              background-image: url("../images/layout/foot_bi_#{$i}.png");
+            }
+          }
+          background: {
+            repeat: no-repeat;
+            size: 72px 22px;
+          }
+        }
+      }
+    }
+  }
+}

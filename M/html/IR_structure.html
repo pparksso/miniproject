@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키다리스튜디오::IR</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/ir.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="./company_intro.html">회사소개</a></li>
+                <li><a href="./company_ceo.html">CEO 인사말</a></li>
+                <li><a href="./company_ci.html">CI</a></li>
+                <li><a href="./company_group.html">그룹사</a></li>
+                <li><a href="./company_view.html">회사전경</a></li>
+                <li><a href="./company_map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="./business_movie.html">영화</a></li>
+                <li><a href="./business_webtoon.html">웹툰제작스튜디오</a></li>
+                <li><a href="./business_webNovel.html">웹소설</a></li>
+                <li><a href="./business_platform.html">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="./careers_job.html">직무안내</a></li>
+                <li><a href="./careers_employ.html">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="./pr_press.html">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="./IR_structure.html">기업지배구조</a></li>
+                <li><a href="./IR_Dart.html">공시정보</a></li>
+                <li><a href="./IR_financial.html">재무정보</a></li>
+                <li><a href="./IR_investment.html">투자정보</a></li>
+                <li><a href="./IR_regulation.html">공시정보 관리규정</a></li>
+                <li><a href="./IR_Announcement.html">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- header end -->
+    <div id="wrapper">
+      <div class="contentsContainer">
+        <section id="sub_visual">
+          <div class="img business">
+            <div class="txt_wrap">
+              <h3>IR</h3>
+              <p class="txt_1">
+                키다리스튜디오는 신속하고 공정한<br />
+                정보전달을 위해 노력합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="locationWrap">
+          <div class="locationInner">
+            <a href="./index.html" class="homeIcon"><span class="roof"></span></a>
+            <div class="locationSelectArea">
+              <span></span>
+              <select name="" id="locationList01" onchange="link01()">
+                <option value="./company_intro.html">Company</option>
+                <option value="./business_movie.html">Business</option>
+                <option value="./careers_job.html">Careers</option>
+                <option value="./pr_press.html">PR</option>
+                <option value="./IR_structure.html" selected>IR</option>
+              </select>
+            </div>
+            <div class="locationSelectArea typeA">
+              <span></span>
+              <select name="" id="locationList02" onchange="link02()">
+                <option value="./IR_structure.html" selected>기업지배구조</option>
+                <option value="./IR_Dart.html">공시정보</option>
+                <option value="./IR_financial.html">재무정보</option>
+                <option value="./IR_investment.html">투자정보</option>
+                <option value="./IR_regulation.html">공시정보 관리규정</option>
+                <option value="./IR_Announcement.html">공고사항</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="titleWrap">
+            <h4>기업지배구조</h4>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="tableName">
+                <h5>주식현황</h5>
+                <span>2021년 12월 31일</span>
+              </div>
+              <table class="table01 nomalTable">
+                <colgroup>
+                  <col width="16%" />
+                  <col width="27%" />
+                  <col width="16%" />
+                  <col width="16%" />
+                  <col width />
+                  <col width="8%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="tableHead"><span>구분</span></td>
+                    <td class="tableHead"><span>성명</span></td>
+                    <td class="tableHead"><span>종류</span></td>
+                    <td class="tableHead"><span>주식수</span></td>
+                    <td class="tableHead"><span>지분율</span></td>
+                    <td class="tableHead"><span>비고</span></td>
+                  </tr>
+                  <tr>
+                    <td>최대주주</td>
+                    <td>㈜다우데이타</td>
+                    <td>기명식 보통주</td>
+                    <td>12,919,237</td>
+                    <td>37.22</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="9">주요주주</td>
+                    <td>㈜이머니</td>
+                    <td>기명식 보통주</td>
+                    <td>790,491</td>
+                    <td>2.28</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>㈜다우기술</td>
+                    <td>기명식 보통주</td>
+                    <td>1,370,474</td>
+                    <td>3.95</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>김동준</td>
+                    <td>기명식 보통주</td>
+                    <td>320,959</td>
+                    <td>0.92</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>김익래</td>
+                    <td>기명식 보통주</td>
+                    <td>250,000</td>
+                    <td>0.72</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>허흥범</td>
+                    <td>기명식 보통주</td>
+                    <td>40,000</td>
+                    <td>0.12</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>김영훈</td>
+                    <td>기명식 보통주</td>
+                    <td>265,000</td>
+                    <td>0.76</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>이선윤</td>
+                    <td>기명식 보통주</td>
+                    <td>20,000</td>
+                    <td>0.06</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>성백진</td>
+                    <td>기명식 보통주</td>
+                    <td>30,000</td>
+                    <td>0.09</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>이병국</td>
+                    <td>기명식 보통주</td>
+                    <td>20,000</td>
+                    <td>0.06</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">기타주주</td>
+                    <td>기명식 보통주</td>
+                    <td>18,683,145</td>
+                    <td>53.83</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">합계</td>
+                    <td>34,709,306</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="tableName">
+                <h5>이사회 구성</h5>
+              </div>
+              <table class="table02 nomalTable">
+                <colgroup>
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                  <col width="20%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="tableHead"><span>구분</span></td>
+                    <td class="tableHead"><span>성명</span></td>
+                    <td class="tableHead"><span>담당업무</span></td>
+                    <td class="tableHead"><span>선임일</span></td>
+                    <td class="tableHead"><span>임기 표시</span></td>
+                  </tr>
+                  <tr>
+                    <td>대표이사</td>
+                    <td>김영훈</td>
+                    <td>경영총괄</td>
+                    <td>2022년 03월 25일</td>
+                    <td>3년</td>
+                  </tr>
+                  <tr>
+                    <td>사내이사</td>
+                    <td>이선윤</td>
+                    <td>기획 / 사업</td>
+                    <td>2021년 03월 26일</td>
+                    <td>3년</td>
+                  </tr>
+                  <tr>
+                    <td>기타비상무이사</td>
+                    <td>이해준</td>
+                    <td>대외협력</td>
+                    <td>2021년 03월 26일</td>
+                    <td>3년</td>
+                  </tr>
+                  <tr>
+                    <td>사외이사</td>
+                    <td>손형만</td>
+                    <td>사외이사</td>
+                    <td>2022년 03월 25일</td>
+                    <td>1년</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="tableName">
+                <h5>이사회 운영</h5>
+              </div>
+              <table class="table03 nomalTable">
+                <colgroup>
+                  <col width="10%" />
+                  <col width="15%" />
+                  <col width />
+                  <col width="15%" />
+                  <col width="15%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="tableHead" rowspan="2"><span>회차</span></td>
+                    <td class="tableHead" rowspan="2"><span>일자</span></td>
+                    <td class="tableHead" rowspan="2"><span>의제</span></td>
+                    <td class="tableHead" rowspan="2"><span>가결여부</span></td>
+                    <td class="tableHead"><span>사외이사 활동내역</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tableHead" style="line-height: 1.5"><span>손형만</span><br />(출석율: 85%)</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>2021년 02월 25일</td>
+                    <td class="tableLeft">내부회계관리제도 운영실태 보고</td>
+                    <td>보고사항</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2021년 01월 07일</td>
+                    <td class="tableLeft">주식의 포괄적 교환계약서 변경의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2021년 01월 22일</td>
+                    <td class="tableLeft">주식 매매 계약 체결의 건</td>
+                    <td>가결</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2021년 03월 11일</td>
+                    <td class="tableLeft">
+                      2020년(제34기) 재무제표 승인의 건<br />
+                      제34기 정기주주총회 소집의 건
+                    </td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>2021년 03월 15일</td>
+                    <td class="tableLeft">
+                      행사시기 도래 주식매수선택권 부여방법 결정의 건<br />
+                      제34기 정기주주총회 소집의 건
+                    </td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>2021년 03월 26일</td>
+                    <td class="tableLeft">대표이사 선임의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>2021년 04월 23일</td>
+                    <td class="tableLeft">주식매수선택권 부여의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>2021년 04월 30일</td>
+                    <td class="tableLeft">자회사와의 콘텐츠 공급 관련 계약 체결의 건</td>
+                    <td>가결</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>2021년 07월 23일</td>
+                    <td class="tableLeft">주식매수선택권 부여의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>2021년 07월 23일</td>
+                    <td class="tableLeft">자회사와의 출판권 설정 계약 체결의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>2021년 08월 20일</td>
+                    <td class="tableLeft">2차적 저작물 사업화 관련 계약 체결의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>2021년 10월 22일</td>
+                    <td class="tableLeft">
+                      소규모합병의 건 <br />
+                      주주확정 기준일 결정의 건
+                    </td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>2021년 11월 05일</td>
+                    <td class="tableLeft">소규모합병 합병기일 변경의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>2021년 11월 24일</td>
+                    <td class="tableLeft">소규모합병 합병계약 승인의 건</td>
+                    <td>가결</td>
+                    <td>찬성</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>2021년 12월 29일</td>
+                    <td class="tableLeft">합병 경과 보고의 건</td>
+                    <td>가결</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="tableName">
+                <h5>&nbsp;</h5>
+                <span>[2021 기말기준]</span>
+              </div>
+            </div>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="tableName">
+                <h5>감사 구성</h5>
+              </div>
+              <table class="table04 nomalTable">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="tableHead"><span>구분</span></td>
+                    <td class="tableHead"><span>성명</span></td>
+                    <td class="tableHead"><span>선임일</span></td>
+                    <td class="tableHead"><span>임기 표시</span></td>
+                  </tr>
+                  <tr>
+                    <td>상근감사</td>
+                    <td>유재혁</td>
+                    <td>2022년 03월 25일</td>
+                    <td>3년</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="tableName">
+                <h5>외부감사인</h5>
+              </div>
+              <table class="table05 nomalTable">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="tableHead"><span>법인명</span></td>
+                    <td class="tableHead"><span>선임일</span></td>
+                    <td class="tableHead"><span>계약기간</span></td>
+                    <td class="tableHead"><span>최근 감사의견</span></td>
+                  </tr>
+                  <tr>
+                    <td>한울회계법인</td>
+                    <td>2022년 01월 01일</td>
+                    <td>1년</td>
+                    <td>적정</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- section end -->
+    <footer id="footer">
+      <div class="footMain">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="company_group.html">다우키룸그룹 전체보기 +</a>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <a href="#" class="btn_gotop">
+      <span></span>
+    </a>
+    <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
+    <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
+      const gnb = document.querySelector("#gnb");
+      const header = document.querySelector("#header");
+      const btnAll = document.querySelector("#header .btnAll");
+      const slideBar = document.querySelector("#slideBar");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
+      btnAll.addEventListener("click", function () {
+        header.classList.toggle("open");
+      });
+      function link01() {
+        let url = document.getElementById("locationList01").value;
+        location.href = url;
+      }
+      function link02() {
+        let url = document.getElementById("locationList02").value;
+        location.href = url;
+      }
+    </script>
+  </body>
+</html>

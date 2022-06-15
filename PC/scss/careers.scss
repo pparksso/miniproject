@@ -15,38 +15,38 @@ a {
 }
 .btn_gotop {
   display: block;
-  position: fixed;
-  text-align: center;
   width: 70px;
   height: 70px;
-  bottom: 70px;
+  position: fixed;
   right: 2%;
+  bottom: 70px;
   z-index: 999;
   border: 1px solid #111;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
   outline: none;
   background-color: white;
-  font-weight: 700;
-  font-size: 14px;
   cursor: pointer;
   &::before {
-    content: "";
+    display: block;
     width: 14px;
     height: 14px;
     margin: 18px auto 0;
-    transform: rotate(45deg);
-    display: block;
     border: 1px solid #000;
-    border-bottom: none;
     border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    content: "";
   }
   // padding: 15px 20px;
 }
 #logo {
   width: 15%;
   h1 {
-    margin: 29px 0 0 78px;
     width: 172px;
     height: 42px;
+    margin: 29px 0 0 78px;
     background-image: url(../images/layout/kidari_logo_white.png);
     background-size: 172px 42px;
   }
@@ -56,16 +56,16 @@ a {
   height: 110px;
   position: fixed;
   z-index: 99;
-  transition: all 0.25s ease-in-out;
-  color: #fff;
   overflow: hidden;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
   &.open {
     .btnAll {
       z-index: 99;
 
       span {
-        background-color: #fff;
         color: #fff;
+        background-color: #fff;
 
         &:nth-child(1) {
           top: 15px;
@@ -83,24 +83,24 @@ a {
       }
     }
     #slideBar {
-      transition: all 0.3s ease-in-out;
       left: 0;
       opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
   }
   &.on {
     height: 400px;
-    background-color: #fff;
     color: #111;
+    background-color: #fff;
     &:after {
       background-color: #ccc;
     }
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -113,15 +113,15 @@ a {
     }
   }
   &.scroll {
-    background-color: #fff;
-    color: #111;
     border-bottom: 1px solid rgba(1, 1, 1, 0.05);
+    color: #111;
+    background-color: #fff;
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -141,27 +141,27 @@ a {
     }
   }
   #slideBar {
-    position: fixed;
     width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
-    padding-top: 60px;
-    background-color: #111;
     left: 100%;
-    transition: all 0.3s ease-out;
+    padding-top: 60px;
     opacity: 0;
+    transition: all 0.3s ease-out;
+    background-color: #111;
     .barInner {
-      position: absolute;
       width: 1000px;
-      left: 24%;
+      position: absolute;
       top: 48%;
+      left: 24%;
       transform: translateX(-50%);
       transform: translateY(-50%);
 
       .menuArea {
-        border-bottom: 1px solid #666;
         margin: 10px 0;
         padding: 16px 0 24px;
+        border-bottom: 1px solid #666;
 
         a {
           &:hover {
@@ -174,26 +174,26 @@ a {
 
           dt {
             width: 200px;
-            text-align: center;
-            font-size: 24px;
             margin-right: 20px;
+            font-size: 24px;
+            text-align: center;
             color: #fff;
           }
           dd {
             width: 130px;
+            padding: 5px 0;
             font-size: 18px;
             text-align: center;
-            float: left;
-            padding: 5px 0;
             color: #999;
             letter-spacing: -1px;
+            float: left;
 
             ul {
+              display: block;
               margin-top: 20px;
               font-size: 16px;
-              display: block;
-              line-height: 1.7;
               color: #666;
+              line-height: 1.7;
             }
           }
         }
@@ -205,29 +205,29 @@ a {
   }
 
   .btnAll {
-    position: absolute;
     display: block;
-    right: 40px;
-    top: 40px;
-    height: 41px;
     width: 60px;
-    background: none;
-    border: none;
-    outline: none;
+    height: 41px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
     padding: 0;
+    border: none;
+    background: none;
+    outline: none;
     cursor: pointer;
 
     span {
       display: block;
       width: 34px;
       height: 3px;
-
-      background-color: #fff;
       position: absolute;
 
       z-index: 2;
 
       transition: all 0.25s ease;
+
+      background-color: #fff;
       &:nth-child(1) {
         top: 0px;
       }
@@ -242,10 +242,10 @@ a {
 }
 #gnb {
   .list {
+    display: block;
     position: absolute;
     top: 22px;
     left: 34%;
-    display: block;
     padding: 20px 0;
 
     > li {
@@ -262,18 +262,18 @@ a {
       }
     }
     .depth01 {
-      font-size: 22px;
       position: relative;
+      font-size: 22px;
       &::before {
-        @include pseudo();
-        left: -10px;
-        bottom: -10px;
         width: 100%;
         height: 4px;
+        bottom: -10px;
+        left: -10px;
         padding: 0 10px;
-        background-color: #1b1b1b;
         transform: scaleX(0);
         transition: all 0.3s;
+        background-color: #1b1b1b;
+        @include pseudo();
       }
     }
     .depth02 {
@@ -299,9 +299,9 @@ a {
       .img {
         height: 100%;
         background-image: url("../images/careers/sub_visual_3.jpg");
+        background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 50%;
         .txt_wrap {
           position: absolute;
           top: 50%;
@@ -409,10 +409,10 @@ a {
     .contents {
       .titleWrap {
         h4 {
+          margin-top: 80px;
           font-size: 66px;
           font-weight: 700;
           text-align: center;
-          margin-top: 80px;
         }
       }
       .subWrap {
@@ -424,31 +424,31 @@ a {
           .careersJob {
             margin: 100px 0;
             h3 {
-              font-size: 30px;
-              color: #e42ca6;
-              font-weight: 700;
               position: relative;
+              font-size: 30px;
+              font-weight: 700;
+              color: #e42ca6;
               &::before {
-                content: "";
                 display: block;
-                position: absolute;
-                height: 1px;
                 width: 22px;
-                background-color: #e42ca6;
+                height: 1px;
+                position: absolute;
                 top: -10px;
                 left: 0;
+                content: "";
+                background-color: #e42ca6;
               }
             }
             ul {
-              margin-top: 50px;
               display: flex;
               flex-wrap: wrap;
+              margin-top: 50px;
               li {
                 width: calc(100% / 3);
                 margin-bottom: 16px;
                 a {
-                  font-weight: 700;
                   font-size: 18px;
+                  font-weight: 700;
                   letter-spacing: -1;
                 }
               }
@@ -462,20 +462,20 @@ a {
                 display: block;
               }
               p {
-                font-size: 16px;
-                word-break: keep-all;
                 margin-top: 10px;
+                font-size: 16px;
                 line-height: 1.5;
+                word-break: keep-all;
               }
             }
           }
           .employ {
             margin-bottom: 120px;
             h5 {
+              margin-bottom: 40px;
               font-size: 28px;
               font-weight: 700;
               text-align: center;
-              margin-bottom: 40px;
             }
           }
           .person {
@@ -510,19 +510,19 @@ a {
                   margin-right: 0;
                 }
                 .wBox {
-                  box-sizing: border-box;
-                  padding: 46px 0;
-                  margin: 0px auto 0;
-                  border: 1px solid #f6f6f6;
                   width: 390px;
                   height: 250px;
+                  margin: 0px auto 0;
+                  padding: 46px 0;
+                  border: 1px solid #f6f6f6;
+                  box-sizing: border-box;
                   text-align: center;
 
                   span {
                     display: block;
                     margin: 14px 0 8px 0;
-                    font-weight: 700;
                     font-size: 20px;
+                    font-weight: 700;
                   }
                   p {
                     font-size: 16px;
@@ -536,20 +536,20 @@ a {
             ul {
               margin-top: 60px;
               li {
+                position: relative;
+                margin-bottom: 10px;
                 font-size: 16px;
                 color: #666;
-                margin-bottom: 10px;
-                position: relative;
                 &::before {
-                  content: "";
                   display: block;
                   width: 2px;
                   height: 2px;
-                  background-color: #000;
                   position: absolute;
                   top: 50%;
-                  transform: translateY(-50%);
                   left: -15px;
+                  transform: translateY(-50%);
+                  content: "";
+                  background-color: #000;
                 }
               }
             }
@@ -559,14 +559,14 @@ a {
               box-sizing: border-box;
               .postHead {
                 height: 70px;
-                line-height: 70px;
-                border-bottom: 1px solid #e3e3e3;
-                border-top: 2px solid #000;
                 margin-top: 40px;
+                border-top: 2px solid #000;
+                border-bottom: 1px solid #e3e3e3;
+                line-height: 70px;
                 span {
                   display: inline-block;
-                  text-align: center;
                   font-size: 18px;
+                  text-align: center;
                   &.kind {
                     width: 100px;
                   }
@@ -583,63 +583,63 @@ a {
               }
               ul {
                 li {
-                  transition: all 0.3s ease-in-out;
                   border-bottom: 1px solid #e3e3e3;
+                  transition: all 0.3s ease-in-out;
                   cursor: pointer;
                   &:hover {
                     background-color: #f6f6f6;
                   }
                   .boardLi {
+                    display: flex;
+                    height: 70px;
                     position: relative;
                     line-height: 70px;
-                    height: 70px;
-                    display: flex;
                     .kindEl {
-                      font-size: 18px;
-                      color: #999;
                       width: 100px;
+                      font-size: 18px;
                       text-align: center;
+                      color: #999;
                     }
                     .postTitle {
                       width: 800px;
-                      text-align: left;
                       padding-left: 40px;
                       box-sizing: border-box;
                       font-size: 18px;
+                      text-align: left;
                     }
                     .date {
+                      padding-left: 20px;
                       font-size: 14px;
                       color: #999;
-                      padding-left: 20px;
                     }
                     .end {
+                      display: block;
+                      width: 68px;
+                      height: 30px;
                       position: absolute;
                       top: 50%;
-                      transform: translateY(-50%);
                       right: 10px;
-                      cursor: default;
-                      background-color: #dcdcdc;
-                      width: 68px;
-                      display: block;
-                      height: 30px;
                       font-size: 13px;
                       text-align: center;
                       color: #fff;
-                      border-radius: 15px;
                       line-height: 30px;
+                      transform: translateY(-50%);
+                      cursor: default;
+                      background-color: #dcdcdc;
+                      border-radius: 15px;
                     }
                   }
                   .postDesc {
-                    background-color: #f6f6f6;
+                    display: none;
                     width: 100%;
                     height: 100%;
+                    padding: 52px 40px 30px 40px;
+                    box-sizing: border-box;
+                    font-size: 9pt;
                     text-align: left;
                     line-height: 2;
+                    background-color: #f6f6f6;
                     word-break: keep-all;
-                    box-sizing: border-box;
-                    padding: 52px 40px 30px 40px;
-                    font-size: 9pt;
-                    display: none;
                     &.on {
                       display: block;
                     }
@@ -653,73 +653,73 @@ a {
             text-align: center;
             a {
               display: inline-block;
-              text-align: center;
               width: 36px;
               height: 36px;
-              line-height: 36px;
+              position: relative;
               margin-right: 0.1px;
+              box-sizing: border-box;
+              text-align: center;
+              line-height: 36px;
               transition: all 0.2s ease;
               vertical-align: middle;
-              box-sizing: border-box;
-              position: relative;
               &:hover {
                 background-color: #f3f3f3;
               }
             }
             .preview {
               &::after {
-                content: "\e5e0";
+                position: absolute;
+                left: 35%;
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 500;
-                position: absolute;
-                left: 35%;
+                content: "\e5e0";
               }
             }
             .next {
               &::after {
-                content: "\e5e1";
+                position: absolute;
+                right: 25%;
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 500;
-                position: absolute;
-                right: 25%;
+                content: "\e5e1";
               }
             }
             .first {
               &::before {
-                content: "\e5e0";
-                font-family: "Material Icons";
-                font-size: 18px;
-                font-weight: 300;
                 position: absolute;
                 left: 30%;
-              }
-              &::after {
-                content: "\e5e0";
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 300;
+                content: "\e5e0";
+              }
+              &::after {
                 position: absolute;
                 left: 45%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e0";
               }
             }
             .last {
               &::before {
-                content: "\e5e1";
-                font-family: "Material Icons";
-                font-size: 18px;
-                font-weight: 300;
                 position: absolute;
                 left: 20%;
-              }
-              &::after {
-                content: "\e5e1";
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 300;
+                content: "\e5e1";
+              }
+              &::after {
                 position: absolute;
                 left: 35%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e1";
               }
             }
             .page {
@@ -737,10 +737,10 @@ a {
 }
 
 #footer {
-  padding-top: 50px;
   position: relative;
-  background-color: #333;
+  padding-top: 50px;
   color: #666;
+  background-color: #333;
 
   .footMain {
     display: flex;
@@ -758,24 +758,24 @@ a {
     line-height: 140%;
   }
   .footMenuBox {
+    height: 70px;
     position: relative;
     margin-top: 50px;
-    height: 70px;
     line-height: 70px;
     background-color: #373737;
     a {
-      position: absolute;
-      text-align: center;
-      font-weight: 400;
-      color: #999;
-      top: 0;
-      left: 20%;
-      font-size: 16px;
       width: 266px;
       height: 70px;
-      line-height: 70px;
-      border-left: 1px solid #3f434b;
+      position: absolute;
+      top: 0;
+      left: 20%;
       border-right: 1px solid #3f434b;
+      border-left: 1px solid #3f434b;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #999;
+      line-height: 70px;
       background: none;
     }
     ul {
@@ -783,21 +783,21 @@ a {
       .footMenu {
         float: left;
         a {
-          position: relative;
           display: block;
-          margin: 0 20px;
-          margin-top: 23px;
           width: 79px;
           height: 23px;
+          position: relative;
+          margin: 0 20px;
+          margin-top: 23px;
           border: none;
-          background: {
-            repeat: no-repeat;
-            size: 72px 22px;
-          }
           @for $i from 1 to 7 {
             &.footVisual0#{$i} {
               background-image: url("../images/layout/foot_bi_#{$i}.png");
             }
+          }
+          background: {
+            repeat: no-repeat;
+            size: 72px 22px;
           }
         }
       }

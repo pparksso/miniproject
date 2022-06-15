@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키다리스튜디오::Business</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/business.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <!-- js -->
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="./company_intro.html">회사소개</a></li>
+                <li><a href="./company_ceo.html">CEO 인사말</a></li>
+                <li><a href="./company_ci.html">CI</a></li>
+                <li><a href="./company_group.html">그룹사</a></li>
+                <li><a href="./company_view.html">회사전경</a></li>
+                <li><a href="./company_map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="./business_movie.html">영화</a></li>
+                <li><a href="./business_webtoon.html">웹툰제작스튜디오</a></li>
+                <li><a href="./business_webNovel.html">웹소설</a></li>
+                <li><a href="./business_platform.html">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="./careers_job.html">직무안내</a></li>
+                <li><a href="./careers_employ.html">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="./pr_press.html">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="./IR_structure.html">기업지배구조</a></li>
+                <li><a href="./IR_Dart.html">공시정보</a></li>
+                <li><a href="./IR_financial.html">재무정보</a></li>
+                <li><a href="./IR_investment.html">투자정보</a></li>
+                <li><a href="./IR_regulation.html">공시정보 관리규정</a></li>
+                <li><a href="./IR_Announcement.html">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- header end -->
+    <div id="wrapper">
+      <div class="contentsContainer">
+        <section id="sub_visual">
+          <div class="img business">
+            <div class="txt_wrap">
+              <h3>Business</h3>
+              <p class="txt_1">키다리스튜디오는 고객 지향적 역량을 바탕으로<br />경쟁우위제품과 서비스를 제공합니다.</p>
+            </div>
+          </div>
+        </section>
+        <section class="locationWrap">
+          <div class="locationInner">
+            <a href="./index.html" class="homeIcon"><span class="roof"></span></a>
+            <div class="locationSelectArea">
+              <span></span>
+              <select name="" id="locationList01" onchange="link01()">
+                <option value="./company_intro.html">Company</option>
+                <option value="./business_movie.html" selected>Business</option>
+                <option value="./careers_job.html">Careers</option>
+                <option value="./pr_press.html">PR</option>
+                <option value="./IR_structure.html">IR</option>
+              </select>
+            </div>
+            <div class="locationSelectArea typeA">
+              <span></span>
+              <select name="" id="locationList02" onchange="link02()">
+                <option value="./business_movie.html">영화</option>
+                <option value="./business_webtoon.html" selected>웹툰제작스튜디오</option>
+                <option value="./business_webNovel.html">웹소설</option>
+                <option value="./business_platform.html">플랫폼</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="titleWrap">
+            <h4>웹툰제작스튜디오</h4>
+          </div>
+          <div class="subWrap business-tab">
+            <div class="tabArea tabAreaBlind">
+              <a href="" class="movieTab01 on">최근상영작<span></span></a>
+              <a href="" class="movieTab02">개봉예정작<span></span></a>
+              <a href="" class="movieTab03">지난상영작<span></span></a>
+              <a href="" class="movieTab04">부가판권작<span></span></a>
+            </div>
+            <div class="areaInner">
+              <div class="board_opt business">
+                <div class="searchArea">
+                  <div class="areaSelectArea">
+                    <span></span>
+                    <select name="field" id="">
+                      <option value="all" selected>전체</option>
+                      <option value="title">제목</option>
+                      <option value="genre">장르</option>
+                    </select>
+                  </div>
+                  <div class="inputArea">
+                    <input type="text" placeholder="검색어를 입력하세요" />
+                    <!-- 버튼 눌렀을 때 경고창 뜨고 인풋박스 활성화 -->
+                    <button></button>
+                  </div>
+                </div>
+                <div class="workListArea">
+                  <ul>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_01.jpg" alt="" />
+                        </div>
+                        <span>루시아</span>
+                        <p>연재시기 : 2019.03 ~ 연재중</p>
+                        <p>글/그림 : TARUVI</p>
+                        <p>장르 : 판타지로맨스</p>
+                        <p>원작 : 하늘가리기</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_02.jpg" alt="" />
+                        </div>
+                        <span>빛과 그림자</span>
+                        <p>연재시기 : 2018 ~ 2019 (103화, 완결)</p>
+                        <p>글/그림 : 희원</p>
+                        <p>장르 : 판타지로맨스</p>
+                        <p>원작 : 류향/신영미디어</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_03.jpg" alt="" />
+                        </div>
+                        <span>외과의사 엘리제</span>
+                        <p>연재시기 : 2017 ~ 2021 (143화, 완결)</p>
+                        <p>글/그림 : mini</p>
+                        <p>장르 : 판타지로맨스</p>
+                        <p>원작 : 유인(流人)/KW BOOKS</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_04.jpg" alt="" />
+                        </div>
+                        <span>골든타임</span>
+                        <p>연재시기 : 2019.11 ~ 연재중</p>
+                        <p>글/그림 : 희원</p>
+                        <p>장르 : 판타지로맨스</p>
+                        <p>원작 : 류향/신영미디어</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_05.jpg" alt="" />
+                        </div>
+                        <span>남동생이 꽃길을 강요한다</span>
+                        <p>연재시기 : 2022.04~연재중</p>
+                        <p>글/그림 : 스튜디오 웨이브</p>
+                        <p>장르 : 로맨스 판타지</p>
+                        <p>원작 : 하일라</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_06.jpg" alt="" />
+                        </div>
+                        <span>사랑의 새싹약국</span>
+                        <p>연재시기 : 2022.03~연재중</p>
+                        <p>글/그림 : 정해솔</p>
+                        <p>장르 : 현대로맨스</p>
+                        <p>원작 : 이유진</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_07.jpg" alt="" />
+                        </div>
+                        <span>낙원의 이론</span>
+                        <p>연재시기 : 2022.03~연재중</p>
+                        <p>글/그림 : 무멘</p>
+                        <p>장르 : SF 판타지</p>
+                        <p>원작 : 정선우</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contentsList webtoonBox">
+                        <div class="imgArea">
+                          <img src="../images/business/webtoon_08.jpg" alt="" />
+                        </div>
+                        <span>메디컬 환생</span>
+                        <p>연재시기 : 2019.09 ~ 2022.01</p>
+                        <p>글/그림 : 키다리스튜디오</p>
+                        <p>장르 : 드라마</p>
+                        <p>원작 : 유인(流人)/브리드</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" data-page="3" class="page">4</a>
+                    <a href="" data-page="4" class="page">5</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- section end -->
+    <footer id="footer">
+      <div class="footMain">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="company_group.html">다우키룸그룹 전체보기 +</a>
+      </div>
+    </footer>
+    <a href="#" class="btn_gotop">
+      <span></span>
+    </a>
+    <!-- footer end -->
+    <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
+    <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
+      const gnb = document.querySelector("#gnb");
+      const header = document.querySelector("#header");
+      const btnAll = document.querySelector("#header .btnAll");
+      const slideBar = document.querySelector("#slideBar");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          $(".btn_gotop").show();
+        } else {
+          $(".btn_gotop").hide();
+        }
+      });
+      btnAll.addEventListener("click", function () {
+        header.classList.toggle("open");
+      });
+
+      function link01() {
+        let url = document.getElementById("locationList01").value;
+        location.href = url;
+      }
+      function link02() {
+        let url = document.getElementById("locationList02").value;
+        location.href = url;
+      }
+    </script>
+  </body>
+</html>

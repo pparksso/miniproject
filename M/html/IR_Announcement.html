@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키다리스튜디오::IR</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/IR.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- js -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"
+            ><h1><i class="blind">키다리스튜디오</i></h1></a
+          >
+        </div>
+        <nav id="gnb">
+          <h2 class="blind">gnb</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="depth01">Company</a>
+              <ul class="depth02">
+                <li><a href="./company_intro.html">회사소개</a></li>
+                <li><a href="./company_ceo.html">CEO 인사말</a></li>
+                <li><a href="./company_ci.html">CI</a></li>
+                <li><a href="./company_group.html">그룹사</a></li>
+                <li><a href="./company_view.html">회사전경</a></li>
+                <li><a href="./company_map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Business</a>
+              <ul class="depth02">
+                <li><a href="./business_movie.html">영화</a></li>
+                <li><a href="./business_webtoon.html">웹툰제작스튜디오</a></li>
+                <li><a href="./business_webNovel.html">웹소설</a></li>
+                <li><a href="./business_platform.html">플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">Careers</a>
+              <ul class="depth02">
+                <li><a href="./careers_job.html">직무안내</a></li>
+                <li><a href="./careers_employ.html">채용공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">PR</a>
+              <ul class="depth02">
+                <li><a href="./pr_press.html">언론보도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="depth01">IR</a>
+              <ul class="depth02">
+                <li><a href="./IR_structure.html">기업지배구조</a></li>
+                <li><a href="./IR_Dart.html">공시정보</a></li>
+                <li><a href="./IR_financial.html">재무정보</a></li>
+                <li><a href="./IR_investment.html">투자정보</a></li>
+                <li><a href="./IR_regulation.html">공시정보 관리규정</a></li>
+                <li><a href="./IR_Announcement.html">공고사항</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="btnAll">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!-- header end -->
+    <div id="wrapper">
+      <div class="contentsContainer">
+        <section id="sub_visual">
+          <div class="img business">
+            <div class="txt_wrap">
+              <h3>IR</h3>
+              <p class="txt_1">
+                키다리스튜디오는 신속하고 공정한<br />
+                정보전달을 위해 노력합니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="locationWrap">
+          <div class="locationInner">
+            <a href="./index.html" class="homeIcon"><span class="roof"></span></a>
+            <div class="locationSelectArea">
+              <span></span>
+              <select name="" id="locationList01" onchange="link01()">
+                <option value="./company_intro.html">Company</option>
+                <option value="./business_movie.html">Business</option>
+                <option value="./careers_job.html">Careers</option>
+                <option value="./pr_press.html">PR</option>
+                <option value="./IR_structure.html" selected>IR</option>
+              </select>
+            </div>
+            <div class="locationSelectArea typeA">
+              <span></span>
+              <select name="" id="locationList02" onchange="link02()">
+                <option value="./IR_structure.html">기업지배구조</option>
+                <option value="./IR_Dart.html">공시정보</option>
+                <option value="./IR_financial.html">재무정보</option>
+                <option value="./IR_investment.html">투자정보</option>
+                <option value="./IR_regulation.html">공시정보 관리규정</option>
+                <option value="./IR_Announcement.html" selected>공고사항</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="titleWrap">
+            <h4>공고사항</h4>
+            <p>키다리스튜디오의 주요 공고사항을 확인할 수 있습니다.</p>
+          </div>
+          <div class="subWrap">
+            <div class="areaInner">
+              <div class="board_opt announcement">
+                <span class="listAll">총 <strong>60</strong>건</span>
+                <div class="searchArea">
+                  <div class="areaSelectArea">
+                    <span></span>
+                    <select name="field" id="">
+                      <option value="all" selected>전체</option>
+                      <option value="title">제목</option>
+                      <option value="genre">장르</option>
+                    </select>
+                  </div>
+                  <div class="inputArea">
+                    <input type="text" placeholder="검색어를 입력하세요" />
+                    <!-- 버튼 눌렀을 때 경고창 뜨고 인풋박스 활성화 -->
+                    <button></button>
+                  </div>
+                </div>
+                <div class="workListArea">
+                  <ul class="AnnouncementListWrap">
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>제35기 결산공고</p>
+                          <span> 2022-03-17 ~ </span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <div id="paperTable">
+                          <h1 class="center">제35기 결산공고</h1>
+                          <strong class="center">연결재무상태표</strong>
+                          <p class="center date">2021년 12월 31일 현재</p>
+                          <div class="companyBox"><span>주식회사 키다리스튜디오와 그 종속기업</span><span>(단위:원)</span></div>
+                          <table class="announceTable">
+                          <colgroup>
+                            <col width="197">
+                            <col width="165">
+                            <col width="197">
+                            <col width="165">
+                          </colgroup>
+                          <thead>
+                          <td class="bold">계 정 과 목</td>
+                          <td class="bold">금 액</td>
+                          <td class="bold">계 정 과 목</td>
+                          <td class="bold">금 액</td></thead>
+                          <tbody>
+                            <tr>
+                              <td class="bold">자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;산</td>
+                              <td></td>
+                              <td class="bold">부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;채</td>
+                              <td></td>
+                            </tr>
+                            <tr class="bold">
+                              <td>I . 유 동 자 산</td>
+                              <td>79,964,058,777</td>
+                              <td>	I.유 동 부 채</td>
+                              <td>64,890,884,912</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(1)현금및현금성자산</td>
+                              <td>26,965,004,899</td>
+                              <td class="indent01">(1)매입채무및기타채무</td>
+                              <td>142,104,127</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(2)당기손익-</td>
+                              <td>12,433,444,021</td>
+                              <td class="indent01">(2)단기차입금</td>
+                              <td>18,571,170,000</td>
+                            </tr>
+                            <tr>
+                              <td class="indent02">  공정가치측정금융자산</td>
+                              <td></td>
+                              <td class="indent01">(3)전환사채</td>
+                              <td>2,290,374,831</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(3)매출채권</td>
+                              <td>8,456,997,544</td>
+                              <td class="indent01">(4)신주인수권부사채</td>
+                              <td>365,104,350</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(4)재고자산</td>
+                              <td>345,070,630</td>
+                              <td class="indent01">(5)파생금융상품</td>
+                                <td>419,976,496</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01"> (5)기타금융자산</td>
+                              <td>1,945,954,141</td>
+                              <td class="indent01">(5)기타금융부채</td>
+                              <td>14,927,432,925</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(6)기타유동자산</td>
+                              <td>28,935,053,382</td>
+                              <td class="indent01">(7)기타부채</td>
+                              <td>28,011,016,071</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(7)당기법인세자산</td>
+                              <td>892,534,160</td>
+                              <td class="indent01">(8)당기법인세부채</td>
+                              <td>164,562,112</td>
+                            </tr>
+                            <tr style="height: 20px;">
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr  class="bold">
+                              <td>II.비 유 동 자 산</td>
+                              <td>210,158,115,979</td>
+                              <td>II.비 유 동 부 채</td>
+                              <td>2,460,021,832</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(1)당기손익-</td>
+                              <td>5,801,524,363</td>
+                              <td class="indent01">(1)기타금융부채</td>
+                              <td>338,280,914</td>
+                            </tr>
+                            <tr>
+                              <td class="indent02">공정가치측정금융자산</td>
+                              <td></td>
+                              <td class="indent01">(2)종업원급여부채</td>
+                              <td>1,538,029,718</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(2)관계기업투자주식</td>
+                              <td>6,784,011,801</td>
+                              <td class="indent01">(3)장기차입금</td>
+                              <td>241,621,200</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(3)유형자산</td>
+                              <td>2,519,256,263</td>
+                              <td class="indent01">(2)기타부채</td>
+                              <td>342,090,000</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(4)무형자산</td>
+                              <td>174,476,804,889</td>
+                              <td class="bold">부 채 총 계</td>
+                              <td class="bold">67,350,906,744</td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(5)기타비유용자산</td>
+                              <td>5,075,828,153</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td class="indent01">(6)기타비유동자산</td>
+                              <td>15,500,679,510</td>
+                              <td class="bold">자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;본 </td>
+                              <td></td>
+                            </tr>
+                            <tr class="bold">
+                              <td></td>
+                              <td></td>
+                              <td>I.지배기업소유주지분</td>
+                              <td>222,781,542,182</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="indent01">(1)자본금</td>
+                              <td class="indent01">17,354,653,000</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="indent01">(2)자본잉여금</td>
+                              <td>201,502,774,537</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="indent01">(3)기타자본항목</td>
+                              <td>( 9, 481, 888, 884 )</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="indent01">(4)기타포괄손익누계액</td>
+                              <td>238,608,182</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="indent01">(5)이익잉여금</td>
+                              <td>13,167,395,347</td>
+                            </tr>
+                            <tr class="bold">
+                              <td></td>
+                              <td></td>
+                              <td>II.비지배지분</td>
+                              <td>(10,274,170)</td>
+                            </tr>
+                            <tr class="bold">
+                              <td></td>
+                              <td></td>
+                              <td>자  본  총  계</td>
+                              <td>222,771,268,012</td>
+                            </tr>
+                            <tr class="bold" style="border-top: 1px solid #000;">
+                              <td class="center">자  산  총  계</td>
+                              <td>290,122,174,756</td>
+                              <td class="center">부 채 와 자 본 총 계</td>
+                              <td>290,122,174,756</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                          <p class="center " style="font-weight: 100; font-size: 18px; margin-bottom: 20px;">위와 같이 공고함</p>
+                          <h2 class="center"  style="font-weight: 100 ;">2022년 03월 17일</h2>
+                          <h2 class="center " style="font-weight: 100 ;font-size: 22px;"> 주식회사 키다리스튜디오</h2>
+                          <h2 class="center" style="font-weight: 100 ;font-size: 22px; padding-bottom: 30px; border-bottom:  2px solid #000;">대표이사 김영훈(직인생략)</h2>
+                          <div class="thanks" >
+                            <span>감사의견 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 회사의 연결재무제표는 주식회사 키다리스튜디오와 그 종속기업의 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021년 12월 31일 현재의 재무상태와 동일로 종료되는 보고기간의 <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;재무성과 및  현금흐름을 한국채택국제회계기준에 따라, 중요성의 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;관점에서 공정하게 표시하고 있습니다.</span>
+                          </div>
+                          <span class="center">한울회계법인 대표이사 남기봉</span>
+                          <strong class="center">재무상태표</strong>
+                          <p class="center date">2021년 12월 31일 현재</p>
+                          <div class="companyBox"><span>주식회사 키다리스튜디오</span><span>(단위:원)</span></div>
+                          <table class="announceTable">
+                            <colgroup>
+                              <col width="197">
+                              <col width="165">
+                              <col width="197">
+                              <col width="165">
+                            </colgroup>
+                            <thead>
+                            <td class="bold">계 정 과 목</td>
+                            <td class="bold">금 액</td>
+                            <td class="bold">계 정 과 목</td>
+                            <td class="bold">금 액</td></thead>
+                            <tbody>
+                              <tr>
+                                <td class="bold">자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;산</td>
+                                <td></td>
+                                <td class="bold">부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;채</td>
+                                <td></td>
+                              </tr>
+                              <tr class="bold">
+                                <td>I . 유 동 자 산</td>
+                                <td>54,474,310,989</td>
+                                <td>	I.유 동 부 채</td>
+                                <td>40,226,689,780</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(1)현금및현금성자산</td>
+                                <td>12,624,815,717</td>
+                                <td class="indent01">(1)매입채무및기타채무</td>
+                                <td>8,390,059</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(2)당기손익-</td>
+                                <td>6,931,940,734</td>
+                                <td class="indent01">(2)단기차입금</td>
+                                <td>17,900,000,000</td>
+                              </tr>
+                              <tr>
+                                <td class="indent02">  공정가치측정금융자산</td>
+                                <td></td>
+                                <td class="indent01">(3)전환사채</td>
+                                <td>1,193,662,468</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(3)매출채권</td>
+                                <td>8,387,337,313</td>
+                                <td class="indent01">(4)파생금융상품</td>
+                                <td>320,873,323</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(4)기타금융자산</td>
+                                <td>1,026,453,164</td>
+                                <td class="indent01">(5)기타금융부채</td>
+                                  <td>6,318,579,882</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01"> (5)기타유동자산</td>
+                                <td>24,850,347,807</td>
+                                <td class="indent01">(6)기타부채</td>
+                                <td>14,120,079,698</td>
+                              </tr>                             
+                              <tr>
+                                <td class="indent01">(7)당기법인세자산</td>
+                                <td>653,415,254</td>
+                                <td class="indent01">(7)신주인수권부사채</td>
+                                <td>365,104,350</td>
+                              </tr>
+                              <tr style="height: 20px;">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr  class="bold">
+                                <td>II.비 유 동 자 산</td>
+                                <td>211,883,262,927</td>
+                                <td>II.비 유 동 부 채</td>
+                                <td>519,720,620</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(1)당기손익-</td>
+                                <td>6,612,627,939</td>
+                                <td class="indent01">(1)기타금융부채</td>
+                                <td>338,280,914</td>
+                              </tr>
+                              <tr>
+                                <td class="indent02">공정가치측정금융자산</td>
+                                <td></td>
+                                <td class="indent01">(2)종업원급여부채</td>
+                                <td>181,439,706</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(2)관계기업투자주식</td>
+                                <td>6,669,830,657</td>
+                                <td class="bold">부 채 총 계</td>
+                                <td class="bold">67,350,906,744</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(3)종속기업투자주식</td>
+                                <td>175,742,106,345</td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(4)유형자산</td>
+                                <td>1,497,298,400</td>
+                                <td class="bold">자본</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(5)영업권</td>
+                                <td>3,465,186,618</td>
+                                <td class="indent01">(1)자본금</td>
+                                <td>17,354,653,000</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(6)영업권이외의무형자산</td>
+                                <td>686,871,391</td>
+                                <td class="indent01">(2)자본잉여금</td>
+                                <td>201,502,774,537</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(5)기타금융자산</td>
+                                <td>3,369,343,964</td>
+                                <td class="indent01">(3)기타자본항목</td>
+                                <td>222,781,542,182</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(6)기타비유동자산</td>
+                                <td>3,369,343,964</td>
+                                <td class="indent01">(4)기타포괄손익누계액</td>
+                                <td>(4,479,147,130)</td>
+                              </tr>
+                              <tr>
+                                <td class="indent01">(7)이연법인세자산</td>
+                                <td>2,065,563,638</td>
+                                <td class="indent01">(2)이익잉여금</td>
+                                <td>11,820,771,945</td>
+                              </tr>             
+                              <tr class="bold">
+                                <td></td>
+                                <td></td>
+                                <td>자  본  총  계</td>
+                                <td>225,611,163,516</td>
+                              </tr>
+                              <tr class="bold" style="border-top: 1px solid #000;">
+                                <td class="center">자  산  총  계</td>
+                                <td>266,357,573,916</td>
+                                <td class="center">부 채 와 자 본 총 계</td>
+                                <td>266,357,573,916</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                            <p class="center " style="font-weight: 100; font-size: 18px; margin-bottom: 20px;">위와 같이 공고함</p>
+                          <h2 class="center"  style="font-weight: 100 ;">2022년 03월 17일</h2>
+                          <h2 class="center " style="font-weight: 100 ;font-size: 22px;"> 주식회사 키다리스튜디오</h2>
+                          <h2 class="center" style="font-weight: 100 ;font-size: 22px; padding-bottom: 30px; border-bottom:  2px solid #000;">대표이사 김영훈(직인생략)</h2>
+                          <div class="thanks" >
+                            <span>감사의견 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 회사의 재무제표는 주식회사 키다리스튜디오의 2021년 12월 31일 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현재의 재무상태와 동일로 종료되는 보고기간의 재무성과 및 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현금흐름을 한국채택국제회계기준에 따라, 중요성의 관점에서 공정하게 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;표시하고 있습니다.</span>
+                          </div>
+                          <span class="center">한울회계법인 대표이사 남기봉</span>
+</div>
+                        </div>
+                    </li>
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>제35기 사업보고서</p>
+                          <span>2022-03-17 ~ </span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <h2 class="center" style="margin-bottom: 90px">제35기 사업보고서 공고</h2>
+                        <p class="center" style="margin-bottom: 60px">상법시행령 제31조에 의거하여 제35기 사업보고서를 공고합니다.</p>
+                        <span class="date center" style="margin-bottom: 30px">2022년 03월 17일</span>
+                        <p class="address center">서울특별시 마포구 독막로 311, 재화스퀘어 12층</p>
+                        <h2 class="center" style="font-size: 12pt">주식회사 키다리스튜디오 대표이사 김 영 훈</h2>
+                      </div>
+                    </li>
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>제35기 (연결)감사보고서</p>
+                          <span>2022-03-17 ~</span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <h2 class="center" style="margin-bottom: 90px">제35기 (연결)감사보고서 공고</h2>
+                        <p class="center" style="margin-bottom: 60px">상법시행령 제31조에 의거하여 제35기 (연결)감사보고서를 공고합니다.</p>
+                        <span class="date center">2022년 03월 17일</span>
+                        <p class="address center">서울특별시 마포구 독막로 311, 재화스퀘어 12층</p>
+                        <h2 class="center" style="font-size: 12pt; margin-bottom: 30px">주식회사 키다리스튜디오 대표이사 김 영 훈</h2>
+                      </div>
+                    </li>
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>제35기 (별도)감사보고서</p>
+                          <span>2022-03-17 ~</span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <h2 class="center" style="margin-bottom: 90px">제35기 (별도)감사보고서 공고</h2>
+                        <p class="center" style="margin-bottom: 60px">상법시행령 제31조에 의거하여 제35기 (별도)감사보고서를 공고합니다.</p>
+                        <span class="date center">2022년 03월 17일</span>
+                        <p class="address center">서울특별시 마포구 독막로 311, 재화스퀘어 12층</p>
+                        <h2 class="center" style="font-size: 12pt; margin-bottom: 30px">주식회사 키다리스튜디오 대표이사 김 영 훈</h2>
+                      </div>
+                    </li>
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>제35기 정기주주총회 소집 공고</p>
+                          <span>2022-03-10 ~ 2022-03-25</span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <h1 class="center">제 <span style="display: inline; font-size: 10px">35</span>기 정기주주총회 소집 통지서</h1>
+                        <p class="smallFz" style="margin-bottom: 20px">주주님의 건승과 가내의 평안을 기원합니다.</p>
+                        <p class="smallFz">당사는 상법 제363조와 정관 제 &nbsp;&nbsp;&nbsp;18 조에 의거 제 35 기 정기주주총회를 아래와 같이 개최 하오니 참석하여 주시기 바랍니다.</p>
+                        <p class="center smallFz" style="margin: 30px 0">- 아&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;래 –</p>
+                        <p class="smallFz" style="margin-bottom: 20px">
+                          1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시 &nbsp;&nbsp;: &nbsp;&nbsp;2022년&nbsp;&nbsp;&nbsp;03월&nbsp;&nbsp;&nbsp;25일(금) 오전
+                          &nbsp;&nbsp;&nbsp;09시&nbsp;&nbsp;&nbsp;00분
+                        </p>
+                        <p class="smallFz" style="margin-bottom: 20px">
+                          2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소 &nbsp;&nbsp;: &nbsp;&nbsp;서울특별시 마포구 독막로&nbsp;&nbsp; &nbsp;311, 재화스퀘어&nbsp;&nbsp;&nbsp; 11층
+                          교육장
+                        </p>
+                        <p class="smallFz">3.&nbsp;&nbsp;&nbsp; 회의목적사항</p>
+                        <p class="smallFz indent01">가&nbsp;&nbsp;. 보고사항</p>
+                        <p class="smallFz indent02">1. 감사의 감사보고</p>
+
+                        <p class="smallFz indent03">2. 영업보고</p>
+
+                        <p class="smallFz indent03">3. 내부회계관리제도 운영실태 보고</p>
+
+                        <p class="smallFz indent01">나. 부의안건</p>
+
+                        <p class="smallFz indent02">제1호 : 제35기(2021.1.1 ~ 2021.12.31) 재무제표 승인의 건</p>
+
+                        <p class="smallFz indent02">제2호 : 정관 일부 변경의 건(사업목적 추가)</p>
+
+                        <p class="smallFz indent02">제3호 : 이사 선임의 건 (사내이사 1명 / 사외이사 1명)</p>
+
+                        <p class="smallFz indent04">3-1) 사내이사 후보자 : 김영훈(재선임)</p>
+
+                        <p class="smallFz indent04">3-2) 사외이사 후보자 : 손형만(재선임)</p>
+
+                        <p class="smallFz indent02">제4호 : 감사 선임의 건</p>
+
+                        <p class="smallFz indent04">4-1 ) 감사 후보자 : 유재혁(신규선임)</p>
+
+                        <p class="smallFz indent02">제5호 : 이사보수한도액 승인의 건</p>
+
+                        <p class="smallFz indent02">제6호 : 감사보수한도액 승인의 건</p>
+
+                        <p class="smallFz indent03" style="margin-bottom: 30px">제7호 : 이사회에서 결의한 주식매수선택권 기부여 승인의 건</p>
+
+                        <p class="smallFz">4. 경영참고사항 비치</p>
+
+                        <p class="smallFz" style="margin: 0 0 30px 10px">
+                          상법 제 542조의 4에 의거하여 회사의 경영참고사항을 당사의 본점, 명의개서대행회사 <br />
+
+                          (KB국민은행 증권대행부)에 비치하였고, 금융위원회 또는 한국거래소의 전자공시시스템에서 조회가 <br />
+
+                          가능하오니 참고하시기 바랍니다.
+                        </p>
+
+                        <p class="smallFz">5. 의결권 행사 방법</p>
+
+                        <p class="smallFz indent02">가. 본인 또는 대리인을 통한 주주총회 참석</p>
+
+                        <p class="smallFz indent04">- 본인 직접행사 : 신분증 지참(본인이 외국인인 경우 투자등록증)</p>
+
+                        <p class="smallFz indent04">- 대리행사 : 대리인의 신분증 지참, 본인 신분증 사본(본인이 법인인 경우</p>
+
+                        <p class="smallFz indent05">법인인감이 날인된 위임장, 인감증명서), 위임장(※위임장에 기재할 사항 참조)</p>
+
+                        <p class="smallFz indent02">나. 전자투표·전자위임장권유에 관한 사항</p>
+
+                        <p class="smallFz indent04">당사는 상법 제368조의4에 따른 전자투표제도와 자본시장과 금융투자업에 관한 법률</p>
+
+                        <p class="smallFz indent04">시행령 제160조 제5호에 따른 전자위임장권유제도를 이번 주주총회에서 활용하기로</p>
+
+                        <p class="smallFz indent04">결의하였고, 이 두 제도의 관리업무를 한국예탁결제원에 위탁하였습니다. 주주님들께서는</p>
+
+                        <p class="smallFz indent04">아래에서 정한 방법에 따라 주주총회에 참석하지 아니하고 전자투표방식으로 의결권을</p>
+
+                        <p class="smallFz indent04" style="margin-bottom: 30px">행사하시거나, 전자위임장을 수여하실 수 있습니다.</p>
+
+                        <p class="smallFz indent01">□ 전자투표·전자위임장권유관리시스템</p>
+
+                        <p class="smallFz indent02">- 인터넷 주소 : 「 &nbsp;&nbsp;<a href="http://evote.ksd.or.kr" style="color: #000;"> http://evote.ksd.or.kr&nbsp;&nbsp;</a>」</p>
+
+                        
+                          <p class="smallFz indent02">- 모바일 주소 : 「&nbsp;&nbsp;<a href="http://evote.ksd.or.kr/m">http://evote.ksd.or.kr/m&nbsp;&nbsp;</a>」</p>
+                        </a>
+
+                        <p class="smallFz indent01">□ 전자투표 행사·전자위임장 수여기간 : 2022년 03월 15일 ∼ 2022년 03월 24일</p>
+
+                        <p class="smallFz indent02">- 기간 중 2022년 3월 15일 오전 9시 이후, 24시간 시스템 접속 가능</p>
+
+                        <p class="smallFz indent02">(단, 마지막 날인 2022년 3월 24일은 오후 5시까지만 투표 행사 가능)</p>
+
+                        <p class="smallFz indent01">□ 시스템에 공인인증을 통해 주주본인을 확인 후 의안별 의결권 행사 또는 전자위임장 수여</p>
+
+                        <p class="smallFz indent02">- 주주확인용 공인인증서의 종류 : 증권거래전용 공인인증서 / 은행 개인용도 제한용</p>
+
+                        <p class="smallFz indent03">공인인증서 / 은행ㆍ증권 범용 공인인증서</p>
+
+                        <p class="smallFz indent01">□ 수정동의안 처리: 주주총회에서 상정된 의안에 관하여 수정동의가 제출되는 경우 전자투표는</p>
+
+                        <p class="smallFz indent02" style="margin-bottom: 30px">기권으로 처리</p>
+
+                        <p class="smallFz">6. 기타사항</p>
+
+                        <p class="smallFz indent01" style="margin-bottom: 30px;">- 주주총회 기념품은 회사의 경비절감을 위하여 지급하지 않습니다.</p>
+
+                        <p class="smallFz">7. 주주총회 참석 시 준비물</p>
+
+                        <p class="smallFz indent01">- 직접행사 : 주총 참석장, 신분증</p>
+
+                        <p class="smallFz indent01">- 대리행사 : 주총 참석장, 위임장 (주주와 대리인의 인적사항 기재, 인감날인), 대리인의 신분증</p>
+
+                        <p class="smallFz center" style="margin: 30px 0">2022 &nbsp; 년&nbsp;&nbsp; 03월 &nbsp;&nbsp;10일</p>
+                        <h2 class="center">서울특별시 마포구 독막로 <span style="display: inline; font-size: 11px;">&nbsp;&nbsp;311</span>, 재화스퀘어&nbsp;&nbsp; <span style="display: inline; font-size: 11px;">12</span>층</h2>
+
+                        <h2 class="center">주식회사 키다리스튜디오</h2>
+
+                        <h2 class="center">대표이사 김&nbsp; 영 &nbsp;훈 <span  style="display: inline; font-size: 11px;">(</span>직인생략&nbsp;<span  style="display: inline; font-size: 11px;">)</span></h2>
+                      </div>
+                    </li>
+                    <li class="AnnouncementEl">
+                      <div class="listTitle">
+                        <div class="boardLi">
+                          <p>합병보고의 공고</p>
+                          <span>2021-12-29 ~ 2022-03-29</span>
+                        </div>
+                        <a href="" class="Announcementfile">
+                          <i class="fileDown"></i>
+                        </a>
+                      </div>
+                      <div class="paper">
+                        <h1 class="center" style="margin: 70px 0 50px 0;">합병보고의 공고</h1>
+                        <p class="smallFz" style="margin-bottom: 50px; letter-spacing: 1px">
+                          1. &nbsp;&nbsp;㈜키다리스튜디오&nbsp;&nbsp;(이하 &nbsp;&nbsp;”갑&nbsp;&nbsp;”)과 ㈜키다리이엔티&nbsp;&nbsp;(이하 “을”&nbsp;&nbsp;)은 2021년 11월 24일 각 회사의 이사회의 결의로 “갑”은 “을”을 합병하여 그 권리와 의무를 승계하고 “을”은 해산하기로
+                          결의하였습니다.
+                        </p>
+
+                        <p class="smallFz" style="margin-bottom: 50px; letter-spacing: 1px">
+                          2. &nbsp;&nbsp;위 결의에 의하여 양 회사는 상법 소정의 합병절차를 완료하였으므로 상법 제526조 제3항에 의하여 이사회의 결의로 이 공고로써 합병보고총회를 갈음하기로 하였으므로 이에
+                          합병완료사실을 각 주주들께 공고로서 보고합니다.
+                        </p>
+
+                        <p class="smallFz center" style="margin: 100px 0;letter-spacing: 1px;">2021&nbsp;&nbsp;년 &nbsp;&nbsp;12월&nbsp;&nbsp; 29일</p>
+
+                        <p class="smallFz indent01" style="margin-bottom: 20px; letter-spacing: 1px;">“갑”&nbsp;&nbsp;&nbsp;&nbsp; 주식회사 키다리스튜디오 대표이사 김영훈</p>
+
+                        <p class="smallFz indent02" style="margin-bottom: 60px; letter-spacing: 1px;">서울특별시 마포구 독막로 311(염리동, 재화스퀘어)</p>
+
+                        <p class="smallFz" style="margin-bottom: 20px; letter-spacing: 1px;">“을” 주식회사 키다리이엔티 대표이사 김영훈</p>
+
+                        <p class="smallFz indent02" style="margin-bottom: 120px;">서울특별시 마포구 독막로 311(염리동, 재화스퀘어)</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagenate">
+                    <a href="" class="first"></a>
+                    <a href="" class="preview"></a>
+                    <a href="" data-page="0" class="page on">1</a>
+                    <a href="" data-page="1" class="page">2</a>
+                    <a href="" data-page="2" class="page">3</a>
+                    <a href="" data-page="3" class="page">4</a>
+                    <a href="" data-page="4" class="page">5</a>
+                    <a href="" class="next"></a>
+                    <a href="" class="last"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- section end -->
+    <footer id="footer">
+      <div class="footMain">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+      </div>
+      <address>
+        사업자 등록번호 : 106-81-49784 | 통신판매업 제 2016-서울마포-1432호 대표이사 김영훈
+        <br />
+        <br />
+        Copyright ⓒ KIDARISTUDIO, Inc. All rights reserved.
+      </address>
+      <div class="footMenuBox">
+        <a href="company_group.html">다우키룸그룹 전체보기 +</a>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <a href="#" class="btn_gotop">
+      <span></span>
+    </a>
+    <!-- 맨 밑에 스크롤버튼 만들기, 셀렉트 옵션에 js -->
+    <script>
+      gsap.from(".subWrap", { duration: 1, y: 100 });
+      gsap.from(".titleWrap", { duration: 1, y: 100, opacity: 0 });
+
+
+      const gnb = document.querySelector("#gnb");
+      const header = document.querySelector("#header");
+      const btnAll = document.querySelector("#header .btnAll");
+      const slideBar = document.querySelector("#slideBar");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+          header.classList.add("scroll");
+        } else {
+          header.classList.remove("scroll");
+        }
+      });
+      window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      $(".btn_gotop").show();
+    } else {
+      $(".btn_gotop").hide();
+    }
+  });
+
+      btnAll.addEventListener("click", function () {
+        header.classList.toggle("open");
+      });
+      
+      const list = $(".listTitle");
+      
+      // $(function(){
+      //   list.on({'mouseenter':function() {
+      //     $(this).css("background", "#f6f6f6")
+      //   }
+      //   ,"mouseleave":function() {
+      //     $(this).css("background", "#fff")
+      //   }})})
+               
+        $(function(){list.on({"click": function (e) {
+        e.preventDefault();       
+        const announce = $(this).next(".paper");
+        const siblings = $(this).parent().siblings().find(".paper");
+        siblings.removeClass("on");
+        announce.addClass("on");
+      }})})
+      function link01() {
+        let url = document.getElementById("locationList01").value;
+        location.href = url;
+      }
+      function link02() {
+        let url = document.getElementById("locationList02").value;
+        location.href = url;
+      }
+      
+      
+
+      // list.on("click", function (e) {
+      //   e.preventDefault();
+        
+      //   const announce = $(this).next(".paper");
+      //   const siblings = $(this).parent().siblings().find(".paper");
+      //   siblings.removeClass("on");
+      //   announce.addClass("on");
+      // });
+    </script>
+    <script></script>
+  </body>
+</html>

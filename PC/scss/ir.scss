@@ -15,38 +15,38 @@ a {
 }
 .btn_gotop {
   display: block;
-  position: fixed;
-  text-align: center;
   width: 70px;
   height: 70px;
-  bottom: 70px;
+  position: fixed;
   right: 2%;
+  bottom: 70px;
   z-index: 999;
   border: 1px solid #111;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
   outline: none;
   background-color: white;
-  font-weight: 700;
-  font-size: 14px;
   cursor: pointer;
   &::before {
-    content: "";
+    display: block;
     width: 14px;
     height: 14px;
     margin: 18px auto 0;
-    transform: rotate(45deg);
-    display: block;
     border: 1px solid #000;
-    border-bottom: none;
     border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    content: "";
   }
   // padding: 15px 20px;
 }
 #logo {
   width: 15%;
   h1 {
-    margin: 29px 0 0 78px;
     width: 172px;
     height: 42px;
+    margin: 29px 0 0 78px;
     background-image: url(../images/layout/kidari_logo_white.png);
     background-size: 172px 42px;
   }
@@ -56,16 +56,16 @@ a {
   height: 110px;
   position: fixed;
   z-index: 99;
-  transition: all 0.25s ease-in-out;
-  color: #fff;
   overflow: hidden;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
   &.open {
     .btnAll {
       z-index: 99;
 
       span {
-        background-color: #fff;
         color: #fff;
+        background-color: #fff;
 
         &:nth-child(1) {
           top: 15px;
@@ -83,24 +83,24 @@ a {
       }
     }
     #slideBar {
-      transition: all 0.3s ease-in-out;
       left: 0;
       opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
   }
   &.on {
     height: 400px;
-    background-color: #fff;
     color: #111;
+    background-color: #fff;
     &:after {
       background-color: #ccc;
     }
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -113,15 +113,15 @@ a {
     }
   }
   &.scroll {
-    background-color: #fff;
-    color: #111;
     border-bottom: 1px solid rgba(1, 1, 1, 0.05);
+    color: #111;
+    background-color: #fff;
     #logo {
       width: 15%;
       h1 {
-        margin: 29px 0 0 78px;
         width: 172px;
         height: 42px;
+        margin: 29px 0 0 78px;
         background-image: url(../images/layout/kidari_logo.png);
         background-size: 172px 42px;
         transition: all 0.2s;
@@ -141,27 +141,27 @@ a {
     }
   }
   #slideBar {
-    position: fixed;
     width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
-    padding-top: 60px;
-    background-color: #111;
     left: 100%;
-    transition: all 0.3s ease-out;
+    padding-top: 60px;
     opacity: 0;
+    transition: all 0.3s ease-out;
+    background-color: #111;
     .barInner {
-      position: absolute;
       width: 1000px;
-      left: 24%;
+      position: absolute;
       top: 48%;
+      left: 24%;
       transform: translateX(-50%);
       transform: translateY(-50%);
 
       .menuArea {
-        border-bottom: 1px solid #666;
         margin: 10px 0;
         padding: 16px 0 24px;
+        border-bottom: 1px solid #666;
 
         a {
           &:hover {
@@ -174,26 +174,26 @@ a {
 
           dt {
             width: 200px;
-            text-align: center;
-            font-size: 24px;
             margin-right: 20px;
+            font-size: 24px;
+            text-align: center;
             color: #fff;
           }
           dd {
             width: 130px;
+            padding: 5px 0;
             font-size: 18px;
             text-align: center;
-            float: left;
-            padding: 5px 0;
             color: #999;
             letter-spacing: -1px;
+            float: left;
 
             ul {
+              display: block;
               margin-top: 20px;
               font-size: 16px;
-              display: block;
-              line-height: 1.7;
               color: #666;
+              line-height: 1.7;
             }
           }
         }
@@ -205,29 +205,29 @@ a {
   }
 
   .btnAll {
-    position: absolute;
     display: block;
-    right: 40px;
-    top: 40px;
-    height: 41px;
     width: 60px;
-    background: none;
-    border: none;
-    outline: none;
+    height: 41px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
     padding: 0;
+    border: none;
+    background: none;
+    outline: none;
     cursor: pointer;
 
     span {
       display: block;
       width: 34px;
       height: 3px;
-
-      background-color: #fff;
       position: absolute;
 
       z-index: 2;
 
       transition: all 0.25s ease;
+
+      background-color: #fff;
       &:nth-child(1) {
         top: 0px;
       }
@@ -242,10 +242,10 @@ a {
 }
 #gnb {
   .list {
+    display: block;
     position: absolute;
     top: 22px;
     left: 34%;
-    display: block;
     padding: 20px 0;
 
     > li {
@@ -262,18 +262,18 @@ a {
       }
     }
     .depth01 {
-      font-size: 22px;
       position: relative;
+      font-size: 22px;
       &::before {
-        @include pseudo();
-        left: -10px;
-        bottom: -10px;
         width: 100%;
         height: 4px;
+        bottom: -10px;
+        left: -10px;
         padding: 0 10px;
-        background-color: #1b1b1b;
         transform: scaleX(0);
         transition: all 0.3s;
+        background-color: #1b1b1b;
+        @include pseudo();
       }
     }
     .depth02 {
@@ -299,9 +299,9 @@ a {
       .img {
         height: 100%;
         background-image: url("../images/business/sub_visual_5.jpg");
+        background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 50%;
         .txt_wrap {
           position: absolute;
           top: 50%;
@@ -409,15 +409,15 @@ a {
     .contents {
       .titleWrap {
         h4 {
+          margin-top: 80px;
           font-size: 66px;
           font-weight: 700;
           text-align: center;
-          margin-top: 80px;
         }
         p {
           margin-top: 60px;
-          font-size: 18px;
           padding: 0 20%;
+          font-size: 18px;
           text-align: center;
           line-height: 1.5;
         }
@@ -427,14 +427,14 @@ a {
         margin: 100px 0 160px 0;
         .areaInner {
           width: 1200px;
-          box-sizing: border-box;
           margin: 80px auto 0 auto;
+          box-sizing: border-box;
           .tableName {
-            margin-bottom: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 42px;
+            margin-bottom: 16px;
             h5 {
               font-size: 28px;
               font-weight: 700;
@@ -444,20 +444,20 @@ a {
             }
           }
           .nomalTable {
-            border-top: 2px solid #000;
             width: 100%;
+            border-top: 2px solid #000;
             tbody {
               tr {
                 box-sizing: border-box;
                 td {
                   height: 80px;
-                  box-sizing: border-box;
-                  font-weight: 400;
-                  font-size: 18px;
                   border: 1px solid #ededed;
                   border-left: none;
-                  vertical-align: middle;
+                  box-sizing: border-box;
+                  font-size: 18px;
+                  font-weight: 400;
                   text-align: center;
+                  vertical-align: middle;
                   &:nth-last-child(1) {
                     border-right: none;
                   }
@@ -472,16 +472,16 @@ a {
           .table03 {
             tr {
               .tableLeft {
-                text-align: left;
                 padding-left: 5px;
+                text-align: left;
                 line-height: 1.5;
               }
             }
           }
           .table06 {
             .smallTable {
-              color: #999;
               font-size: 16px;
+              color: #999;
             }
             .colorTable {
               color: #000;
@@ -495,40 +495,40 @@ a {
           }
           .dartBox {
             .dartLink {
+              display: block;
               width: 420px;
               height: 80px;
               margin: 0 auto;
               border: 1px solid #000;
-              text-align: center;
-              display: block;
-              line-height: 80px;
               font-size: 22px;
+              text-align: center;
+              line-height: 80px;
               span {
-                margin-left: 18px;
+                display: inline-block;
                 width: 52px;
                 height: 16px;
-                display: inline-block;
                 position: relative;
+                margin-left: 18px;
                 &:before {
-                  content: "";
+                  display: block;
                   width: 52px;
                   height: 1px;
-                  bottom: 0;
-                  display: block;
-                  background-color: #000;
                   position: absolute;
+                  bottom: 0;
                   bottom: 0;
                   left: 0;
+                  content: "";
+                  background-color: #000;
                 }
                 &:after {
-                  content: "";
-                  width: 14px;
-                  position: absolute;
-                  bottom: 3px;
-                  right: 0;
                   display: block;
+                  width: 14px;
                   height: 1px;
+                  position: absolute;
+                  right: 0;
+                  bottom: 3px;
                   transform: rotate(30deg);
+                  content: "";
                   background-color: #000;
                 }
               }
@@ -539,25 +539,25 @@ a {
       #regulation {
         .regulationTextBox {
           height: 500px;
-          overflow-y: auto;
-          border: 1px solid #e3e3e3;
           padding: 4% 6%;
+          border: 1px solid #e3e3e3;
+          overflow-y: auto;
           .regulationTextArea {
             box-sizing: border-box;
             word-break: keep-all;
             .regulationTitle {
-              font-size: 22px;
-              text-align: left;
-              font-weight: 600;
-              line-height: 28px;
-              color: #2e2e2e;
               margin-bottom: 10px;
+              font-size: 22px;
+              font-weight: 600;
+              text-align: left;
+              color: #2e2e2e;
+              line-height: 28px;
             }
             .regulationTxt {
-              text-align: left;
-              line-height: 25px;
-              color: #2e2e2e;
               font-size: 15px;
+              text-align: left;
+              color: #2e2e2e;
+              line-height: 25px;
               span {
                 margin-top: 19px;
                 font-weight: 600;
@@ -569,24 +569,24 @@ a {
               }
             }
             .IR_txt2 {
+              margin-top: 30px;
               font-size: 15px;
               text-align: justify;
-              line-height: 25px;
               color: #2e2e2e;
-              margin-top: 30px;
+              line-height: 25px;
               .title_01 {
-                font-size: 26px;
-                text-align: center;
-                font-weight: 600;
-                line-height: 30px;
                 margin-top: 100px;
+                font-size: 26px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 30px;
               }
               .title_02 {
-                font-size: 17px;
-                text-align: left;
-                font-weight: 600;
-                line-height: 30px;
                 margin-top: 30px;
+                font-size: 17px;
+                font-weight: 600;
+                text-align: left;
+                line-height: 30px;
               }
             }
           }
@@ -594,8 +594,8 @@ a {
       }
       .announcement {
         .listAll {
-          position: relative;
           display: inline-block;
+          position: relative;
           top: 25px;
           font-size: 18px;
           strong {
@@ -632,14 +632,14 @@ a {
               }
             }
             select {
-              height: 100%;
               width: 122px;
+              height: 100%;
+              padding-left: 14px;
+              border: 1px solid #e3e3e3;
+              font-size: 15px;
               appearance: none;
               outline: none;
-              border: 1px solid #e3e3e3;
-              padding-left: 14px;
               cursor: pointer;
-              font-size: 15px;
             }
           }
           .inputArea {
@@ -647,45 +647,45 @@ a {
             input[type="text"] {
               width: 344px;
               height: 42px;
-              box-sizing: border-box;
-              border: 1px solid #e3e3e3;
               padding: 0 10px;
+              border: 1px solid #e3e3e3;
+              box-sizing: border-box;
               font-size: 15px;
               &::placeholder {
                 color: #bfbfbf;
               }
             }
             button {
+              width: 38px;
+              height: 38px;
               position: absolute;
               top: 2px;
               right: 2px;
-              width: 38px;
-              height: 38px;
               border: none;
               cursor: pointer;
               background-color: #fff;
               &:before {
-                content: "";
                 display: block;
-                position: absolute;
-                background-color: #fff;
                 width: 12px;
                 height: 12px;
-                border: 2px solid #000;
-                border-radius: 100%;
+                position: absolute;
                 top: 30%;
                 right: 14px;
+                border: 2px solid #000;
+                content: "";
+                background-color: #fff;
+                border-radius: 100%;
               }
               &:after {
-                content: "";
                 display: block;
-                position: absolute;
-                background-color: #000;
                 width: 7px;
                 height: 2px;
-                bottom: 9px;
+                position: absolute;
                 right: 11px;
+                bottom: 9px;
                 transform: rotate(45deg);
+                content: "";
+                background-color: #000;
               }
             }
           }
@@ -694,14 +694,14 @@ a {
           width: 1200px;
           .AnnouncementListHead {
             height: 70px;
-            line-height: 70px;
-            border-bottom: 1px solid #e3e3e3;
-            border-top: 2px solid #000;
             margin-top: 40px;
+            border-top: 2px solid #000;
+            border-bottom: 1px solid #e3e3e3;
+            line-height: 70px;
             span {
               display: inline-block;
-              text-align: center;
               font-size: 18px;
+              text-align: center;
               &.title {
                 width: 800px;
               }
@@ -713,12 +713,12 @@ a {
 
           .AnnouncementListWrap {
             li {
+              position: relative;
+              position: relative;
               // height: 70px;
               border-bottom: 1px solid #e3e3e3;
               line-height: 70px;
-              position: relative;
               transition: all 0.3s ease-in-out;
-              position: relative;
               // :hover {
               //   background-color: #f6f6f6;
               // }
@@ -730,12 +730,12 @@ a {
                 }
                 .boardLi {
                   p {
-                    width: 800px;
-                    box-sizing: border-box;
-                    padding-left: 40px;
-                    font-size: 18px;
                     display: inline-block;
+                    width: 800px;
                     margin-right: 60px;
+                    padding-left: 40px;
+                    box-sizing: border-box;
+                    font-size: 18px;
                   }
                   span {
                     font-size: 14px;
@@ -743,14 +743,14 @@ a {
                   }
                 }
                 .Announcementfile {
+                  display: block;
                   width: 40px;
                   height: 40px;
-                  display: block;
                   position: absolute;
-                  z-index: 1;
                   top: 50%;
-                  transform: translateY(-50%);
                   right: 66px;
+                  z-index: 1;
+                  transform: translateY(-50%);
                   transition: all 0.3s ease-in-out;
                   &:hover {
                     background-color: #f1f1f1;
@@ -759,55 +759,55 @@ a {
                     }
                   }
                   .fileDown {
+                    width: 18px;
+                    height: 7px;
                     position: absolute;
                     bottom: 10px;
                     left: 9px;
-                    width: 18px;
-                    height: 7px;
                     border: 2px solid #666666;
                     border-top: none;
                     &::before {
-                      content: "";
+                      width: 8px;
+                      height: 8px;
                       position: absolute;
                       bottom: 7px;
                       left: 4px;
-                      width: 8px;
-                      height: 8px;
                       border: 2px solid #666666;
                       border-top: none;
                       border-right: none;
                       transform: rotate(-45deg);
+                      content: "";
                     }
                     &::after {
-                      content: "";
+                      width: 2px;
+                      height: 7px;
                       position: absolute;
                       bottom: 8px;
                       left: 8px;
-                      width: 2px;
-                      height: 7px;
-                      background-color: #666;
                       transform: rotate(180deg);
                       transition: height 0.25s ease-in-out;
+                      content: "";
+                      background-color: #666;
                     }
                   }
                 }
               }
               .paper {
-                background-color: #f6f6f6;
                 display: none;
-                color: rgb(153, 153, 153);
-                box-sizing: border-box;
-                padding: 32px 40px 30px 40px;
                 width: 100%;
-                line-height: 180%;
+                padding: 32px 40px 30px 40px;
+                box-sizing: border-box;
                 text-align: justify;
+                color: rgb(153, 153, 153);
+                line-height: 180%;
+                background-color: #f6f6f6;
                 &.on {
                   display: block;
                 }
                 h1 {
+                  margin: 30px 0 10px 0;
                   font-size: 20pt;
                   font-weight: 700;
-                  margin: 30px 0 10px 0;
                 }
                 h2 {
                   font-size: 14pt;
@@ -820,12 +820,12 @@ a {
                   text-align: center;
                 }
                 p {
-                  letter-spacing: 1.5;
                   font-size: 11px;
+                  letter-spacing: 1.5;
                 }
                 .date {
-                  font-size: 16px;
                   margin-bottom: 30px;
+                  font-size: 16px;
                 }
                 .address {
                   font-size: 11.5pt;
@@ -858,73 +858,73 @@ a {
             text-align: center;
             a {
               display: inline-block;
-              text-align: center;
               width: 36px;
               height: 36px;
-              line-height: 36px;
+              position: relative;
               margin-right: 0.1px;
+              box-sizing: border-box;
+              text-align: center;
+              line-height: 36px;
               transition: all 0.2s ease;
               vertical-align: middle;
-              box-sizing: border-box;
-              position: relative;
               &:hover {
                 background-color: #f3f3f3;
               }
             }
             .preview {
               &::after {
-                content: "\e5e0";
+                position: absolute;
+                left: 35%;
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 500;
-                position: absolute;
-                left: 35%;
+                content: "\e5e0";
               }
             }
             .next {
               &::after {
-                content: "\e5e1";
+                position: absolute;
+                right: 25%;
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 500;
-                position: absolute;
-                right: 25%;
+                content: "\e5e1";
               }
             }
             .first {
               &::before {
-                content: "\e5e0";
-                font-family: "Material Icons";
-                font-size: 18px;
-                font-weight: 300;
                 position: absolute;
                 left: 30%;
-              }
-              &::after {
-                content: "\e5e0";
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 300;
+                content: "\e5e0";
+              }
+              &::after {
                 position: absolute;
                 left: 45%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e0";
               }
             }
             .last {
               &::before {
-                content: "\e5e1";
-                font-family: "Material Icons";
-                font-size: 18px;
-                font-weight: 300;
                 position: absolute;
                 left: 20%;
-              }
-              &::after {
-                content: "\e5e1";
                 font-family: "Material Icons";
                 font-size: 18px;
                 font-weight: 300;
+                content: "\e5e1";
+              }
+              &::after {
                 position: absolute;
                 left: 35%;
+                font-family: "Material Icons";
+                font-size: 18px;
+                font-weight: 300;
+                content: "\e5e1";
               }
             }
             .page {
@@ -942,19 +942,19 @@ a {
 }
 #paperTable {
   width: 724.33px;
-  background-color: #fff;
-  color: #000;
   font-weight: 300;
+  color: #000;
+  background-color: #fff;
   h1 {
     font-size: 16pt;
     font-weight: 700;
   }
   strong {
-    font-size: 14pt;
-    margin-top: 50px;
-    letter-spacing: 30px;
-    text-align: center;
     display: block;
+    margin-top: 50px;
+    font-size: 14pt;
+    text-align: center;
+    letter-spacing: 30px;
   }
   .companyBox {
     display: flex;
@@ -962,23 +962,23 @@ a {
     font-size: 15px;
   }
   .thanks {
+    margin-bottom: 20px;
+    margin-left: 70px;
     text-align: left;
     word-break: keep-all;
-    margin-left: 70px;
-    margin-bottom: 20px;
   }
   .announceTable {
-    word-break: keep-all;
-    box-sizing: border-box;
     border: 1px solid;
+    box-sizing: border-box;
+    word-break: keep-all;
     thead {
-      text-align: center;
       border: 1px solid #000;
       border-bottom: none;
+      text-align: center;
     }
     .bold {
-      font-weight: 700;
       font-size: 15px;
+      font-weight: 700;
       letter-spacing: 2px;
     }
     tbody {
@@ -989,17 +989,17 @@ a {
       border-right: 1px solid #000;
       font-size: 15px;
       &:nth-child(2n) {
-        text-align: right;
         padding-right: 15px;
+        text-align: right;
       }
     }
   }
 }
 #footer {
-  padding-top: 50px;
   position: relative;
-  background-color: #333;
+  padding-top: 50px;
   color: #666;
+  background-color: #333;
 
   .footMain {
     display: flex;
@@ -1017,24 +1017,24 @@ a {
     line-height: 140%;
   }
   .footMenuBox {
+    height: 70px;
     position: relative;
     margin-top: 50px;
-    height: 70px;
     line-height: 70px;
     background-color: #373737;
     a {
-      position: absolute;
-      text-align: center;
-      font-weight: 400;
-      color: #999;
-      top: 0;
-      left: 20%;
-      font-size: 16px;
       width: 266px;
       height: 70px;
-      line-height: 70px;
-      border-left: 1px solid #3f434b;
+      position: absolute;
+      top: 0;
+      left: 20%;
       border-right: 1px solid #3f434b;
+      border-left: 1px solid #3f434b;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #999;
+      line-height: 70px;
       background: none;
     }
     ul {
@@ -1042,21 +1042,21 @@ a {
       .footMenu {
         float: left;
         a {
-          position: relative;
           display: block;
-          margin: 0 20px;
-          margin-top: 23px;
           width: 79px;
           height: 23px;
+          position: relative;
+          margin: 0 20px;
+          margin-top: 23px;
           border: none;
-          background: {
-            repeat: no-repeat;
-            size: 72px 22px;
-          }
           @for $i from 1 to 7 {
             &.footVisual0#{$i} {
               background-image: url("../images/layout/foot_bi_#{$i}.png");
             }
+          }
+          background: {
+            repeat: no-repeat;
+            size: 72px 22px;
           }
         }
       }
